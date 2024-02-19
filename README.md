@@ -1,0 +1,3 @@
+- Pull with your version control client of choice ( I personally use sourcetree) and it should work directly.
+- If you need to do something in the unity project, please use branches and pull requests to the develop branch.
+- (Dont worry about this for now) For art, download the folder from the art team and put it inside the assets folder. The project wont work without it.
