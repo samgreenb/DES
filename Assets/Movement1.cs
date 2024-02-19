@@ -80,6 +80,9 @@ public class Movement1 : MonoBehaviour
             moveDirection = cameraRotater.transform.TransformDirection(moveDirection).normalized;
 
             direction = Vector3.Project(moveDirection, direction);
+
+            direction = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+            direction = cameraRotater.transform.TransformDirection(direction).normalized;
             dragging.GetComponent<Rigidbody>().MovePosition(dragging.transform.position +
                 direction * Time.deltaTime * pushSpeed);
             //if ((transform.position - dragging.transform.position).magnitude - distance.magnitude >= 1.01f )
@@ -94,36 +97,108 @@ public class Movement1 : MonoBehaviour
             //}
         }
 
-        if (!Input.GetButtonDown("Drag")) return;
-
-        if (dragging != null) {
-            Debug.Log("lmao3");
-            dragging.transform.parent = null;
-            transform.parent = null;
-            //dragging.GetComponent<Joint>().connectedBody = null;
-            dragging = null;
-            state = STATE.Default;
-            controller.enabled = true;
-            transform.rotation = Quaternion.identity;
-            return;
-        }
-
-        Collider[] colliders = new Collider[10] ;
-        Physics.OverlapSphereNonAlloc(interact.transform.position, 0.1f, colliders);
-        foreach (Collider collider in colliders)
+        if (Input.GetButtonDown("Drag"))
         {
-            if (collider != null && collider.CompareTag("PushPull"))
+            Collider[] colliders = new Collider[10];
+            Physics.OverlapSphereNonAlloc(interact.transform.position, 0.1f, colliders);
+            foreach (Collider collider in colliders)
             {
-                controller.enabled = false;
-                dragging = collider.attachedRigidbody.gameObject;
-                //dragging.transform.parent = transform;
-                //dragging.GetComponent<Joint>().connectedBody = GetComponentInChildren<Rigidbody>();
-                transform.parent = dragging.transform;
-                state = STATE.PushPull;
-                distance = (dragging.transform.position - transform.position);
-                return;
+                if (collider != null && collider.CompareTag("PushPull"))
+                {
+                    controller.enabled = false;
+                    dragging = collider.attachedRigidbody.gameObject;
+                    //dragging.transform.parent = transform;
+                    //dragging.GetComponent<Joint>().connectedBody = GetComponentInChildren<Rigidbody>();
+                    transform.parent = dragging.transform;
+                    state = STATE.PushPull;
+                    distance = (dragging.transform.position - transform.position);
+                    return;
+                }
             }
         }
+
+        if (Input.GetButtonUp("Drag"))
+        {
+            if (dragging != null)
+            {
+                Debug.Log("lmao3");
+                dragging.transform.parent = null;
+                transform.parent = null;
+                //dragging.GetComponent<Joint>().connectedBody = null;
+                dragging = null;
+                state = STATE.Default;
+                controller.enabled = true;
+                transform.rotation = Quaternion.identity;
+                return;
+            }
+
+            
+        }
+
+
+
+
+
+
+
+
+
+        ////////////////////////////
+        //if (dragging != null)
+        //{
+        //    //only forward/backwards
+        //    Vector3 direction = dragging.transform.position - transform.position;
+        //    moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+        //    moveDirection = cameraRotater.transform.TransformDirection(moveDirection).normalized;
+
+        //    direction = Vector3.Project(moveDirection, direction);
+
+        //    direction = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+        //    direction = cameraRotater.transform.TransformDirection(direction).normalized;
+        //    dragging.GetComponent<Rigidbody>().MovePosition(dragging.transform.position +
+        //        direction * Time.deltaTime * pushSpeed);
+        //    //if ((transform.position - dragging.transform.position).magnitude - distance.magnitude >= 1.01f )
+        //    //{
+        //    //    //dragging.GetComponent<Rigidbody>().velocity = new Vector3(controller.velocity.x, -9.81f, controller.velocity.z);
+        //    //    Debug.Log("Disatnce disconnect");
+        //    //    dragging.transform.parent = null;
+        //    //    //dragging.GetComponent<Joint>().connectedBody = null;
+        //    //    dragging = null;
+        //    //    state = STATE.Default;
+        //    //    return;
+        //    //}
+        //}
+
+        //if (!Input.GetButtonDown("Drag")) return;
+
+        //if (dragging != null) {
+        //    Debug.Log("lmao3");
+        //    dragging.transform.parent = null;
+        //    transform.parent = null;
+        //    //dragging.GetComponent<Joint>().connectedBody = null;
+        //    dragging = null;
+        //    state = STATE.Default;
+        //    controller.enabled = true;
+        //    transform.rotation = Quaternion.identity;
+        //    return;
+        //}
+
+        //Collider[] colliders = new Collider[10] ;
+        //Physics.OverlapSphereNonAlloc(interact.transform.position, 0.1f, colliders);
+        //foreach (Collider collider in colliders)
+        //{
+        //    if (collider != null && collider.CompareTag("PushPull"))
+        //    {
+        //        controller.enabled = false;
+        //        dragging = collider.attachedRigidbody.gameObject;
+        //        //dragging.transform.parent = transform;
+        //        //dragging.GetComponent<Joint>().connectedBody = GetComponentInChildren<Rigidbody>();
+        //        transform.parent = dragging.transform;
+        //        state = STATE.PushPull;
+        //        distance = (dragging.transform.position - transform.position);
+        //        return;
+        //    }
+        //}
         
     }
 
@@ -131,34 +206,69 @@ public class Movement1 : MonoBehaviour
     [SerializeField] GameObject holding = null;
     private void Hold()
     {
-        if (!Input.GetButtonDown("Drag")) return;
-
-        if (holding != null)
+        if (Input.GetButtonDown("Drag"))
         {
-            Debug.Log("lmao4");
-            holding.GetComponent<Rigidbody>().isKinematic = false;
-            holding.transform.parent = null;
-            holding = null;
-            state = STATE.Default;
-            
-            return;
+            Collider[] colliders = new Collider[10];
+            Physics.OverlapCapsuleNonAlloc(interact.transform.position + Vector3.up * 0.5f, interact.transform.position - Vector3.up * 0.5f, 0.25f, colliders);
+
+            foreach (Collider collider in colliders)
+            {
+                if (collider != null && collider.CompareTag("Hold"))
+                {
+                    holding = collider.attachedRigidbody.gameObject;
+                    holding.transform.parent = holdPosition.transform;
+                    holding.transform.position = holdPosition.transform.position;
+                    state = STATE.Hold;
+                    holding.GetComponent<Rigidbody>().isKinematic = true;
+                    return;
+                }
+            }
         }
 
-        Collider[] colliders = new Collider[10];
-        Physics.OverlapCapsuleNonAlloc(interact.transform.position + Vector3.up * 0.5f, interact.transform.position - Vector3.up * 0.5f, 0.25f, colliders);
 
-        foreach (Collider collider in colliders)
+        if (Input.GetButtonUp("Drag"))
         {
-            if (collider != null && collider.CompareTag("Hold"))
+            if (holding != null)
             {
-                holding = collider.attachedRigidbody.gameObject;
-                holding.transform.parent = holdPosition.transform;
-                holding.transform.position = holdPosition.transform.position;
-                state = STATE.Hold;
-                holding.GetComponent<Rigidbody>().isKinematic = true;
+                Debug.Log("lmao4");
+                holding.GetComponent<Rigidbody>().isKinematic = false;
+                holding.transform.parent = null;
+                holding = null;
+                state = STATE.Default;
+
                 return;
             }
         }
+
+
+        //if (!Input.GetButtonDown("Drag")) return;
+
+        //if (holding != null)
+        //{
+        //    Debug.Log("lmao4");
+        //    holding.GetComponent<Rigidbody>().isKinematic = false;
+        //    holding.transform.parent = null;
+        //    holding = null;
+        //    state = STATE.Default;
+            
+        //    return;
+        //}
+
+        //Collider[] colliders = new Collider[10];
+        //Physics.OverlapCapsuleNonAlloc(interact.transform.position + Vector3.up * 0.5f, interact.transform.position - Vector3.up * 0.5f, 0.25f, colliders);
+
+        //foreach (Collider collider in colliders)
+        //{
+        //    if (collider != null && collider.CompareTag("Hold"))
+        //    {
+        //        holding = collider.attachedRigidbody.gameObject;
+        //        holding.transform.parent = holdPosition.transform;
+        //        holding.transform.position = holdPosition.transform.position;
+        //        state = STATE.Hold;
+        //        holding.GetComponent<Rigidbody>().isKinematic = true;
+        //        return;
+        //    }
+        //}
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
