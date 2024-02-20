@@ -1,10 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.WSA;
 
 public class IceStatues : MonoBehaviour
 {
     [SerializeField] List<GameObject> parts;
+    [SerializeField] List<IceStatueEffect> effects;
+    int partCounter = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +24,18 @@ public class IceStatues : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //Debug.Log("IEE :" + other.gameObject.name);
-        //parts.fi other.gameObject
+        Debug.Log("ISE :" + other.gameObject.name);
+        if (!parts.Contains(other.gameObject)) return;
+        other.gameObject.SetActive(false);
+        partCounter++;
+        if (partCounter == parts.Count) Activate();
+    }
+
+    private void Activate()
+    {
+        foreach(var effect in effects) 
+        {
+            effect.Activate();
+        }
     }
 }
