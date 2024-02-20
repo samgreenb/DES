@@ -4,8 +4,16 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+public enum STATE
+{
+    Default,
+    Crouch,
+    PushPull,
+    Hold,
+    Headbutt
+}
 
-public class Movement1 : MonoBehaviour
+public class DogController : MonoBehaviour
 {
     [SerializeField]
     STATE state = STATE.Default;
@@ -34,7 +42,6 @@ public class Movement1 : MonoBehaviour
     [SerializeField]  public float pushSpeed = 6.0F; //Weight of object?
     [SerializeField]  public float crouchSpeedMultiplier = 0.6F;
     [SerializeField]  public float jumpSpeed = 8.0F;
-    //[SerializeField] public float gravity = 20.0F;
     [SerializeField] public float gravity = 9.8F;
     private Vector3 moveDirection = Vector3.zero;
 
@@ -47,6 +54,7 @@ public class Movement1 : MonoBehaviour
                 Move();
                 PushPull();
                 Hold();
+                Headbutt();
                 break;
             case STATE.Crouch:
                 Crouch();
@@ -61,10 +69,9 @@ public class Movement1 : MonoBehaviour
                 Hold();
                 Crouch();
                 break;
+            case STATE.Headbutt:
+                break;
         }
-        //crouch
-
-        
     }
 
     [SerializeField] GameObject interact;
@@ -85,16 +92,7 @@ public class Movement1 : MonoBehaviour
             direction = cameraRotater.transform.TransformDirection(direction).normalized;
             dragging.GetComponent<Rigidbody>().MovePosition(dragging.transform.position +
                 direction * Time.deltaTime * pushSpeed);
-            //if ((transform.position - dragging.transform.position).magnitude - distance.magnitude >= 1.01f )
-            //{
-            //    //dragging.GetComponent<Rigidbody>().velocity = new Vector3(controller.velocity.x, -9.81f, controller.velocity.z);
-            //    Debug.Log("Disatnce disconnect");
-            //    dragging.transform.parent = null;
-            //    //dragging.GetComponent<Joint>().connectedBody = null;
-            //    dragging = null;
-            //    state = STATE.Default;
-            //    return;
-            //}
+
         }
 
         if (Input.GetButtonDown("Drag"))
@@ -107,8 +105,6 @@ public class Movement1 : MonoBehaviour
                 {
                     controller.enabled = false;
                     dragging = collider.attachedRigidbody.gameObject;
-                    //dragging.transform.parent = transform;
-                    //dragging.GetComponent<Joint>().connectedBody = GetComponentInChildren<Rigidbody>();
                     transform.parent = dragging.transform;
                     state = STATE.PushPull;
                     distance = (dragging.transform.position - transform.position);
@@ -124,7 +120,6 @@ public class Movement1 : MonoBehaviour
                 Debug.Log("lmao3");
                 dragging.transform.parent = null;
                 transform.parent = null;
-                //dragging.GetComponent<Joint>().connectedBody = null;
                 dragging = null;
                 state = STATE.Default;
                 controller.enabled = true;
@@ -134,72 +129,35 @@ public class Movement1 : MonoBehaviour
 
             
         }
-
-
-
-
-
-
-
-
-
-        ////////////////////////////
-        //if (dragging != null)
-        //{
-        //    //only forward/backwards
-        //    Vector3 direction = dragging.transform.position - transform.position;
-        //    moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-        //    moveDirection = cameraRotater.transform.TransformDirection(moveDirection).normalized;
-
-        //    direction = Vector3.Project(moveDirection, direction);
-
-        //    direction = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-        //    direction = cameraRotater.transform.TransformDirection(direction).normalized;
-        //    dragging.GetComponent<Rigidbody>().MovePosition(dragging.transform.position +
-        //        direction * Time.deltaTime * pushSpeed);
-        //    //if ((transform.position - dragging.transform.position).magnitude - distance.magnitude >= 1.01f )
-        //    //{
-        //    //    //dragging.GetComponent<Rigidbody>().velocity = new Vector3(controller.velocity.x, -9.81f, controller.velocity.z);
-        //    //    Debug.Log("Disatnce disconnect");
-        //    //    dragging.transform.parent = null;
-        //    //    //dragging.GetComponent<Joint>().connectedBody = null;
-        //    //    dragging = null;
-        //    //    state = STATE.Default;
-        //    //    return;
-        //    //}
-        //}
-
-        //if (!Input.GetButtonDown("Drag")) return;
-
-        //if (dragging != null) {
-        //    Debug.Log("lmao3");
-        //    dragging.transform.parent = null;
-        //    transform.parent = null;
-        //    //dragging.GetComponent<Joint>().connectedBody = null;
-        //    dragging = null;
-        //    state = STATE.Default;
-        //    controller.enabled = true;
-        //    transform.rotation = Quaternion.identity;
-        //    return;
-        //}
-
-        //Collider[] colliders = new Collider[10] ;
-        //Physics.OverlapSphereNonAlloc(interact.transform.position, 0.1f, colliders);
-        //foreach (Collider collider in colliders)
-        //{
-        //    if (collider != null && collider.CompareTag("PushPull"))
-        //    {
-        //        controller.enabled = false;
-        //        dragging = collider.attachedRigidbody.gameObject;
-        //        //dragging.transform.parent = transform;
-        //        //dragging.GetComponent<Joint>().connectedBody = GetComponentInChildren<Rigidbody>();
-        //        transform.parent = dragging.transform;
-        //        state = STATE.PushPull;
-        //        distance = (dragging.transform.position - transform.position);
-        //        return;
-        //    }
-        //}
         
+    }
+
+    [SerializeField]
+    float HeadbuttTime = 1.0f;
+    private void Headbutt()
+    {
+        if (Input.GetButtonDown("Drag"))
+        {
+            Collider[] colliders = new Collider[10];
+            Physics.OverlapCapsuleNonAlloc(interact.transform.position + Vector3.up * 0.5f, interact.transform.position - Vector3.up * 0.5f, 0.25f, colliders);
+
+            foreach (Collider collider in colliders)
+            {
+                if(collider == null) continue;
+                HeadbuttTarget target = collider.gameObject.GetComponent<HeadbuttTarget>();
+                if (target != null)
+                {
+                    state = STATE.Headbutt;
+                    Invoke(nameof(FinishHeadbutt), HeadbuttTime);
+                    target.OnHeadbutted(HeadbuttTime);
+                }
+            }
+        }
+    }
+
+    private void FinishHeadbutt()
+    {
+        state = STATE.Default;
     }
 
     [SerializeField] GameObject holdPosition;
@@ -220,6 +178,7 @@ public class Movement1 : MonoBehaviour
                     holding.transform.position = holdPosition.transform.position;
                     state = STATE.Hold;
                     holding.GetComponent<Rigidbody>().isKinematic = true;
+                    holding.GetComponentInChildren<BoxCollider>().enabled = false;
                     return;
                 }
             }
@@ -232,6 +191,7 @@ public class Movement1 : MonoBehaviour
             {
                 Debug.Log("lmao4");
                 holding.GetComponent<Rigidbody>().isKinematic = false;
+                holding.GetComponentInChildren<BoxCollider>().enabled = true;
                 holding.transform.parent = null;
                 holding = null;
                 state = STATE.Default;
@@ -239,40 +199,13 @@ public class Movement1 : MonoBehaviour
                 return;
             }
         }
-
-
-        //if (!Input.GetButtonDown("Drag")) return;
-
-        //if (holding != null)
-        //{
-        //    Debug.Log("lmao4");
-        //    holding.GetComponent<Rigidbody>().isKinematic = false;
-        //    holding.transform.parent = null;
-        //    holding = null;
-        //    state = STATE.Default;
-            
-        //    return;
-        //}
-
-        //Collider[] colliders = new Collider[10];
-        //Physics.OverlapCapsuleNonAlloc(interact.transform.position + Vector3.up * 0.5f, interact.transform.position - Vector3.up * 0.5f, 0.25f, colliders);
-
-        //foreach (Collider collider in colliders)
-        //{
-        //    if (collider != null && collider.CompareTag("Hold"))
-        //    {
-        //        holding = collider.attachedRigidbody.gameObject;
-        //        holding.transform.parent = holdPosition.transform;
-        //        holding.transform.position = holdPosition.transform.position;
-        //        state = STATE.Hold;
-        //        holding.GetComponent<Rigidbody>().isKinematic = true;
-        //        return;
-        //    }
-        //}
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
+        return;
+        //This is to try to improve dragging later on
+
         //Debug.Log(hit.gameObject.name);
         if (hit.rigidbody != null && hit.rigidbody.gameObject.Equals(dragging))
         {
@@ -283,19 +216,6 @@ public class Movement1 : MonoBehaviour
         }
 
         return;
-        var rigidBody = hit.rigidbody;
-
-        if (rigidBody/* != null && rigidBody.velocity.magnitude <= 0.1f*/)
-        {
-            var forceDirection = hit.gameObject.transform.position - transform.position;
-            forceDirection = hit.moveDirection;
-            forceDirection.y = 0;
-            //forceDirection = rigidBody.transform.TransformDirection(forceDirection);
-            forceDirection.Normalize();
-
-            //rigidBody.AddForceAtPosition(forceDirection * 0.25f, transform.position, ForceMode.Impulse);
-            rigidBody.AddForceAtPosition(forceDirection * 0.25f, transform.position, ForceMode.Impulse);
-        }
     }
 
     Vector3 push = Vector3.zero;
@@ -364,25 +284,5 @@ public class Movement1 : MonoBehaviour
             state = holding == null ? STATE.Default : STATE.Hold;
             crouching = false;
         }
-
-        //if (!Input.GetButtonDown("Crouch")) return;
-
-        //crouching = !crouching;
-        //if(crouching)
-        //{
-        //    standingModel.SetActive(false);
-        //    crouchingModel.SetActive(true);
-        //    controller.height = 1;
-        //    controller.center = new Vector3(0, 0.5f, 0);
-        //    state = STATE.Crouch;
-        //}
-        //else
-        //{
-        //    standingModel.SetActive(true);
-        //    crouchingModel.SetActive(false);
-        //    controller.height = 2;
-        //    controller.center = new Vector3(0, 1, 0);
-        //    state = STATE.Default;
-        //}
     }
 }
