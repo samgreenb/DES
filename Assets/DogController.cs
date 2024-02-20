@@ -10,13 +10,24 @@ public enum STATE
     Crouch,
     PushPull,
     Hold,
-    Headbutt
+    Headbutt,
+    Sniff
+}
+
+public enum SNIFFSTATE
+{
+    NotSniff,
+    Far,
+    Medium,
+    Close,
+    Found
 }
 
 public class DogController : MonoBehaviour
 {
     [SerializeField]
     STATE state = STATE.Default;
+    SNIFFSTATE sniffState = SNIFFSTATE.NotSniff;
 
     [SerializeField]
     Animator animController;
@@ -41,6 +52,7 @@ public class DogController : MonoBehaviour
     [SerializeField]  public float runMultiplier = 1.5F;
     [SerializeField]  public float pushSpeed = 6.0F; //Weight of object?
     [SerializeField]  public float crouchSpeedMultiplier = 0.6F;
+    [SerializeField]  public float sniffSpeedMultiplier = 0.6F;
     [SerializeField]  public float jumpSpeed = 8.0F;
     [SerializeField] public float gravity = 9.8F;
     private Vector3 moveDirection = Vector3.zero;
@@ -55,6 +67,7 @@ public class DogController : MonoBehaviour
                 PushPull();
                 Hold();
                 Headbutt();
+                Sniff();
                 break;
             case STATE.Crouch:
                 Crouch();
@@ -71,6 +84,33 @@ public class DogController : MonoBehaviour
                 break;
             case STATE.Headbutt:
                 break;
+            case STATE.Sniff:
+                Move();
+                Sniff();
+                break;
+        }
+    }
+
+    private void Sniff()
+    {
+
+        
+
+        if (Input.GetButtonDown("Smell"))
+        {
+            state = STATE.Sniff;
+            sniffState = SNIFFSTATE.Far;
+        }
+
+        if(state == STATE.Sniff)
+        {
+
+        }
+
+        if (Input.GetButtonUp("Smell"))
+        {
+            state = STATE.Default;
+            sniffState = SNIFFSTATE.NotSniff;
         }
     }
 
@@ -207,31 +247,47 @@ public class DogController : MonoBehaviour
         //This is to try to improve dragging later on
 
         //Debug.Log(hit.gameObject.name);
-        if (hit.rigidbody != null && hit.rigidbody.gameObject.Equals(dragging))
-        {
-            Debug.Log("SUKIS");
-            state = STATE.Default;
-            dragging.transform.parent = null;
-            dragging = null;
-        }
+        //if (hit.rigidbody != null && hit.rigidbody.gameObject.Equals(dragging))
+        //{
+        //    Debug.Log("SUKIS");
+        //    state = STATE.Default;
+        //    dragging.transform.parent = null;
+        //    dragging = null;
+        //}
 
-        return;
+        //return;
     }
 
     Vector3 push = Vector3.zero;
     private void Move()
     {
         Debug.Log(Input.GetButton("Run"));
-        bool anim = false;
+        //bool anim = false;
         Vector3 input = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         CharacterController controller = GetComponent<CharacterController>();
         if (controller.isGrounded)
         {
             moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-            if (moveDirection.magnitude > 0) { anim = true; }
+            //if (moveDirection.magnitude > 0) { anim = true; }
             moveDirection = cameraRotater.transform.TransformDirection(moveDirection).normalized;
             push = moveDirection;
-            moveDirection *= speed * (Input.GetButton("Run") ? runMultiplier : 1.0f) * (state.Equals(STATE.Crouch) ? crouchSpeedMultiplier : 1.0f);
+            switch (state)
+            {
+                case STATE.Default:
+                case STATE.Hold:
+                    moveDirection *= speed * (Input.GetButton("Run") ? runMultiplier : 1.0f);
+
+                    break;
+                case STATE.Crouch:
+                    moveDirection *= speed * crouchSpeedMultiplier;
+
+                    break;
+                case STATE.Sniff:
+                    moveDirection *= speed * sniffSpeedMultiplier;
+
+                    break;
+            }
+            //moveDirection *= speed * (Input.GetButton("Run") ? runMultiplier : 1.0f) * (state.Equals(STATE.Crouch) ? crouchSpeedMultiplier : 1.0f);
             if (Input.GetButton("Jump"))
             {
                 moveDirection.y = jumpSpeed;
@@ -259,7 +315,6 @@ public class DogController : MonoBehaviour
         //animController.SetBool("moving", anim);
     }
 
-    bool crouching = false;
     [SerializeField] GameObject standingModel;
     [SerializeField] GameObject crouchingModel;
 
@@ -272,7 +327,6 @@ public class DogController : MonoBehaviour
             controller.height = 1;
             controller.center = new Vector3(0, 0.5f, 0);
             state = STATE.Crouch;
-            crouching = true;
         }
 
         if (Input.GetButtonUp("Crouch"))
@@ -282,7 +336,16 @@ public class DogController : MonoBehaviour
             controller.height = 2;
             controller.center = new Vector3(0, 1, 0);
             state = holding == null ? STATE.Default : STATE.Hold;
-            crouching = false;
         }
+    }
+
+    public SNIFFSTATE GetSniffState()
+    {
+        return sniffState;
+    }
+
+    public STATE GetState()
+    {
+        return state;
     }
 }
