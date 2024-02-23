@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 76ddbdf9e8afa245a9d89e1561a5c4bf
     GuidInternal: 
-    m_lastTime: -8584931688925600144
+    m_lastTime: -8584929131766829448
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 076b5706ac524a4f99360f1dd314bc12
     GuidInternal: 
-    m_lastTime: -8584931688926757186
+    m_lastTime: -8584929131769929487
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 3393a2487e8d2f48b8d8d877e6065cbb
     GuidInternal: 
-    m_lastTime: -8584931688925940394
-    List: []
+    m_lastTime: -8584929131766869480
+    List:
+    - name: Main
+      guid: 08d96443a17eb8459509e56c096e9406
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3393a2487e8d2f48b8d8d877e6065cbb
+      - ElementName: Main
+        ObjectType: 7
+        guid: 08d96443a17eb8459509e56c096e9406
+      Path: SoundBanks\Default Work Unit\Main
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,127 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6ba2c523a76fd44fb22a32d8f086ec57
     GuidInternal: 
-    m_lastTime: -8584931688926500572
-    List: []
+    m_lastTime: -8584929131772079459
+    List:
+    - name: Ambience_Wind
+      guid: e3deda5b34b03c439624b4ce56891313
+      id: 156328838
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6ba2c523a76fd44fb22a32d8f086ec57
+      - ElementName: Ambience_Wind
+        ObjectType: 3
+        guid: e3deda5b34b03c439624b4ce56891313
+      Path: Events\Default Work Unit\Ambience_Wind
+      maxAttenuation: 0
+      maxDuration: 70.48
+      minDuration: 70.48
+    - name: Collapsing_Cave
+      guid: c055ae85acda9744bff482093f10f4ed
+      id: 2567379095
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6ba2c523a76fd44fb22a32d8f086ec57
+      - ElementName: Collapsing_Cave
+        ObjectType: 3
+        guid: c055ae85acda9744bff482093f10f4ed
+      Path: Events\Default Work Unit\Collapsing_Cave
+      maxAttenuation: 0
+      maxDuration: 13.312
+      minDuration: 13.312
+    - name: Falling_Into_Lake
+      guid: c5e158d364b86649be69ec0622646208
+      id: 3170274879
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6ba2c523a76fd44fb22a32d8f086ec57
+      - ElementName: Falling_Into_Lake
+        ObjectType: 3
+        guid: c5e158d364b86649be69ec0622646208
+      Path: Events\Default Work Unit\Falling_Into_Lake
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Item_Drop
+      guid: 856c6c4baa5cb74493099271d0d9a187
+      id: 2177967876
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6ba2c523a76fd44fb22a32d8f086ec57
+      - ElementName: Item_Drop
+        ObjectType: 3
+        guid: 856c6c4baa5cb74493099271d0d9a187
+      Path: Events\Default Work Unit\Item_Drop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Item_Pickup
+      guid: 68c023d823f4c8488949fa7be900fa4f
+      id: 566396871
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6ba2c523a76fd44fb22a32d8f086ec57
+      - ElementName: Item_Pickup
+        ObjectType: 3
+        guid: 68c023d823f4c8488949fa7be900fa4f
+      Path: Events\Default Work Unit\Item_Pickup
+      maxAttenuation: 0
+      maxDuration: 0.45004168
+      minDuration: 0.45004168
+    - name: Jump
+      guid: 7b282f078b40ed4aa39c04c3b79c9008
+      id: 3833651337
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6ba2c523a76fd44fb22a32d8f086ec57
+      - ElementName: Jump
+        ObjectType: 3
+        guid: 7b282f078b40ed4aa39c04c3b79c9008
+      Path: Events\Default Work Unit\Jump
+      maxAttenuation: 0
+      maxDuration: 0.33416668
+      minDuration: 0.33416668
+    - name: Land
+      guid: d23f04fc5d635e4bb590da280cac9a03
+      id: 674522502
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6ba2c523a76fd44fb22a32d8f086ec57
+      - ElementName: Land
+        ObjectType: 3
+        guid: d23f04fc5d635e4bb590da280cac9a03
+      Path: Events\Default Work Unit\Land
+      maxAttenuation: 0
+      maxDuration: 0.39970833
+      minDuration: 0.39970833
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -94,7 +227,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: c70e93abd42a954690f04a3b0f448f71
     GuidInternal: 
-    m_lastTime: -8584931688925839322
+    m_lastTime: -8584929131772079459
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -108,7 +241,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: eab348f159d6af48a09b21eabc8360b5
     GuidInternal: 
-    m_lastTime: -8584931688926313235
+    m_lastTime: -8584929131766849480
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -122,7 +255,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 549aa12270c0274dbf6cb9ea92e331d6
     GuidInternal: 
-    m_lastTime: -8584931688926393504
+    m_lastTime: -8584929131766849480
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -136,7 +269,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 4b3d2308ec45b34cb6d455bd9ebe6fe0
     GuidInternal: 
-    m_lastTime: -8584931688925236873
+    m_lastTime: -8584929131766839475
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 

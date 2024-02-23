@@ -14,10 +14,19 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMBIENCE_WIND = 156328838U;
+        static const AkUniqueID CAVE_RIVER = 732341345U;
+        static const AkUniqueID CLOCK_TICK = 2719257531U;
         static const AkUniqueID COLLAPSING_CAVE = 2567379095U;
+        static const AkUniqueID EARTHQUAKE = 1245902094U;
+        static const AkUniqueID FALLING_INTO_LAKE = 3170274879U;
+        static const AkUniqueID HEAVY_ICE_IMPACT = 2004729559U;
+        static const AkUniqueID ITEM_DROP = 2177967876U;
         static const AkUniqueID ITEM_PICKUP = 566396871U;
         static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID LAND = 674522502U;
+        static const AkUniqueID LIGHT_ICE_IMPACT = 680865880U;
+        static const AkUniqueID MEDIUM_ICE_IMPACT = 2031244205U;
+        static const AkUniqueID PRESSURE_PLATE_CLICK = 1442179120U;
     } // namespace EVENTS
 
     namespace BANKS

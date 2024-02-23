@@ -36,7 +36,24 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Falling_Into_Lake" ID="{D358E1C5-B864-4966-BE69-EC0622646208}"/>
+				<Event Name="Falling_Into_Lake" ID="{D358E1C5-B864-4966-BE69-EC0622646208}">
+					<ChildrenList>
+						<Action Name="" ID="{46F4A8C7-0D24-4D78-8E47-E2AB1DF81387}" ShortID="633639743">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Falling_Into_Lake" ID="{3F0E640A-164A-46DE-8E56-3A3C41E72BB4}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E1CD09D8-11BD-4862-AE97-E51BE14962BA}" ShortID="606548677">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Panting" ID="{CA5FB746-A9EF-46CE-BA2F-D65950278E49}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="Item_Pickup" ID="{D823C068-F423-48C8-8949-FA7BE900FA4F}">
 					<ChildrenList>
 						<Action Name="" ID="{C91C9780-56D4-46DF-B4F4-9530315E2CE4}" ShortID="928960573">
@@ -65,6 +82,83 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Collapsing_Cave" ID="{53B0F2DB-0C42-4466-B1B4-D39D33047987}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pressure_Plate_Click" ID="{FE0A1939-DDBB-4191-A5CD-0062991E45FC}">
+					<ChildrenList>
+						<Action Name="" ID="{9C62C5A4-11A9-4AF3-B084-7084B9CC6420}" ShortID="1053742323">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pressure_Plate_Click" ID="{ADE61F81-E269-4189-B871-9146D7D3E0D0}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Earthquake" ID="{9052D098-943C-4E2C-A6F1-23B4F20A9224}">
+					<ChildrenList>
+						<Action Name="" ID="{5CDF9507-B135-48D9-BAF8-EEAB6FDA7C57}" ShortID="796634443">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Earthquake" ID="{9846D44C-9530-43DE-B282-D0644D1A6CD9}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Cave_River" ID="{89847318-85AB-4B8F-9D3E-DF3A090799F4}">
+					<ChildrenList>
+						<Action Name="" ID="{9FC22AD6-0675-4AF4-9483-3D039D594BFF}" ShortID="128803526">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cave_River" ID="{97CC6C67-5B89-4F1D-8BD6-1E54B939F26C}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Clock_Tick" ID="{EE813EE8-2527-48D8-8987-F20D0835C512}">
+					<ChildrenList>
+						<Action Name="" ID="{97B8EEEE-15A1-4F6B-BDDF-BBE56CCDD9A8}" ShortID="285642283">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Clock_Ticks" ID="{9FD988AE-2E04-4D04-90DF-8AF173486409}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Light_Ice_Impact" ID="{9BFFBE81-4AE5-4B36-A0C0-590F2E35DFD9}">
+					<ChildrenList>
+						<Action Name="" ID="{596DC2DB-CD06-4B75-A14E-3DED4E8C947E}" ShortID="206341032">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Light_Ice_Impacts" ID="{CBAF7BBF-BF6D-4055-996A-9CA64E5F57DF}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Medium_Ice_Impact" ID="{394CD58F-4639-4ED3-B2D3-ADC1A5224C2D}">
+					<ChildrenList>
+						<Action Name="" ID="{A7ED7035-D862-4FAF-86C4-B98AE99115D9}" ShortID="840574330">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Medium_Ice_Impacts" ID="{E67BAFC3-4ED8-4D23-90DE-9E8F293DBC7D}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Heavy_Ice_Impact" ID="{B22C7F7F-FA5D-4B14-A6AE-ABCEE82A102A}">
+					<ChildrenList>
+						<Action Name="" ID="{058A4D35-54F5-415B-AAE5-6E4825C9B223}" ShortID="14265273">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Heavy_Ice_Impacts" ID="{DDB5E5F9-3199-4426-ACD9-2478F9B6D0E4}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -2,13 +2,42 @@ Event	ID	Name			Wwise Object Path	Notes
 	156328838	Ambience_Wind			\Default Work Unit\Ambience_Wind	
 	566396871	Item_Pickup			\Default Work Unit\Item_Pickup	
 	674522502	Land			\Default Work Unit\Land	
+	680865880	Light_Ice_Impact			\Default Work Unit\Light_Ice_Impact	
+	732341345	Cave_River			\Default Work Unit\Cave_River	
+	1245902094	Earthquake			\Default Work Unit\Earthquake	
+	1442179120	Pressure_Plate_Click			\Default Work Unit\Pressure_Plate_Click	
+	2004729559	Heavy_Ice_Impact			\Default Work Unit\Heavy_Ice_Impact	
+	2031244205	Medium_Ice_Impact			\Default Work Unit\Medium_Ice_Impact	
+	2177967876	Item_Drop			\Default Work Unit\Item_Drop	
 	2567379095	Collapsing_Cave			\Default Work Unit\Collapsing_Cave	
+	2719257531	Clock_Tick			\Default Work Unit\Clock_Tick	
+	3170274879	Falling_Into_Lake			\Default Work Unit\Falling_Into_Lake	
 	3833651337	Jump			\Default Work Unit\Jump	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	130225437	Jump	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Jump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump		64256
+	198118840	Light_Ice_Impact_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Light_Ice_Impact_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Light_Ice_Impacts\Light_Ice_Impact_3		215136
+	210020008	Falling_Into_Lake	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Falling_Into_Lake_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Falling_Into_Lake		1837152
+	212957350	Medium_Ice_Impact_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Medium_Ice_Impact_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Medium_Ice_Impacts\Medium_Ice_Impact_1		208992
+	272439696	Light_Impact_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Light_Impact_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Light_Impacts\Light_Impact_2		148576
+	278901706	Cave_River	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Cave_River_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cave_River		15973544
+	288214208	Earthquake	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Earthquake_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Earthquake		21158784
+	318292429	Heavy_Ice_Impact_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Heavy_Ice_Impact_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Heavy_Ice_Impacts\Heavy_Ice_Impact_1		202848
+	390234051	Medium_Ice_Impact_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Medium_Ice_Impact_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Medium_Ice_Impacts\Medium_Ice_Impact_2		184416
+	408948165	Medium_Ice_Impact_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Medium_Ice_Impact_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Medium_Ice_Impacts\Medium_Ice_Impact_3		172128
 	429081445	Ambience_Wind	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Ambience_Wind_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Wind		13532256
+	445252164	Light_Ice_Impact_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Light_Ice_Impact_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Light_Ice_Impacts\Light_Ice_Impact_1		180320
 	458584362	Collapsing_Cave	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Collapsing_Cave_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Collapsing_Cave		2556000
+	481628282	Pressure_Plate_Click	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Pressure_Plate_Click_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pressure_Plate_Click		68192
+	669593204	Light_Impact_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Light_Impact_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Light_Impacts\Light_Impact_3		133216
+	729610960	Heavy_Ice_Impact_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Heavy_Ice_Impact_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Heavy_Ice_Impacts\Heavy_Ice_Impact_3		170080
+	740541392	Clock_Tick_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Clock_Tick_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clock_Ticks\Clock_Tick_1		39520
+	803106823	Heavy_Ice_Impact_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Heavy_Ice_Impact_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Heavy_Ice_Impacts\Heavy_Ice_Impact_2		190560
+	805304820	Light_Ice_Impact_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Light_Ice_Impact_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Light_Ice_Impacts\Light_Ice_Impact_2		161888
+	816564180	Light_Impact_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Light_Impact_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Light_Impacts\Light_Impact_1		161888
+	865124749	Clock_Tick_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Clock_Tick_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clock_Ticks\Clock_Tick_3		31840
 	988023209	Land	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Land_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Land		76840
+	1030029765	Clock_Tick_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Clock_Tick_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clock_Ticks\Clock_Tick_2		36192
 	1054721353	Item_Pickup	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Item_Pickup_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Item_Pickup		86504
+	1073202503	Player_Panting	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Player_Panting_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Panting		1120352
 

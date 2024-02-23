@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{6456B47B-CE7B-C227-7469-2CAA2F35DED4}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{FA410009-79FC-90EF-D324-01D874CE275A}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -30,21 +30,101 @@
 					<ShortName>Jump.wav</ShortName>
 					<CachePath>SFX/Jump_10C4C929.wem</CachePath>
 				</File>
+				<File Id="198118840" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Light_Ice_Impact_3.wav</ShortName>
+					<CachePath>SFX/Light_Ice_Impact_3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="210020008" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Falling_Into_Lake.wav</ShortName>
+					<CachePath>SFX/Falling_Into_Lake_10C4C929.wem</CachePath>
+				</File>
+				<File Id="212957350" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Medium_Ice_Impact_1.wav</ShortName>
+					<CachePath>SFX/Medium_Ice_Impact_1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="272439696" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Light_Impact_2.wav</ShortName>
+					<CachePath>SFX/Light_Impact_2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="278901706" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cave_River.wav</ShortName>
+					<CachePath>SFX/Cave_River_10C4C929.wem</CachePath>
+				</File>
+				<File Id="288214208" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Earthquake.wav</ShortName>
+					<CachePath>SFX/Earthquake_10C4C929.wem</CachePath>
+				</File>
+				<File Id="318292429" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Heavy_Ice_Impact_1.wav</ShortName>
+					<CachePath>SFX/Heavy_Ice_Impact_1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="390234051" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Medium_Ice_Impact_2.wav</ShortName>
+					<CachePath>SFX/Medium_Ice_Impact_2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="408948165" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Medium_Ice_Impact_3.wav</ShortName>
+					<CachePath>SFX/Medium_Ice_Impact_3_10C4C929.wem</CachePath>
+				</File>
 				<File Id="429081445" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ambience_Wind.wav</ShortName>
 					<CachePath>SFX/Ambience_Wind_10C4C929.wem</CachePath>
+				</File>
+				<File Id="445252164" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Light_Ice_Impact_1.wav</ShortName>
+					<CachePath>SFX/Light_Ice_Impact_1_10C4C929.wem</CachePath>
 				</File>
 				<File Id="458584362" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Collapsing_Cave.wav</ShortName>
 					<CachePath>SFX/Collapsing_Cave_10C4C929.wem</CachePath>
 				</File>
+				<File Id="481628282" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pressure_Plate_Click.wav</ShortName>
+					<CachePath>SFX/Pressure_Plate_Click_10C4C929.wem</CachePath>
+				</File>
+				<File Id="669593204" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Light_Impact_3.wav</ShortName>
+					<CachePath>SFX/Light_Impact_3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="729610960" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Heavy_Ice_Impact_3.wav</ShortName>
+					<CachePath>SFX/Heavy_Ice_Impact_3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="740541392" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Clock_Tick_1.wav</ShortName>
+					<CachePath>SFX/Clock_Tick_1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="803106823" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Heavy_Ice_Impact_2.wav</ShortName>
+					<CachePath>SFX/Heavy_Ice_Impact_2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="805304820" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Light_Ice_Impact_2.wav</ShortName>
+					<CachePath>SFX/Light_Ice_Impact_2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="816564180" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Light_Impact_1.wav</ShortName>
+					<CachePath>SFX/Light_Impact_1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="865124749" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Clock_Tick_3.wav</ShortName>
+					<CachePath>SFX/Clock_Tick_3_10C4C929.wem</CachePath>
+				</File>
 				<File Id="988023209" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Land.wav</ShortName>
 					<CachePath>SFX/Land_10C4C929.wem</CachePath>
 				</File>
+				<File Id="1030029765" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Clock_Tick_2.wav</ShortName>
+					<CachePath>SFX/Clock_Tick_2_10C4C929.wem</CachePath>
+				</File>
 				<File Id="1054721353" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Item_Pickup.wav</ShortName>
 					<CachePath>SFX/Item_Pickup_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1073202503" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Panting.wav</ShortName>
+					<CachePath>SFX/Player_Panting_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -53,9 +133,46 @@
 						<MediaRef Id="429081445"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="732341345" Name="Cave_River" DurationType="OneShot" DurationMin="90.55243" DurationMax="90.55243">
+					<MediaRefs>
+						<MediaRef Id="278901706"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2719257531" Name="Clock_Tick" DurationType="OneShot" DurationMin="0.17995465" DurationMax="0.22349206">
+					<MediaRefs>
+						<MediaRef Id="740541392"/>
+						<MediaRef Id="865124749"/>
+						<MediaRef Id="1030029765"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2567379095" Name="Collapsing_Cave" DurationType="OneShot" DurationMin="13.312" DurationMax="13.312">
 					<MediaRefs>
 						<MediaRef Id="458584362"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1245902094" Name="Earthquake" DurationType="OneShot" DurationMin="119.94721" DurationMax="119.94721">
+					<MediaRefs>
+						<MediaRef Id="288214208"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3170274879" Name="Falling_Into_Lake" DurationType="OneShot" DurationMin="9.568" DurationMax="9.568">
+					<MediaRefs>
+						<MediaRef Id="210020008"/>
+						<MediaRef Id="1073202503"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2004729559" Name="Heavy_Ice_Impact" DurationType="OneShot" DurationMin="0.78874236" DurationMax="1.1853199">
+					<MediaRefs>
+						<MediaRef Id="318292429"/>
+						<MediaRef Id="729610960"/>
+						<MediaRef Id="803106823"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2177967876" Name="Item_Drop" DurationType="OneShot" DurationMin="0.6544195" DurationMax="0.8673587">
+					<MediaRefs>
+						<MediaRef Id="272439696"/>
+						<MediaRef Id="669593204"/>
+						<MediaRef Id="816564180"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="566396871" Name="Item_Pickup" DurationType="OneShot" DurationMin="0.45004168" DurationMax="0.45004168">
@@ -73,8 +190,27 @@
 						<MediaRef Id="988023209"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="680865880" Name="Light_Ice_Impact" DurationType="OneShot" DurationMin="0.75073063" DurationMax="1.2571574">
+					<MediaRefs>
+						<MediaRef Id="198118840"/>
+						<MediaRef Id="445252164"/>
+						<MediaRef Id="805304820"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2031244205" Name="Medium_Ice_Impact" DurationType="OneShot" DurationMin="0.79824525" DurationMax="1.2212387">
+					<MediaRefs>
+						<MediaRef Id="212957350"/>
+						<MediaRef Id="390234051"/>
+						<MediaRef Id="408948165"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1442179120" Name="Pressure_Plate_Click" DurationType="OneShot" DurationMin="0.38603175" DurationMax="0.38603175">
+					<MediaRefs>
+						<MediaRef Id="481628282"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{35446389-54B4-0DA9-F1FF-D53AFA03D66C}</FileHash>
+	<FileHash>{8BC3223E-3828-5374-882B-14B42AF0C1FD}</FileHash>
 </SoundBanksInfo>
