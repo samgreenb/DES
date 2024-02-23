@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PushPull
   - Hold
+  - Sniff
   layers:
   - Default
   - TransparentFX

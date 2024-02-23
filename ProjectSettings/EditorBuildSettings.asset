@@ -4,5 +4,9 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/VerticalSlice.unity
+    guid: 6e7cff171eb00f740ac781426733d79b
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
