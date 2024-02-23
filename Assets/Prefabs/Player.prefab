@@ -109,13 +109,17 @@ MonoBehaviour:
   animController: {fileID: 0}
   model: {fileID: 2673817289393828547}
   cameraRotater: {fileID: 682451845397414739}
+  sniffAreas: []
   turn: {x: 0, y: 0}
   speed: 5
   runMultiplier: 1.5
   pushSpeed: 7
   crouchSpeedMultiplier: 0.6
+  sniffSpeedMultiplier: 0.6
   jumpSpeed: 8
   gravity: 20
+  closeMediumCutoff: 6
+  MediumFarCutoff: 15
   interact: {fileID: 3899420409822578202}
   dragging: {fileID: 0}
   HeadbuttTime: 1
@@ -464,7 +468,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5afe7095d2d115044ab4f11a9766cf78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DebugSphere: {fileID: 4304114815458328701}
 --- !u!1 &5221158035830450529
 GameObject:
   m_ObjectHideFlags: 0

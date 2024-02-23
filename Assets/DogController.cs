@@ -17,6 +17,7 @@ public enum STATE
 public enum SNIFFSTATE
 {
     NotSniff,
+    None,
     Far,
     Medium,
     Close,
@@ -40,11 +41,25 @@ public class DogController : MonoBehaviour
 
     CharacterController controller;
 
+    [SerializeField]
+    List<GameObject> sniffAreas;
+
     // Start is called before the first frame update
     void Start()
     {
         controller = gameObject.GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
+        sniffAreas = new List<GameObject>();
+    }
+
+    public void AddSniffArea(GameObject hiddenItem)
+    {
+        sniffAreas.Add(hiddenItem);
+    }
+
+    public void RemoveFromSniffArea(GameObject hiddenItem)
+    {
+        sniffAreas.Remove(hiddenItem);
     }
 
     public Vector2 turn = Vector2.zero;
@@ -91,6 +106,10 @@ public class DogController : MonoBehaviour
         }
     }
 
+    [SerializeField]
+    float closeMediumCutoff = 10.0f;
+    [SerializeField]
+    float MediumFarCutoff = 20.0f;
     private void Sniff()
     {
 
@@ -99,12 +118,21 @@ public class DogController : MonoBehaviour
         if (Input.GetButtonDown("Smell"))
         {
             state = STATE.Sniff;
-            sniffState = SNIFFSTATE.Far;
+            sniffState = SNIFFSTATE.None;
         }
 
         if(state == STATE.Sniff)
         {
-
+            float smallestDistance = 9999.0f;
+            foreach(GameObject sniffItem in sniffAreas)
+            {
+                float objectDistance = (gameObject.transform.position - sniffItem.transform.position).magnitude;
+                if (objectDistance >= smallestDistance) continue;
+                if (objectDistance < closeMediumCutoff) sniffState = SNIFFSTATE.Close;
+                if (objectDistance >= closeMediumCutoff && objectDistance < MediumFarCutoff) sniffState = SNIFFSTATE.Medium;
+                if (objectDistance >= MediumFarCutoff) sniffState = SNIFFSTATE.Far;
+                smallestDistance = objectDistance;
+            }
         }
 
         if (Input.GetButtonUp("Smell"))

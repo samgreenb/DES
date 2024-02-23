@@ -23,6 +23,10 @@ public class SmellDebug : MonoBehaviour
             case SNIFFSTATE.NotSniff:
                 sphere.enabled = false;
                 break;
+            case SNIFFSTATE.None:
+                sphere.enabled = true;
+                sphere.material.color = Color.black;
+                break;
             case SNIFFSTATE.Close:
                 sphere.enabled = true;
                 sphere.material.color = Color.green;

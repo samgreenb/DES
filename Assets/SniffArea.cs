@@ -23,6 +23,7 @@ public class SniffArea : MonoBehaviour
         if(dogData.GetState() == STATE.Sniff) 
         {
             hiddenObject.SetActive(true);
+            dogData.RemoveFromSniffArea(hiddenObject);
         }
     }
 
