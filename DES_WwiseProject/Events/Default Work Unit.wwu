@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Jump" ID="{072F287B-408B-4AED-A39C-04C3B79C9008}">
+					<ChildrenList>
+						<Action Name="" ID="{E247082C-ED42-4D4F-8422-868A7B19AC71}" ShortID="795602167">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jump" ID="{20A55CC4-F538-488A-B5DE-D9AB530F1B6B}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Land" ID="{FC043FD2-635D-4B5E-B590-DA280CAC9A03}">
+					<ChildrenList>
+						<Action Name="" ID="{5127EE49-06D2-4FE7-AAA4-9EEC0B77B440}" ShortID="13320339">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Land" ID="{4D1DD1CD-8FD2-41F6-A63C-E1750C556E17}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ambience_Wind" ID="{5BDADEE3-B034-433C-9624-B4CE56891313}">
+					<ChildrenList>
+						<Action Name="" ID="{70090137-0B7A-4A55-9A67-0122D9D01A36}" ShortID="602044932">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience_Wind" ID="{874B7C01-BB7A-400B-A1AA-59E6925AB427}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Falling_Into_Lake" ID="{D358E1C5-B864-4966-BE69-EC0622646208}"/>
+				<Event Name="Item_Pickup" ID="{D823C068-F423-48C8-8949-FA7BE900FA4F}">
+					<ChildrenList>
+						<Action Name="" ID="{C91C9780-56D4-46DF-B4F4-9530315E2CE4}" ShortID="928960573">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Item_Pickup" ID="{83555535-0994-4B12-9479-8B92F4A4B162}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Item_Drop" ID="{4B6C6C85-5CAA-44B7-9309-9271D0D9A187}">
+					<ChildrenList>
+						<Action Name="" ID="{AE2D38D7-9C24-4A5E-B191-116DE148AA95}" ShortID="387624048">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Light_Impacts" ID="{47311A65-4149-4C15-BC12-DDF899EC44AB}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Collapsing_Cave" ID="{85AE55C0-DAAC-4497-BFF4-82093F10F4ED}">
+					<ChildrenList>
+						<Action Name="" ID="{E5E52470-67E4-451F-9E5D-827BFBAE5F7D}" ShortID="657815408">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Collapsing_Cave" ID="{53B0F2DB-0C42-4466-B1B4-D39D33047987}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

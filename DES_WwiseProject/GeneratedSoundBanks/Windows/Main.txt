@@ -1,0 +1,14 @@
+Event	ID	Name			Wwise Object Path	Notes
+	156328838	Ambience_Wind			\Default Work Unit\Ambience_Wind	
+	566396871	Item_Pickup			\Default Work Unit\Item_Pickup	
+	674522502	Land			\Default Work Unit\Land	
+	2567379095	Collapsing_Cave			\Default Work Unit\Collapsing_Cave	
+	3833651337	Jump			\Default Work Unit\Jump	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	130225437	Jump	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Jump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump		64256
+	429081445	Ambience_Wind	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Ambience_Wind_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Wind		13532256
+	458584362	Collapsing_Cave	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Collapsing_Cave_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Collapsing_Cave		2556000
+	988023209	Land	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Land_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Land		76840
+	1054721353	Item_Pickup	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Item_Pickup_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Item_Pickup		86504
+

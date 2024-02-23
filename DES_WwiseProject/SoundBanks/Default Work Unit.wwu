@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{48A29333-8D7E-482F-B8D8-D877E6065CBB}" SchemaVersion="110">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{48A29333-8D7E-482F-B8D8-D877E6065CBB}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{4364D908-7EA1-45B8-9509-E56C096E9406}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Ambience_Wind" ID="{5BDADEE3-B034-433C-9624-B4CE56891313}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Collapsing_Cave" ID="{85AE55C0-DAAC-4497-BFF4-82093F10F4ED}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Item_Pickup" ID="{D823C068-F423-48C8-8949-FA7BE900FA4F}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Jump" ID="{072F287B-408B-4AED-A39C-04C3B79C9008}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Land" ID="{FC043FD2-635D-4B5E-B590-DA280CAC9A03}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

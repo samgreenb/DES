@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Mac</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F56A610C-C7C4-F874-B68B-7ADDF94EBB7A}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{6456B47B-CE7B-C227-7469-2CAA2F35DED4}">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<Media>
+				<File Id="130225437" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Jump.wav</ShortName>
+					<CachePath>SFX/Jump_10C4C929.wem</CachePath>
+				</File>
+				<File Id="429081445" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ambience_Wind.wav</ShortName>
+					<CachePath>SFX/Ambience_Wind_10C4C929.wem</CachePath>
+				</File>
+				<File Id="458584362" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Collapsing_Cave.wav</ShortName>
+					<CachePath>SFX/Collapsing_Cave_10C4C929.wem</CachePath>
+				</File>
+				<File Id="988023209" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Land.wav</ShortName>
+					<CachePath>SFX/Land_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1054721353" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Item_Pickup.wav</ShortName>
+					<CachePath>SFX/Item_Pickup_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="156328838" Name="Ambience_Wind" DurationType="OneShot" DurationMin="70.48" DurationMax="70.48">
+					<MediaRefs>
+						<MediaRef Id="429081445"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2567379095" Name="Collapsing_Cave" DurationType="OneShot" DurationMin="13.312" DurationMax="13.312">
+					<MediaRefs>
+						<MediaRef Id="458584362"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="566396871" Name="Item_Pickup" DurationType="OneShot" DurationMin="0.45004168" DurationMax="0.45004168">
+					<MediaRefs>
+						<MediaRef Id="1054721353"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3833651337" Name="Jump" DurationType="OneShot" DurationMin="0.33416668" DurationMax="0.33416668">
+					<MediaRefs>
+						<MediaRef Id="130225437"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="674522502" Name="Land" DurationType="OneShot" DurationMin="0.39970833" DurationMax="0.39970833">
+					<MediaRefs>
+						<MediaRef Id="988023209"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{E875699F-A5A9-6ACB-5192-894FD79177FC}</FileHash>
+</SoundBanksInfo>
