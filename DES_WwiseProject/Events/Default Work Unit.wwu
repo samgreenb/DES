@@ -164,6 +164,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Player_Sniffs" ID="{F2AF232E-5220-4CD5-A634-DC3A7E2998FF}">
+					<ChildrenList>
+						<Action Name="" ID="{196238BB-48B6-4FFA-A60F-02F1247737CD}" ShortID="589279935">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Sniffs" ID="{6F9D752B-D775-4C91-A14F-297E7467B73E}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Barks" ID="{A4C2B1E2-3D5B-48D7-9906-09463E287FE9}">
+					<ChildrenList>
+						<Action Name="" ID="{9C1A20C8-CB5C-4C9C-84BB-F34748ACD863}" ShortID="1530620">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Barks" ID="{997D8BAD-1F7B-423C-A78B-5300687FBD0D}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

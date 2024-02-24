@@ -26,6 +26,8 @@ namespace AK
         static const AkUniqueID LAND = 674522502U;
         static const AkUniqueID LIGHT_ICE_IMPACT = 680865880U;
         static const AkUniqueID MEDIUM_ICE_IMPACT = 2031244205U;
+        static const AkUniqueID PLAYER_BARKS = 3978910662U;
+        static const AkUniqueID PLAYER_SNIFFS = 1028362978U;
         static const AkUniqueID PRESSURE_PLATE_CLICK = 1442179120U;
     } // namespace EVENTS
 

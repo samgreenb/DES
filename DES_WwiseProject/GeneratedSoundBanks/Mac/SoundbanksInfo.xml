@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{FA410009-79FC-90EF-D324-01D874CE275A}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{3C7A4C38-9763-BD38-9D7A-0711EC9ACE41}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -42,17 +42,29 @@
 					<ShortName>Medium_Ice_Impact_1.wav</ShortName>
 					<CachePath>SFX/Medium_Ice_Impact_1_10C4C929.wem</CachePath>
 				</File>
+				<File Id="261001254" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Sniff_1.wav</ShortName>
+					<CachePath>SFX/Player_Sniff_1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="264028608" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Bark_2.wav</ShortName>
+					<CachePath>SFX/Player_Bark_2_10C4C929.wem</CachePath>
+				</File>
 				<File Id="272439696" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Light_Impact_2.wav</ShortName>
 					<CachePath>SFX/Light_Impact_2_10C4C929.wem</CachePath>
 				</File>
 				<File Id="278901706" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cave_River.wav</ShortName>
-					<CachePath>SFX/Cave_River_10C4C929.wem</CachePath>
+					<CachePath>SFX/Cave_River_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="288214208" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Earthquake.wav</ShortName>
-					<CachePath>SFX/Earthquake_10C4C929.wem</CachePath>
+					<CachePath>SFX/Earthquake_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="295553665" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Sniff_2.wav</ShortName>
+					<CachePath>SFX/Player_Sniff_2_10C4C929.wem</CachePath>
 				</File>
 				<File Id="318292429" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Heavy_Ice_Impact_1.wav</ShortName>
@@ -76,11 +88,19 @@
 				</File>
 				<File Id="458584362" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Collapsing_Cave.wav</ShortName>
-					<CachePath>SFX/Collapsing_Cave_10C4C929.wem</CachePath>
+					<CachePath>SFX/Collapsing_Cave_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="481628282" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Pressure_Plate_Click.wav</ShortName>
 					<CachePath>SFX/Pressure_Plate_Click_10C4C929.wem</CachePath>
+				</File>
+				<File Id="549733239" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Bark_1.wav</ShortName>
+					<CachePath>SFX/Player_Bark_1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="658702813" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Bark_3.wav</ShortName>
+					<CachePath>SFX/Player_Bark_3_10C4C929.wem</CachePath>
 				</File>
 				<File Id="669593204" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Light_Impact_3.wav</ShortName>
@@ -105,6 +125,10 @@
 				<File Id="816564180" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Light_Impact_1.wav</ShortName>
 					<CachePath>SFX/Light_Impact_1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="840412545" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Sniff_3.wav</ShortName>
+					<CachePath>SFX/Player_Sniff_3_10C4C929.wem</CachePath>
 				</File>
 				<File Id="865124749" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Clock_Tick_3.wav</ShortName>
@@ -133,7 +157,7 @@
 						<MediaRef Id="429081445"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="732341345" Name="Cave_River" DurationType="OneShot" DurationMin="90.55243" DurationMax="90.55243">
+				<Event Id="732341345" Name="Cave_River" MaxAttenuation="56" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="278901706"/>
 					</MediaRefs>
@@ -145,12 +169,12 @@
 						<MediaRef Id="1030029765"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2567379095" Name="Collapsing_Cave" DurationType="OneShot" DurationMin="13.312" DurationMax="13.312">
+				<Event Id="2567379095" Name="Collapsing_Cave" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="458584362"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1245902094" Name="Earthquake" DurationType="OneShot" DurationMin="119.94721" DurationMax="119.94721">
+				<Event Id="1245902094" Name="Earthquake" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="288214208"/>
 					</MediaRefs>
@@ -204,6 +228,20 @@
 						<MediaRef Id="408948165"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3978910662" Name="Player_Barks" DurationType="OneShot" DurationMin="0.26672474" DurationMax="0.32692006">
+					<MediaRefs>
+						<MediaRef Id="264028608"/>
+						<MediaRef Id="549733239"/>
+						<MediaRef Id="658702813"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1028362978" Name="Player_Sniffs" DurationType="OneShot" DurationMin="0.66323245" DurationMax="1.5261121">
+					<MediaRefs>
+						<MediaRef Id="261001254"/>
+						<MediaRef Id="295553665"/>
+						<MediaRef Id="840412545"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1442179120" Name="Pressure_Plate_Click" DurationType="OneShot" DurationMin="0.38603175" DurationMax="0.38603175">
 					<MediaRefs>
 						<MediaRef Id="481628282"/>
@@ -212,5 +250,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{85B69826-FD2C-4D94-27B7-8F584B8E9896}</FileHash>
+	<FileHash>{7D43D4B9-8490-6965-94AE-EF6FAA66FA2D}</FileHash>
 </SoundBanksInfo>

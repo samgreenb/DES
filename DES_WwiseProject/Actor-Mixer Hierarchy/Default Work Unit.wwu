@@ -26,6 +26,9 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Collapsing_Cave" ID="{53B0F2DB-0C42-4466-B1B4-D39D33047987}" ShortID="227395590">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
@@ -912,6 +915,9 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<Sound Name="Earthquake" ID="{9846D44C-9530-43DE-B282-D0644D1A6CD9}" ShortID="403172345">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
@@ -934,7 +940,23 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Cave_River" ID="{97CC6C67-5B89-4F1D-8BD6-1E54B939F26C}" ShortID="866396212">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>39</Value>
+							</ValueList>
+						</Property>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Cave_River" ID="{93FAFF0A-561B-49C9-89B3-EF3A55320ABE}" WorkUnitID="{9855DF81-3858-421D-ABB1-6FB25CA5BB9C}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
 						</Reference>
