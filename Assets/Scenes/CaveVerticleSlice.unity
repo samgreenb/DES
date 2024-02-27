@@ -150,7 +150,7 @@ Transform:
   m_GameObject: {fileID: 24635106}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5609851, y: -0.4304589, z: 0.43046007, w: -0.5609858}
-  m_LocalPosition: {x: 102.71103, y: 9.778767, z: -0.72217035}
+  m_LocalPosition: {x: 102.71103, y: 9.778767, z: -0.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -219,7 +219,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 2
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -823,10 +823,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3370396817934834006, guid: 9808e33e0e69d9b41b61e4ef1922a03c, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4687215792214223769, guid: 9808e33e0e69d9b41b61e4ef1922a03c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.5
@@ -1418,11 +1414,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 851673955815575182, guid: b72b7181aab1a96419404a7001b585e4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.82268995
+      value: 0.82269
       objectReference: {fileID: 0}
     - target: {fileID: 851673955815575182, guid: b72b7181aab1a96419404a7001b585e4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.040107574
+      value: -0.040107567
       objectReference: {fileID: 0}
     - target: {fileID: 851673955815575182, guid: b72b7181aab1a96419404a7001b585e4, type: 3}
       propertyPath: m_LocalRotation.y
@@ -1430,7 +1426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 851673955815575182, guid: b72b7181aab1a96419404a7001b585e4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.027613046
+      value: -0.027613038
       objectReference: {fileID: 0}
     - target: {fileID: 1820754538929808718, guid: b72b7181aab1a96419404a7001b585e4, type: 3}
       propertyPath: m_Name
@@ -1632,7 +1628,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 2
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -26866,7 +26862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8649332845270778683, guid: 867ff5bf34b05dc4e8a7ffc978816b9d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7208683
+      value: 0.72086823
       objectReference: {fileID: 0}
     - target: {fileID: 8649332845270778683, guid: 867ff5bf34b05dc4e8a7ffc978816b9d, type: 3}
       propertyPath: m_LocalRotation.x
@@ -26878,7 +26874,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8649332845270778683, guid: 867ff5bf34b05dc4e8a7ffc978816b9d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.022532173
+      value: 0.022532176
       objectReference: {fileID: 0}
     - target: {fileID: 8649332845270778683, guid: 867ff5bf34b05dc4e8a7ffc978816b9d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -33960,7 +33956,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 2
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -37295,7 +37291,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753698866}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.023461696, y: -0.69230837, z: 0.022532173, w: 0.7208683}
+  m_LocalRotation: {x: 0.023461696, y: -0.69230837, z: 0.022532176, w: 0.72086823}
   m_LocalPosition: {x: 12.360279, y: 8.367078, z: 1.0032902}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -37663,7 +37659,7 @@ Transform:
   m_GameObject: {fileID: 1795337123}
   serializedVersion: 2
   m_LocalRotation: {x: 0.4304592, y: -0.5609856, z: 0.5609856, w: -0.4304592}
-  m_LocalPosition: {x: 83.95767, y: 10.635784, z: 4.1978025}
+  m_LocalPosition: {x: 83.95767, y: 10.635784, z: 4.21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -37732,7 +37728,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 2
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89

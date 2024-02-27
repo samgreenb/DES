@@ -106,6 +106,26 @@ public class DogController : MonoBehaviour
         }
     }
 
+    private void FixedUpdate()
+    {
+        switch (state)
+        {
+            case STATE.PushPull:
+                //only forward/backwards
+                Vector3 direction = dragging.transform.position - transform.position;
+                moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+                moveDirection = cameraRotater.transform.TransformDirection(moveDirection).normalized;
+                direction = Vector3.Project(moveDirection, direction);
+
+                direction = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+                direction = cameraRotater.transform.TransformDirection(direction).normalized;
+
+                dragging.GetComponent<Rigidbody>().MovePosition(dragging.transform.position +
+                    direction * pushSpeed);
+                break;
+        }
+    }
+
     [SerializeField]
     float closeMediumCutoff = 10.0f;
     [SerializeField]
@@ -149,17 +169,37 @@ public class DogController : MonoBehaviour
     {
         if (dragging != null)
         {
-            //only forward/backwards
-            Vector3 direction = dragging.transform.position - transform.position;
-            moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-            moveDirection = cameraRotater.transform.TransformDirection(moveDirection).normalized;
+            ////only forward/backwards
+            //Vector3 direction = dragging.transform.position - transform.position;
+            //moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+            //moveDirection = cameraRotater.transform.TransformDirection(moveDirection).normalized;
+            //direction = Vector3.Project(moveDirection, direction);
 
-            direction = Vector3.Project(moveDirection, direction);
+            //direction = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+            //direction = cameraRotater.transform.TransformDirection(direction).normalized;
 
-            direction = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-            direction = cameraRotater.transform.TransformDirection(direction).normalized;
-            dragging.GetComponent<Rigidbody>().MovePosition(dragging.transform.position +
-                direction * Time.deltaTime * pushSpeed);
+            //dragging.GetComponent<Rigidbody>().MovePosition(dragging.transform.position +
+            //    direction * Time.deltaTime * pushSpeed);
+
+
+            Vector3 currentDistance = dragging.transform.position - transform.position;
+            currentDistance.y = 0;
+            if (currentDistance.magnitude > distance.magnitude + 0.4f)
+            {
+                currentDistance.Normalize();
+                currentDistance *= 3.0f;
+                currentDistance.y = -gravity;
+                controller.Move(currentDistance * Time.deltaTime);
+
+            } else if (currentDistance.magnitude < distance.magnitude + 0.2f)
+            {
+                currentDistance.Normalize();
+                currentDistance *= 3.0f;
+                currentDistance.y = gravity;
+                controller.Move(-currentDistance * Time.deltaTime);
+            }
+            currentDistance.y = 0;
+            model.transform.LookAt(model.transform.position + currentDistance);
 
         }
 
@@ -171,9 +211,9 @@ public class DogController : MonoBehaviour
             {
                 if (collider != null && collider.CompareTag("PushPull"))
                 {
-                    controller.enabled = false;
+                    //controller.enabled = false;
                     dragging = collider.attachedRigidbody.gameObject;
-                    transform.parent = dragging.transform;
+                    //transform.parent = dragging.transform;
                     state = STATE.PushPull;
                     distance = (dragging.transform.position - transform.position);
                     return;
@@ -186,12 +226,12 @@ public class DogController : MonoBehaviour
             if (dragging != null)
             {
                 Debug.Log("lmao3");
-                dragging.transform.parent = null;
-                transform.parent = null;
+                //dragging.transform.parent = null;
+                //transform.parent = null;
                 dragging = null;
                 state = STATE.Default;
-                controller.enabled = true;
-                transform.rotation = Quaternion.identity;
+                //controller.enabled = true;
+                //transform.rotation = Quaternion.identity;
                 return;
             }
 
