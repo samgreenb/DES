@@ -23,7 +23,6 @@ public class IceStatues : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("ISE :" + other.gameObject.name);
         if (!parts.Contains(other.gameObject)) return;
         other.gameObject.SetActive(false);
         partCounter++;

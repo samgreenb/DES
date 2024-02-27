@@ -77,25 +77,26 @@ public class DogController : MonoBehaviour
         switch (state)
         {
             case STATE.Default:
-                Crouch();
                 Move();
-                PushPull();
                 Hold();
+                Crouch();
+                PushPull();
                 Headbutt();
                 Sniff();
                 break;
             case STATE.Crouch:
                 Crouch();
                 Move();
+                Hold();
                 break;
             case STATE.PushPull:
                 //Move();
                 PushPull();
                 break;
-            case STATE.Hold:
-                Move();
-                Hold();
-                Crouch();
+            //case STATE.Hold:
+            //    Move();
+            //    Hold();
+            //    Crouch();
                 break;
             case STATE.Headbutt:
                 break;
@@ -133,7 +134,7 @@ public class DogController : MonoBehaviour
     private void Sniff()
     {
 
-        
+        if (!controller.isGrounded) return;
 
         if (Input.GetButtonDown("Smell"))
         {
@@ -167,6 +168,8 @@ public class DogController : MonoBehaviour
     Vector3 distance = Vector3.zero;
     private void PushPull()
     {
+        if (!controller.isGrounded) return;
+
         if (dragging != null)
         {
             ////only forward/backwards
@@ -244,6 +247,8 @@ public class DogController : MonoBehaviour
     float HeadbuttTime = 1.0f;
     private void Headbutt()
     {
+        if (!controller.isGrounded) return;
+
         if (Input.GetButtonDown("Drag"))
         {
             Collider[] colliders = new Collider[10];
@@ -284,7 +289,7 @@ public class DogController : MonoBehaviour
                     holding = collider.attachedRigidbody.gameObject;
                     holding.transform.parent = holdPosition.transform;
                     holding.transform.position = holdPosition.transform.position;
-                    state = STATE.Hold;
+                    //state = STATE.Hold;
                     holding.GetComponent<Rigidbody>().isKinematic = true;
                     holding.GetComponentInChildren<BoxCollider>().enabled = false;
                     return;
@@ -302,7 +307,7 @@ public class DogController : MonoBehaviour
                 holding.GetComponentInChildren<BoxCollider>().enabled = true;
                 holding.transform.parent = null;
                 holding = null;
-                state = STATE.Default;
+                //state = STATE.Default;
 
                 return;
             }
@@ -329,39 +334,47 @@ public class DogController : MonoBehaviour
     Vector3 push = Vector3.zero;
     private void Move()
     {
-        Debug.Log(Input.GetButton("Run"));
+        
         //bool anim = false;
         Vector3 input = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         CharacterController controller = GetComponent<CharacterController>();
-        if (controller.isGrounded)
+        Debug.Log("Is grounded? : " + controller.isGrounded);
+
+            //moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+        //if (moveDirection.magnitude > 0) { anim = true; }
+        input = cameraRotater.transform.TransformDirection(input).normalized;
+        push = moveDirection;
+        switch (state)
         {
-            moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-            //if (moveDirection.magnitude > 0) { anim = true; }
-            moveDirection = cameraRotater.transform.TransformDirection(moveDirection).normalized;
-            push = moveDirection;
-            switch (state)
-            {
-                case STATE.Default:
-                case STATE.Hold:
-                    moveDirection *= speed * (Input.GetButton("Run") ? runMultiplier : 1.0f);
+            case STATE.Default:
+            case STATE.Hold:
+                input *= speed * (Input.GetButton("Run") ? runMultiplier : 1.0f);
 
-                    break;
-                case STATE.Crouch:
-                    moveDirection *= speed * crouchSpeedMultiplier;
+                break;
+            case STATE.Crouch:
+                input *= speed * crouchSpeedMultiplier;
 
-                    break;
-                case STATE.Sniff:
-                    moveDirection *= speed * sniffSpeedMultiplier;
+                break;
+            case STATE.Sniff:
+                input *= speed * sniffSpeedMultiplier;
 
-                    break;
-            }
-            //moveDirection *= speed * (Input.GetButton("Run") ? runMultiplier : 1.0f) * (state.Equals(STATE.Crouch) ? crouchSpeedMultiplier : 1.0f);
-            if (Input.GetButton("Jump"))
-            {
-                moveDirection.y = jumpSpeed;
-            }
+                break;
         }
+        moveDirection = new Vector3(input.x, moveDirection.y, input.z);
+        if(controller.isGrounded)
+        {
+            moveDirection.y = -9.8f;
+        }
+        //moveDirection *= speed * (Input.GetButton("Run") ? runMultiplier : 1.0f) * (state.Equals(STATE.Crouch) ? crouchSpeedMultiplier : 1.0f);
+        if (controller.isGrounded && Input.GetButtonDown("Jump") && state != STATE.Crouch)
+        {
+            moveDirection.y = jumpSpeed;
+        }
+        
+        if(!controller.isGrounded) {
             moveDirection.y -= gravity * Time.deltaTime;
+        }   
+            
         
         controller.Move(moveDirection * Time.deltaTime);
 
@@ -388,6 +401,8 @@ public class DogController : MonoBehaviour
 
     private void Crouch()
     {
+        if (!controller.isGrounded) return;
+
         if (Input.GetButtonDown("Crouch"))
         {
             standingModel.SetActive(false);
@@ -397,13 +412,28 @@ public class DogController : MonoBehaviour
             state = STATE.Crouch;
         }
 
-        if (Input.GetButtonUp("Crouch"))
+        if (state == STATE.Crouch && !Input.GetButton("Crouch"))
         {
+            // Bit shift the index of the layer (8) to get a bit mask
+            int layerMask = 1 << 3;
+
+            // This would cast rays only against colliders in layer 8.
+            // But instead we want to collide against everything except layer 8. The ~ operator does this, it inverts a bitmask.
+            layerMask = ~layerMask;
+
+            RaycastHit hit;
+            // Does the ray intersect any objects excluding the player layer
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.up), out hit, 2.0f, layerMask) && !hit.collider.gameObject.CompareTag("Player"))
+            {
+                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+                Debug.Log("Did Hit : " + hit.collider.gameObject.name);
+                return;
+            }
             standingModel.SetActive(true);
             crouchingModel.SetActive(false);
             controller.height = 2;
             controller.center = new Vector3(0, 1, 0);
-            state = holding == null ? STATE.Default : STATE.Hold;
+            state = STATE.Default;
         }
     }
 

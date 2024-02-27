@@ -23,7 +23,6 @@ public class FocusCamera : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Happened");
         if(other.gameObject.CompareTag("Player")) fCamera.Priority = priority;
     }
 
