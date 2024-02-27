@@ -71,6 +71,7 @@ public class DogController : MonoBehaviour
     [SerializeField]  public float jumpSpeed = 8.0F;
     [SerializeField] public float gravity = 9.8F;
     private Vector3 moveDirection = Vector3.zero;
+    private bool justJumped = false;
 
     void Update()
     {
@@ -368,7 +369,12 @@ public class DogController : MonoBehaviour
         //moveDirection *= speed * (Input.GetButton("Run") ? runMultiplier : 1.0f) * (state.Equals(STATE.Crouch) ? crouchSpeedMultiplier : 1.0f);
         if (controller.isGrounded && Input.GetButtonDown("Jump") && state != STATE.Crouch)
         {
+            justJumped = true;
             moveDirection.y = jumpSpeed;
+        }
+        else
+        {
+            justJumped = false;
         }
         
         if(!controller.isGrounded) {
@@ -445,5 +451,10 @@ public class DogController : MonoBehaviour
     public STATE GetState()
     {
         return state;
+    }
+
+    public bool JumpedThisUpdate()
+    {
+        return justJumped;
     }
 }
