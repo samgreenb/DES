@@ -185,9 +185,12 @@ public class DogController : MonoBehaviour
             //dragging.GetComponent<Rigidbody>().MovePosition(dragging.transform.position +
             //    direction * Time.deltaTime * pushSpeed);
 
-
             Vector3 currentDistance = dragging.transform.position - transform.position;
             currentDistance.y = 0;
+
+            //Debug.Log("CDM : " + currentDistance.magnitude + "DM : " + distance.magnitude + "");
+            //Debug.Log("Lower : " + (distance.magnitude + 0.2f) + " current : " + currentDistance.magnitude + " Higher : " + (distance.magnitude + 0.4f) + "");
+
             if (currentDistance.magnitude > distance.magnitude + 0.4f)
             {
                 currentDistance.Normalize();
@@ -201,10 +204,13 @@ public class DogController : MonoBehaviour
                 currentDistance *= 3.0f;
                 currentDistance.y = gravity;
                 controller.Move(-currentDistance * Time.deltaTime);
+            } else 
+            {
+                controller.Move(Vector3.down);
             }
+
             currentDistance.y = 0;
             model.transform.LookAt(model.transform.position + currentDistance);
-
         }
 
         if (Input.GetButtonDown("Drag"))
@@ -220,6 +226,7 @@ public class DogController : MonoBehaviour
                     //transform.parent = dragging.transform;
                     state = STATE.PushPull;
                     distance = (dragging.transform.position - transform.position);
+                    distance.y = 0;
                     return;
                 }
             }
