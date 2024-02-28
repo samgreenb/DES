@@ -186,6 +186,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Footsteps" ID="{94DA5BC1-E82F-42D5-8F1C-50E6B4CDB5EF}">
+					<ChildrenList>
+						<Action Name="" ID="{1CA8BC97-5841-42BA-970F-43BFFCFAF72F}" ShortID="415989068">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{73A58159-0C9E-4981-8601-B18E3C103F15}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Statue_Drag" ID="{3C692771-86CB-4D9B-9B7F-AE83CEA925E5}">
+					<ChildrenList>
+						<Action Name="" ID="{0F532440-FD51-4D40-9A09-8202D5B910E4}" ShortID="869268457">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Statue_Drag" ID="{E8F91694-30B0-478A-9821-2A46FB2147CB}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

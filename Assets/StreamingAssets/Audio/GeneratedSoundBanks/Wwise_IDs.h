@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID COLLAPSING_CAVE = 2567379095U;
         static const AkUniqueID EARTHQUAKE = 1245902094U;
         static const AkUniqueID FALLING_INTO_LAKE = 3170274879U;
+        static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID HEAVY_ICE_IMPACT = 2004729559U;
         static const AkUniqueID ITEM_DROP = 2177967876U;
         static const AkUniqueID ITEM_PICKUP = 566396871U;
@@ -29,7 +30,25 @@ namespace AK
         static const AkUniqueID PLAYER_BARKS = 3978910662U;
         static const AkUniqueID PLAYER_SNIFFS = 1028362978U;
         static const AkUniqueID PRESSURE_PLATE_CLICK = 1442179120U;
+        static const AkUniqueID STATUE_DRAG = 543487814U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace FOOTSTEP_SURFACES
+        {
+            static const AkUniqueID GROUP = 1265478494U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID SNOW = 787898836U;
+                static const AkUniqueID STONE = 1216965916U;
+                static const AkUniqueID VOID = 3370470011U;
+            } // namespace SWITCH
+        } // namespace FOOTSTEP_SURFACES
+
+    } // namespace SWITCHES
 
     namespace BANKS
     {

@@ -6,6 +6,7 @@
 				<SoundBank Name="Main" ID="{4364D908-7EA1-45B8-9509-E56C096E9406}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Pressure_Plate_Click" ID="{FE0A1939-DDBB-4191-A5CD-0062991E45FC}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Footsteps" ID="{94DA5BC1-E82F-42D5-8F1C-50E6B4CDB5EF}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Ambience_Wind" ID="{5BDADEE3-B034-433C-9624-B4CE56891313}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Collapsing_Cave" ID="{85AE55C0-DAAC-4497-BFF4-82093F10F4ED}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Item_Drop" ID="{4B6C6C85-5CAA-44B7-9309-9271D0D9A187}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
@@ -19,6 +20,7 @@
 						<ObjectRef Name="Land" ID="{FC043FD2-635D-4B5E-B590-DA280CAC9A03}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Cave_River" ID="{89847318-85AB-4B8F-9D3E-DF3A090799F4}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player_Sniffs" ID="{F2AF232E-5220-4CD5-A634-DC3A7E2998FF}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Statue_Drag" ID="{3C692771-86CB-4D9B-9B7F-AE83CEA925E5}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Earthquake" ID="{9052D098-943C-4E2C-A6F1-23B4F20A9224}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Medium_Ice_Impact" ID="{394CD58F-4639-4ED3-B2D3-ADC1A5224C2D}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

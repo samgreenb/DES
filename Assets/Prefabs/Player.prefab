@@ -157,15 +157,15 @@ MonoBehaviour:
   footstepSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: a897cadd6c3429548b4e59e933df6fdd, type: 2}
   jumpSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 20aae5fb133f1bf45af739d65daf6a64, type: 2}
   jumpLandSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 4ac753e88e892134d84c2962ea333f49, type: 2}
   dragSound:
     idInternal: 0
     valueGuidInternal: 
