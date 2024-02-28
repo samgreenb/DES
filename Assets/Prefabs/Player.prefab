@@ -42,6 +42,8 @@ GameObject:
   - component: {fileID: 4687215792214223769}
   - component: {fileID: 6628052255991370713}
   - component: {fileID: 3370396817934834006}
+  - component: {fileID: 5089884646022049394}
+  - component: {fileID: 5484636349776316270}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -113,7 +115,7 @@ MonoBehaviour:
   turn: {x: 0, y: 0}
   speed: 5
   runMultiplier: 1.5
-  pushSpeed: 7
+  pushSpeed: 0.05
   crouchSpeedMultiplier: 0.6
   sniffSpeedMultiplier: 0.6
   jumpSpeed: 8
@@ -127,6 +129,44 @@ MonoBehaviour:
   holding: {fileID: 0}
   standingModel: {fileID: 5221158035830450529}
   crouchingModel: {fileID: 4258800693268326114}
+--- !u!114 &5089884646022049394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626571032494645772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a7d41628bb49e84ba5bb02822322e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 6027426128292631151}
+--- !u!114 &5484636349776316270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626571032494645772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c91fc00d4317ef442aca822d0e8f8f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  jumpSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  jumpLandSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  walkFrequency: 0.5
 --- !u!1 &2673817289393828547
 GameObject:
   m_ObjectHideFlags: 0
