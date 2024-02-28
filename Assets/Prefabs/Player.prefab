@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 6628052255991370713}
   - component: {fileID: 3370396817934834006}
   - component: {fileID: 5089884646022049394}
+  - component: {fileID: 5484636349776316270}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -141,6 +142,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 6027426128292631151}
+--- !u!114 &5484636349776316270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626571032494645772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c91fc00d4317ef442aca822d0e8f8f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  jumpSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  jumpLandSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  walkFrequency: 0.5
 --- !u!1 &2673817289393828547
 GameObject:
   m_ObjectHideFlags: 0

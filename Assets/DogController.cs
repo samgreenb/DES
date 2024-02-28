@@ -292,6 +292,7 @@ public class DogController : MonoBehaviour
                     holding.transform.position = holdPosition.transform.position;
                     //state = STATE.Hold;
                     holding.GetComponent<Rigidbody>().isKinematic = true;
+                    holding.GetComponent<HoldItemAudio>().PickupAndDropBox();
                     holding.GetComponentInChildren<BoxCollider>().enabled = false;
                     return;
                 }
@@ -305,6 +306,7 @@ public class DogController : MonoBehaviour
             {
                 Debug.Log("lmao4");
                 holding.GetComponent<Rigidbody>().isKinematic = false;
+                holding.GetComponent<HoldItemAudio>().PickupAndDropBox();
                 holding.GetComponentInChildren<BoxCollider>().enabled = true;
                 holding.transform.parent = null;
                 holding = null;
@@ -339,7 +341,6 @@ public class DogController : MonoBehaviour
         //bool anim = false;
         Vector3 input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         CharacterController controller = GetComponent<CharacterController>();
-        Debug.Log("Is grounded? : " + controller.isGrounded);
 
             //moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         //if (moveDirection.magnitude > 0) { anim = true; }
