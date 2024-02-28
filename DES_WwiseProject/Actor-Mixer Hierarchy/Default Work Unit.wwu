@@ -994,14 +994,10 @@
 				</Sound>
 				<Sound Name="Statue_Drag" ID="{E8F91694-30B0-478A-9821-2A46FB2147CB}" ShortID="551189394">
 					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Pitch" Type="int32">
 							<ValueList>
 								<Value>-550</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-6</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

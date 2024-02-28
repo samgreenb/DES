@@ -32,7 +32,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{DAC801CF-AACF-D769-FD40-EE9EAEC955F4}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{31589E6D-6ADF-2EB6-970D-305AC395B28F}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -186,7 +186,7 @@
 				</File>
 				<File Id="870524985" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Statue_Drag.wav</ShortName>
-					<CachePath>SFX/Statue_Drag_10C4C929.wem</CachePath>
+					<CachePath>SFX/Statue_Drag_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="947600182" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Stone_Footstep_1.wav</ShortName>
@@ -224,6 +224,7 @@
 						<MediaRef Id="278901706"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="281929850" Name="Cave_Track" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2719257531" Name="Clock_Tick" DurationType="OneShot" DurationMin="0.17995465" DurationMax="0.22349206">
 					<MediaRefs>
 						<MediaRef Id="740541392"/>
@@ -340,7 +341,7 @@
 						<MediaRef Id="481628282"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="543487814" Name="Statue_Drag" DurationType="OneShot" DurationMin="12.210927" DurationMax="12.210927">
+				<Event Id="543487814" Name="Statue_Drag" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="870524985"/>
 					</MediaRefs>
@@ -358,5 +359,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2C4E0366-0E44-75FB-022F-26CB7AACF0AE}</FileHash>
+	<FileHash>{709B6173-13A5-4F05-328C-E25880643B3E}</FileHash>
 </SoundBanksInfo>

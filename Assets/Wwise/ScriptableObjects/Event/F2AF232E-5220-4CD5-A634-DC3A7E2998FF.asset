@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af376399e0405b64187a51607aa01a44, type: 3}
+  m_Name: F2AF232E-5220-4CD5-A634-DC3A7E2998FF
+  m_EditorClassIdentifier: 
+  objectName: Player_Sniffs
+  id: 1028362978
+  guid: F2AF232E-5220-4CD5-A634-DC3A7E2998FF

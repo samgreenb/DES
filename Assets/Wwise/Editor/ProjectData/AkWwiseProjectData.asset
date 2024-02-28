@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 3393a2487e8d2f48b8d8d877e6065cbb
     GuidInternal: 
-    m_lastTime: -8584924763563561139
+    m_lastTime: -8584924438254089729
     List:
     - name: Main
       guid: 08d96443a17eb8459509e56c096e9406
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6ba2c523a76fd44fb22a32d8f086ec57
     GuidInternal: 
-    m_lastTime: -8584924763570670598
+    m_lastTime: -8584924438254155854
     List:
     - name: Ambience_Wind
       guid: e3deda5b34b03c439624b4ce56891313
@@ -130,6 +130,23 @@ MonoBehaviour:
       maxAttenuation: 56
       maxDuration: -1
       minDuration: -1
+    - name: Cave_Track
+      guid: 9056760b9cd0fc46872da215df02833b
+      id: 281929850
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6ba2c523a76fd44fb22a32d8f086ec57
+      - ElementName: Cave_Track
+        ObjectType: 3
+        guid: 9056760b9cd0fc46872da215df02833b
+      Path: Events\Default Work Unit\Cave_Track
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Clock_Tick
       guid: e83e81ee2725d8488987f20d0835c512
       id: 2719257531
@@ -400,8 +417,8 @@ MonoBehaviour:
         guid: 7127693ccb869b4d9b7fae83cea925e5
       Path: Events\Default Work Unit\Statue_Drag
       maxAttenuation: 0
-      maxDuration: 12.210927
-      minDuration: 12.210927
+      maxDuration: 122.10927
+      minDuration: 122.10927
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -541,7 +558,7 @@ MonoBehaviour:
     m_lastTime: -8584928099326260833
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0600000007000000
+  ExpandedWaapiItemIds: 050000000600000007000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

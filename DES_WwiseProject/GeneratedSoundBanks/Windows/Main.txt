@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	156328838	Ambience_Wind			\Default Work Unit\Ambience_Wind	
+	281929850	Cave_Track			\Default Work Unit\Cave_Track	
 	543487814	Statue_Drag			\Default Work Unit\Statue_Drag	
 	566396871	Item_Pickup			\Default Work Unit\Item_Pickup	
 	674522502	Land			\Default Work Unit\Land	
@@ -65,7 +66,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	833563640	Grass_Footsteps_4	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Grass_Footsteps_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Grass_Footsteps\Grass_Footsteps_4		43872
 	840412545	Player_Sniff_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Player_Sniff_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Sniffs\Player_Sniff_3		131168
 	865124749	Clock_Tick_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Clock_Tick_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clock_Ticks\Clock_Tick_3		31840
-	870524985	Statue_Drag	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Statue_Drag_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Statue_Drag		1567840
+	870524985	Statue_Drag	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Statue_Drag_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Statue_Drag		1567840
 	947600182	Stone_Footstep_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Stone_Footstep_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Stone_Footsteps\Stone_Footstep_1		46944
 	988023209	Land	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Land_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Land		76840
 	1030029765	Clock_Tick_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Clock_Tick_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clock_Ticks\Clock_Tick_2		36192

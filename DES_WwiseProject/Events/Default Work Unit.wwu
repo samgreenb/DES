@@ -208,6 +208,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Cave_Track" ID="{0B765690-D09C-46FC-872D-A215DF02833B}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

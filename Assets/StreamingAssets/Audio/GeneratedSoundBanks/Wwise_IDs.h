@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID AMBIENCE_WIND = 156328838U;
         static const AkUniqueID CAVE_RIVER = 732341345U;
+        static const AkUniqueID CAVE_TRACK = 281929850U;
         static const AkUniqueID CLOCK_TICK = 2719257531U;
         static const AkUniqueID COLLAPSING_CAVE = 2567379095U;
         static const AkUniqueID EARTHQUAKE = 1245902094U;

@@ -169,11 +169,11 @@ MonoBehaviour:
   dragSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 56f2fd324e2c8c947ba059b84a588d27, type: 2}
   sniffSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 3e4a74cb6750a6647a03c6f74e2e089f, type: 2}
   walkFrequency: 0.5
   sniffFrequency: 0.5
 --- !u!1 &2673817289393828547
