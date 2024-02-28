@@ -73,6 +73,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3428da26d9f54f14380736359a7a86a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupAndDropSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c8c7332e91de3d446941b16df2fe005b, type: 2}
+  groundCollideSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f5cc5197496bfdb42bfdf51b51769aec, type: 2}
 --- !u!1 &5452444632673364211
 GameObject:
   m_ObjectHideFlags: 0

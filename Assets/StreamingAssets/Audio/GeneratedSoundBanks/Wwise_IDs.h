@@ -33,6 +33,23 @@ namespace AK
         static const AkUniqueID STATUE_DRAG = 543487814U;
     } // namespace EVENTS
 
+    namespace SWITCHES
+    {
+        namespace FOOTSTEP_SURFACES
+        {
+            static const AkUniqueID GROUP = 1265478494U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID SNOW = 787898836U;
+                static const AkUniqueID STONE = 1216965916U;
+                static const AkUniqueID VOID = 3370470011U;
+            } // namespace SWITCH
+        } // namespace FOOTSTEP_SURFACES
+
+    } // namespace SWITCHES
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
