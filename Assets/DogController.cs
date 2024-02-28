@@ -337,7 +337,7 @@ public class DogController : MonoBehaviour
     {
         
         //bool anim = false;
-        Vector3 input = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        Vector3 input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         CharacterController controller = GetComponent<CharacterController>();
         Debug.Log("Is grounded? : " + controller.isGrounded);
 
