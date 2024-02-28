@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	156328838	Ambience_Wind			\Default Work Unit\Ambience_Wind	
+	543487814	Statue_Drag			\Default Work Unit\Statue_Drag	
 	566396871	Item_Pickup			\Default Work Unit\Item_Pickup	
 	674522502	Land			\Default Work Unit\Land	
 	680865880	Light_Ice_Impact			\Default Work Unit\Light_Ice_Impact	
@@ -10,6 +11,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2004729559	Heavy_Ice_Impact			\Default Work Unit\Heavy_Ice_Impact	
 	2031244205	Medium_Ice_Impact			\Default Work Unit\Medium_Ice_Impact	
 	2177967876	Item_Drop			\Default Work Unit\Item_Drop	
+	2385628198	Footsteps			\Default Work Unit\Footsteps	
 	2567379095	Collapsing_Cave			\Default Work Unit\Collapsing_Cave	
 	2719257531	Clock_Tick			\Default Work Unit\Clock_Tick	
 	3170274879	Falling_Into_Lake			\Default Work Unit\Falling_Into_Lake	
@@ -44,6 +46,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	816564180	Light_Impact_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Light_Impact_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Light_Impacts\Light_Impact_1		161888
 	840412545	Player_Sniff_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Player_Sniff_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Sniffs\Player_Sniff_3		131168
 	865124749	Clock_Tick_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Clock_Tick_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clock_Ticks\Clock_Tick_3		31840
+	870524985	Statue_Drag	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Statue_Drag_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Statue_Drag		1567840
 	988023209	Land	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Land_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Land		76840
 	1030029765	Clock_Tick_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Clock_Tick_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clock_Ticks\Clock_Tick_2		36192
 	1054721353	Item_Pickup	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Item_Pickup_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Item_Pickup		86504

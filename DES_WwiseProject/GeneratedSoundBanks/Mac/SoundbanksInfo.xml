@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{3C7A4C38-9763-BD38-9D7A-0711EC9ACE41}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8559F75C-9204-58E3-C776-CAB130AA1BC0}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -134,6 +134,10 @@
 					<ShortName>Clock_Tick_3.wav</ShortName>
 					<CachePath>SFX/Clock_Tick_3_10C4C929.wem</CachePath>
 				</File>
+				<File Id="870524985" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Statue_Drag.wav</ShortName>
+					<CachePath>SFX/Statue_Drag_10C4C929.wem</CachePath>
+				</File>
 				<File Id="988023209" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Land.wav</ShortName>
 					<CachePath>SFX/Land_10C4C929.wem</CachePath>
@@ -185,6 +189,7 @@
 						<MediaRef Id="1073202503"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2004729559" Name="Heavy_Ice_Impact" DurationType="OneShot" DurationMin="0.78874236" DurationMax="1.1853199">
 					<MediaRefs>
 						<MediaRef Id="318292429"/>
@@ -247,8 +252,13 @@
 						<MediaRef Id="481628282"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="543487814" Name="Statue_Drag" DurationType="OneShot" DurationMin="12.210927" DurationMax="12.210927">
+					<MediaRefs>
+						<MediaRef Id="870524985"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7D43D4B9-8490-6965-94AE-EF6FAA66FA2D}</FileHash>
+	<FileHash>{6D64941C-CEC1-C4B1-0885-636E59CC0A96}</FileHash>
 </SoundBanksInfo>
