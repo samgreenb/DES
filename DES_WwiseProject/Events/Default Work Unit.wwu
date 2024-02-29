@@ -208,7 +208,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Cave_Track" ID="{0B765690-D09C-46FC-872D-A215DF02833B}"/>
+				<Event Name="Cave_Music" ID="{16874197-10E4-41F8-A8CF-E171EA07AEA2}">
+					<ChildrenList>
+						<Action Name="" ID="{39F76A1C-824C-4C8F-9BFA-D0798641E377}" ShortID="885650531">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Afterlife_Journey_Cave_track" ID="{3A199049-108F-4D3C-B879-A73D4EAF62A8}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

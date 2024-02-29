@@ -38,8 +38,59 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 076b5706ac524a4f99360f1dd314bc12
     GuidInternal: 
-    m_lastTime: -8584928099336446841
+    m_lastTime: -8584923749492449254
     List:
+    - name: Cave
+      guid: 938b6f076735b34a89848a3d738368a7
+      id: 4122393694
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 076b5706ac524a4f99360f1dd314bc12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Cave
+        ObjectType: 2
+        guid: 938b6f076735b34a89848a3d738368a7
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Cave
+    - name: Cave_Reverb
+      guid: d14b5696b6c45a4aa3a978ed9c9b5402
+      id: 3177428469
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 076b5706ac524a4f99360f1dd314bc12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Cave_Reverb
+        ObjectType: 1
+        guid: d14b5696b6c45a4aa3a978ed9c9b5402
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Cave_Reverb
+    - name: Cave_Statue_Room_Reverb
+      guid: f54db1939c1c0d4bb369913a4cd58f08
+      id: 854237680
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 076b5706ac524a4f99360f1dd314bc12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Cave_Statue_Room_Reverb
+        ObjectType: 1
+        guid: f54db1939c1c0d4bb369913a4cd58f08
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Cave_Statue_Room_Reverb
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -54,6 +105,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Tunnel_Reverb
+      guid: e2f95931a2768549a53b090425786419
+      id: 3400062578
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 076b5706ac524a4f99360f1dd314bc12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Tunnel_Reverb
+        ObjectType: 1
+        guid: e2f95931a2768549a53b090425786419
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Tunnel_Reverb
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -66,7 +134,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 3393a2487e8d2f48b8d8d877e6065cbb
     GuidInternal: 
-    m_lastTime: -8584924438254089729
+    m_lastTime: -8584923855652143078
     List:
     - name: Main
       guid: 08d96443a17eb8459509e56c096e9406
@@ -94,7 +162,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6ba2c523a76fd44fb22a32d8f086ec57
     GuidInternal: 
-    m_lastTime: -8584924438254155854
+    m_lastTime: -8584923855652223945
     List:
     - name: Ambience_Wind
       guid: e3deda5b34b03c439624b4ce56891313
@@ -113,6 +181,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 70.48
       minDuration: 70.48
+    - name: Cave_Music
+      guid: 97418716e410f841a8cfe171ea07aea2
+      id: 694142006
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6ba2c523a76fd44fb22a32d8f086ec57
+      - ElementName: Cave_Music
+        ObjectType: 3
+        guid: 97418716e410f841a8cfe171ea07aea2
+      Path: Events\Default Work Unit\Cave_Music
+      maxAttenuation: 0
+      maxDuration: 192
+      minDuration: 192
     - name: Cave_River
       guid: 18738489ab858f4b9d3edf3a090799f4
       id: 732341345
@@ -130,23 +215,6 @@ MonoBehaviour:
       maxAttenuation: 56
       maxDuration: -1
       minDuration: -1
-    - name: Cave_Track
-      guid: 9056760b9cd0fc46872da215df02833b
-      id: 281929850
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 6ba2c523a76fd44fb22a32d8f086ec57
-      - ElementName: Cave_Track
-        ObjectType: 3
-        guid: 9056760b9cd0fc46872da215df02833b
-      Path: Events\Default Work Unit\Cave_Track
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
     - name: Clock_Tick
       guid: e83e81ee2725d8488987f20d0835c512
       id: 2719257531
@@ -417,8 +485,8 @@ MonoBehaviour:
         guid: 7127693ccb869b4d9b7fae83cea925e5
       Path: Events\Default Work Unit\Statue_Drag
       maxAttenuation: 0
-      maxDuration: 122.10927
-      minDuration: 122.10927
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -558,7 +626,7 @@ MonoBehaviour:
     m_lastTime: -8584928099326260833
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000007000000
+  ExpandedWaapiItemIds: 020000000300000004000000050000000600000007000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

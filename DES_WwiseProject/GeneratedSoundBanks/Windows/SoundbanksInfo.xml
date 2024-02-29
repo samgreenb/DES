@@ -9,10 +9,15 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{986487A9-2683-E47A-8688-3D0FE6FDB954}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{49B1BF0C-02D9-9A84-A153-5377A291D636}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<ShareSets>
+					<Plugin Id="2849147824" Name="Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="2995775460" Name="Room_Small" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="3407225994" Name="Phone_Booth" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
@@ -20,7 +25,31 @@
 			</Plugins>
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="4122393694" Name="Cave"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="854237680" Name="Cave_Statue_Room_Reverb">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2995775460"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="3177428469" Name="Cave_Reverb">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2849147824"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="3400062578" Name="Tunnel_Reverb">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3407225994"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
 			<SwitchGroups>
 				<SwitchGroup Id="1265478494" Name="Footstep_Surfaces">
 					<Switches>
@@ -32,7 +61,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{31589E6D-6ADF-2EB6-970D-305AC395B28F}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{841C1B93-84C4-8960-0520-F308DE99839F}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -123,6 +152,10 @@
 				<File Id="481628282" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Pressure_Plate_Click.wav</ShortName>
 					<CachePath>SFX/Pressure_Plate_Click_10C4C929.wem</CachePath>
+				</File>
+				<File Id="506904011" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Afterlife_Journey_Cave_track.wav</ShortName>
+					<CachePath>SFX/Afterlife_Journey_Cave_track_10C4C929.wem</CachePath>
 				</File>
 				<File Id="549733239" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Bark_1.wav</ShortName>
@@ -219,12 +252,16 @@
 						<MediaRef Id="429081445"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="694142006" Name="Cave_Music" DurationType="OneShot" DurationMin="192" DurationMax="192">
+					<MediaRefs>
+						<MediaRef Id="506904011"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="732341345" Name="Cave_River" MaxAttenuation="56" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="278901706"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="281929850" Name="Cave_Track" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2719257531" Name="Clock_Tick" DurationType="OneShot" DurationMin="0.17995465" DurationMax="0.22349206">
 					<MediaRefs>
 						<MediaRef Id="740541392"/>
@@ -359,5 +396,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{709B6173-13A5-4F05-328C-E25880643B3E}</FileHash>
+	<FileHash>{00D33FFB-52C1-50AC-C469-AB4F9724C8BB}</FileHash>
 </SoundBanksInfo>

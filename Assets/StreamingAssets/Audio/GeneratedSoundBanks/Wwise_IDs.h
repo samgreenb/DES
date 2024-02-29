@@ -14,8 +14,8 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMBIENCE_WIND = 156328838U;
+        static const AkUniqueID CAVE_MUSIC = 694142006U;
         static const AkUniqueID CAVE_RIVER = 732341345U;
-        static const AkUniqueID CAVE_TRACK = 281929850U;
         static const AkUniqueID CLOCK_TICK = 2719257531U;
         static const AkUniqueID COLLAPSING_CAVE = 2567379095U;
         static const AkUniqueID EARTHQUAKE = 1245902094U;
@@ -59,8 +59,16 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID CAVE = 4122393694U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID CAVE_REVERB = 3177428469U;
+        static const AkUniqueID CAVE_STATUE_ROOM_REVERB = 854237680U;
+        static const AkUniqueID TUNNEL_REVERB = 3400062578U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {

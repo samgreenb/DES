@@ -1,10 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
 	156328838	Ambience_Wind			\Default Work Unit\Ambience_Wind	
-	281929850	Cave_Track			\Default Work Unit\Cave_Track	
 	543487814	Statue_Drag			\Default Work Unit\Statue_Drag	
 	566396871	Item_Pickup			\Default Work Unit\Item_Pickup	
 	674522502	Land			\Default Work Unit\Land	
 	680865880	Light_Ice_Impact			\Default Work Unit\Light_Ice_Impact	
+	694142006	Cave_Music			\Default Work Unit\Cave_Music	
 	732341345	Cave_River			\Default Work Unit\Cave_River	
 	1028362978	Player_Sniffs			\Default Work Unit\Player_Sniffs	
 	1245902094	Earthquake			\Default Work Unit\Earthquake	
@@ -51,6 +51,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	445252164	Light_Ice_Impact_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Light_Ice_Impact_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Light_Ice_Impacts\Light_Ice_Impact_1		180320
 	458584362	Collapsing_Cave	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Collapsing_Cave_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Collapsing_Cave		2556000
 	481628282	Pressure_Plate_Click	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Pressure_Plate_Click_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pressure_Plate_Click		68192
+	506904011	Afterlife_Journey_Cave_track	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Afterlife_Journey_Cave_track_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Afterlife_Journey_Cave_track		36864096
 	549733239	Player_Bark_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Player_Bark_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Barks\Player_Bark_1		52704
 	581431168	Stone_Footstep_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Stone_Footstep_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Stone_Footsteps\Stone_Footstep_3		46432
 	658702813	Player_Bark_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Player_Bark_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Barks\Player_Bark_3		54528

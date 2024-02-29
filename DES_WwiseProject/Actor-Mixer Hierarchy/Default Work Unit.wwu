@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{0F998219-96FC-4A6F-A037-202C90C13818}" PersistMode="Standalone">
 			<ChildrenList>
 				<Sound Name="Ambience_Wind" ID="{874B7C01-BB7A-400B-A1AA-59E6925AB427}" ShortID="52408990">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
@@ -28,13 +31,14 @@
 				<Sound Name="Collapsing_Cave" ID="{53B0F2DB-0C42-4466-B1B4-D39D33047987}" ShortID="227395590">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06576B07-52AC-4F4A-9936-0F1DD314BC12}"/>
+							<ObjectRef Name="Cave" ID="{076F8B93-3567-4AB3-8984-8A3D738368A7}" WorkUnitID="{06576B07-52AC-4F4A-9936-0F1DD314BC12}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -51,6 +55,9 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Item_Pickup" ID="{83555535-0994-4B12-9479-8B92F4A4B162}" ShortID="597834130">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
@@ -74,6 +81,7 @@
 				</Sound>
 				<Sound Name="Jump" ID="{20A55CC4-F538-488A-B5DE-D9AB530F1B6B}" ShortID="463856495">
 					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-5</Value>
@@ -103,6 +111,7 @@
 				</Sound>
 				<Sound Name="Land" ID="{4D1DD1CD-8FD2-41F6-A63C-E1750C556E17}" ShortID="734541741">
 					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-5</Value>
@@ -131,6 +140,9 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Player_Panting" ID="{CA5FB746-A9EF-46CE-BA2F-D65950278E49}" ShortID="813586633">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
@@ -168,6 +180,7 @@
 							</ModifierList>
 						</Property>
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ModifierList>
 								<ModifierInfo>
@@ -275,6 +288,7 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>2</Value>
@@ -370,6 +384,9 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<Sound Name="Falling_Into_Lake" ID="{3F0E640A-164A-46DE-8E56-3A3C41E72BB4}" ShortID="328709123">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
@@ -392,12 +409,15 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Pressure_Plate_Click" ID="{ADE61F81-E269-4189-B871-9146D7D3E0D0}" ShortID="837975827">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06576B07-52AC-4F4A-9936-0F1DD314BC12}"/>
+							<ObjectRef Name="Cave" ID="{076F8B93-3567-4AB3-8984-8A3D738368A7}" WorkUnitID="{06576B07-52AC-4F4A-9936-0F1DD314BC12}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -429,6 +449,7 @@
 							</ModifierList>
 						</Property>
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ModifierList>
 								<ModifierInfo>
@@ -536,6 +557,7 @@
 							</ModifierList>
 						</Property>
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ModifierList>
 								<ModifierInfo>
@@ -643,6 +665,7 @@
 							</ModifierList>
 						</Property>
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ModifierList>
 								<ModifierInfo>
@@ -750,6 +773,7 @@
 							</ModifierList>
 						</Property>
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ModifierList>
 								<ModifierInfo>
@@ -844,6 +868,7 @@
 				<RandomSequenceContainer Name="Clock_Ticks" ID="{9FD988AE-2E04-4D04-90DF-8AF173486409}" ShortID="544398268">
 					<PropertyList>
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ModifierList>
 								<ModifierInfo>
@@ -857,7 +882,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06576B07-52AC-4F4A-9936-0F1DD314BC12}"/>
+							<ObjectRef Name="Cave" ID="{076F8B93-3567-4AB3-8984-8A3D738368A7}" WorkUnitID="{06576B07-52AC-4F4A-9936-0F1DD314BC12}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -932,13 +957,14 @@
 				<Sound Name="Earthquake" ID="{9846D44C-9530-43DE-B282-D0644D1A6CD9}" ShortID="403172345">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06576B07-52AC-4F4A-9936-0F1DD314BC12}"/>
+							<ObjectRef Name="Cave" ID="{076F8B93-3567-4AB3-8984-8A3D738368A7}" WorkUnitID="{06576B07-52AC-4F4A-9936-0F1DD314BC12}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -962,6 +988,7 @@
 							</ValueList>
 						</Property>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>5</Value>
@@ -976,7 +1003,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06576B07-52AC-4F4A-9936-0F1DD314BC12}"/>
+							<ObjectRef Name="Cave" ID="{076F8B93-3567-4AB3-8984-8A3D738368A7}" WorkUnitID="{06576B07-52AC-4F4A-9936-0F1DD314BC12}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1000,13 +1027,14 @@
 								<Value>-550</Value>
 							</ValueList>
 						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06576B07-52AC-4F4A-9936-0F1DD314BC12}"/>
+							<ObjectRef Name="Cave" ID="{076F8B93-3567-4AB3-8984-8A3D738368A7}" WorkUnitID="{06576B07-52AC-4F4A-9936-0F1DD314BC12}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1037,6 +1065,7 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>6</Value>
@@ -1423,6 +1452,35 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<Sound Name="Afterlife_Journey_Cave_track" ID="{3A199049-108F-4D3C-B879-A73D4EAF62A8}" ShortID="1027408942">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06576B07-52AC-4F4A-9936-0F1DD314BC12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Afterlife_Journey_Cave_track" ID="{20A7CFDF-8A42-4598-A3E6-84C0F888410B}">
+							<Language>SFX</Language>
+							<AudioFile>Afterlife_Journey_Cave_track.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="506904011"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Afterlife_Journey_Cave_track" ID="{20A7CFDF-8A42-4598-A3E6-84C0F888410B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
