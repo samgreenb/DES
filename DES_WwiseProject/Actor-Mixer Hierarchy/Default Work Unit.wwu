@@ -1481,6 +1481,28 @@
 						<ActiveSource Name="Afterlife_Journey_Cave_track" ID="{20A7CFDF-8A42-4598-A3E6-84C0F888410B}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="Statue_Melt" ID="{84663AF7-E9AC-4CB1-B3EF-057BB501B051}" ShortID="565888106">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06576B07-52AC-4F4A-9936-0F1DD314BC12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Statue_Melt" ID="{8B2CB91D-CC98-48E5-9F72-0BDDE262658F}">
+							<Language>SFX</Language>
+							<AudioFile>Statue_Melt.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="271229291"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Statue_Melt" ID="{8B2CB91D-CC98-48E5-9F72-0BDDE262658F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

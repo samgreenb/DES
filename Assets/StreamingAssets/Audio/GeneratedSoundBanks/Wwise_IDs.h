@@ -32,6 +32,7 @@ namespace AK
         static const AkUniqueID PLAYER_SNIFFS = 1028362978U;
         static const AkUniqueID PRESSURE_PLATE_CLICK = 1442179120U;
         static const AkUniqueID STATUE_DRAG = 543487814U;
+        static const AkUniqueID STATUE_MELT = 4004046394U;
     } // namespace EVENTS
 
     namespace SWITCHES

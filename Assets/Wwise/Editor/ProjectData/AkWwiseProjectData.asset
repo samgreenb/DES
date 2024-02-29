@@ -134,7 +134,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 3393a2487e8d2f48b8d8d877e6065cbb
     GuidInternal: 
-    m_lastTime: -8584923855652143078
+    m_lastTime: -8584923729961580254
     List:
     - name: Main
       guid: 08d96443a17eb8459509e56c096e9406
@@ -162,7 +162,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6ba2c523a76fd44fb22a32d8f086ec57
     GuidInternal: 
-    m_lastTime: -8584923855652223945
+    m_lastTime: -8584923729961646697
     List:
     - name: Ambience_Wind
       guid: e3deda5b34b03c439624b4ce56891313
@@ -487,6 +487,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Statue_Melt
+      guid: 794d66ae7ac8854496ddd0dbc42c6d47
+      id: 4004046394
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6ba2c523a76fd44fb22a32d8f086ec57
+      - ElementName: Statue_Melt
+        ObjectType: 3
+        guid: 794d66ae7ac8854496ddd0dbc42c6d47
+      Path: Events\Default Work Unit\Statue_Melt
+      maxAttenuation: 0
+      maxDuration: 4.376961
+      minDuration: 4.376961
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

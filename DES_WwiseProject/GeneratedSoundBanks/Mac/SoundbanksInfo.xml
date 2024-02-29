@@ -61,7 +61,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{841C1B93-84C4-8960-0520-F308DE99839F}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7B13C67D-44AC-83AA-71F4-1CDAC7D29C20}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -104,6 +104,10 @@
 				<File Id="264028608" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Bark_2.wav</ShortName>
 					<CachePath>SFX/Player_Bark_2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="271229291" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Statue_Melt.wav</ShortName>
+					<CachePath>SFX/Statue_Melt_10C4C929.wem</CachePath>
 				</File>
 				<File Id="272439696" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Light_Impact_2.wav</ShortName>
@@ -383,6 +387,11 @@
 						<MediaRef Id="870524985"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="4004046394" Name="Statue_Melt" DurationType="OneShot" DurationMin="4.376961" DurationMax="4.376961">
+					<MediaRefs>
+						<MediaRef Id="271229291"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 			<SwitchGroups>
 				<SwitchGroup Id="1265478494" Name="Footstep_Surfaces">
@@ -396,5 +405,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C87B3AFB-8826-2B32-164F-E53C9AB84AE7}</FileHash>
+	<FileHash>{64E48273-10EF-B4B8-E0E3-D750599544F6}</FileHash>
 </SoundBanksInfo>

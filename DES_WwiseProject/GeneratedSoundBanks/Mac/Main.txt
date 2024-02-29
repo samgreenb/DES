@@ -18,6 +18,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3170274879	Falling_Into_Lake			\Default Work Unit\Falling_Into_Lake	
 	3833651337	Jump			\Default Work Unit\Jump	
 	3978910662	Player_Barks			\Default Work Unit\Player_Barks	
+	4004046394	Statue_Melt			\Default Work Unit\Statue_Melt	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	1265478494	Footstep_Surfaces			\Default Work Unit\Footstep_Surfaces	
@@ -39,6 +40,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	212957350	Medium_Ice_Impact_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Medium_Ice_Impact_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Medium_Ice_Impacts\Medium_Ice_Impact_1		208992
 	261001254	Player_Sniff_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Player_Sniff_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Sniffs\Player_Sniff_1		155744
 	264028608	Player_Bark_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Player_Bark_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Barks\Player_Bark_2		49944
+	271229291	Statue_Melt	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Statue_Melt_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Statue_Melt		772192
 	272439696	Light_Impact_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Light_Impact_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Light_Impacts\Light_Impact_2		148576
 	278901706	Cave_River	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Cave_River_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cave_River		15973544
 	288214208	Earthquake	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Earthquake_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Earthquake		21158784
