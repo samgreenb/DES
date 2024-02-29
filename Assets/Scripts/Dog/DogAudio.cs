@@ -95,7 +95,7 @@ public class DogAudio : MonoBehaviour
             playingDrag = true;
             dragSound.Post(gameObject);
         } 
-        else if(dog.GetState() == STATE.PushPull && input.magnitude == 0 && playingDrag)
+        else if((dog.GetState() != STATE.PushPull || input.magnitude == 0) && playingDrag)
         {
             Debug.Log("Stop playing drag");
             playingDrag = false;
