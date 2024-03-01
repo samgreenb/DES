@@ -48,7 +48,7 @@ public class DogController : MonoBehaviour
     void Start()
     {
         controller = gameObject.GetComponent<CharacterController>();
-        Cursor.lockState = CursorLockMode.Locked;
+        
         sniffAreas = new List<GameObject>();
     }
 
