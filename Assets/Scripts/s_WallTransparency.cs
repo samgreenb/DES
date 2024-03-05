@@ -6,7 +6,7 @@ public class s_WallTransparency : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public GameObject ThingMaJig;
+    public GameObject WallToHide;
     public GameObject Player;
 
 
@@ -16,12 +16,12 @@ public class s_WallTransparency : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("Player")) return;
-        ThingMaJig.SetActive(false);
+        WallToHide.SetActive(false);
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (!other.CompareTag("Player")) return;
-        ThingMaJig.SetActive(true);
+        WallToHide.SetActive(true);
     }
 }
