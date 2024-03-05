@@ -53,15 +53,16 @@
 			<SwitchGroups>
 				<SwitchGroup Id="1265478494" Name="Footstep_Surfaces">
 					<Switches>
+						<Switch Id="344481046" Name="Ice"/>
 						<Switch Id="787898836" Name="Snow"/>
 						<Switch Id="1216965916" Name="Stone"/>
+						<Switch Id="2195636714" Name="Dirt"/>
 						<Switch Id="3370470011" Name="Void"/>
-						<Switch Id="4248645337" Name="Grass"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7B13C67D-44AC-83AA-71F4-1CDAC7D29C20}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{82AC5BAC-94AB-726E-5142-FC1D1ABDFF02}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -72,6 +73,10 @@
 				<File Id="86817994" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Snow_Footstep_3.wav</ShortName>
 					<CachePath>SFX/Snow_Footstep_3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="88630389" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dirt_Footstep_3.wav</ShortName>
+					<CachePath>SFX/Dirt_Footstep_3_10C4C929.wem</CachePath>
 				</File>
 				<File Id="130225437" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Jump.wav</ShortName>
@@ -117,6 +122,10 @@
 					<ShortName>Cave_River.wav</ShortName>
 					<CachePath>SFX/Cave_River_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="284730830" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dirt_Footstep_4.wav</ShortName>
+					<CachePath>SFX/Dirt_Footstep_4_10C4C929.wem</CachePath>
+				</File>
 				<File Id="288214208" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Earthquake.wav</ShortName>
 					<CachePath>SFX/Earthquake_D79FB2B7.wem</CachePath>
@@ -159,7 +168,11 @@
 				</File>
 				<File Id="506904011" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Afterlife_Journey_Cave_track.wav</ShortName>
-					<CachePath>SFX/Afterlife_Journey_Cave_track_10C4C929.wem</CachePath>
+					<CachePath>SFX/Afterlife_Journey_Cave_track_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="539440202" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Void_Footstep_2.wav</ShortName>
+					<CachePath>SFX/Void_Footstep_2_10C4C929.wem</CachePath>
 				</File>
 				<File Id="549733239" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Bark_1.wav</ShortName>
@@ -169,33 +182,45 @@
 					<ShortName>Stone_Footstep_3.wav</ShortName>
 					<CachePath>SFX/Stone_Footstep_3_10C4C929.wem</CachePath>
 				</File>
+				<File Id="642308971" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ice_Footstep_1.wav</ShortName>
+					<CachePath>SFX/Ice_Footstep_1_10C4C929.wem</CachePath>
+				</File>
 				<File Id="658702813" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Bark_3.wav</ShortName>
 					<CachePath>SFX/Player_Bark_3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="668849041" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ice_Footstep_3.wav</ShortName>
+					<CachePath>SFX/Ice_Footstep_3_10C4C929.wem</CachePath>
 				</File>
 				<File Id="669593204" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Light_Impact_3.wav</ShortName>
 					<CachePath>SFX/Light_Impact_3_10C4C929.wem</CachePath>
 				</File>
-				<File Id="681288750" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass_Footsteps_2.wav</ShortName>
-					<CachePath>SFX/Grass_Footsteps_2_10C4C929.wem</CachePath>
-				</File>
 				<File Id="729610960" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Heavy_Ice_Impact_3.wav</ShortName>
 					<CachePath>SFX/Heavy_Ice_Impact_3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="732323351" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dirt_Footstep_2.wav</ShortName>
+					<CachePath>SFX/Dirt_Footstep_2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="736419123" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Void_Footstep_1.wav</ShortName>
+					<CachePath>SFX/Void_Footstep_1_10C4C929.wem</CachePath>
 				</File>
 				<File Id="740541392" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Clock_Tick_1.wav</ShortName>
 					<CachePath>SFX/Clock_Tick_1_10C4C929.wem</CachePath>
 				</File>
+				<File Id="745359697" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ice_Footstep_4.wav</ShortName>
+					<CachePath>SFX/Ice_Footstep_4_10C4C929.wem</CachePath>
+				</File>
 				<File Id="780233463" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Stone_Footstep_2.wav</ShortName>
 					<CachePath>SFX/Stone_Footstep_2_10C4C929.wem</CachePath>
-				</File>
-				<File Id="797125566" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass_Footsteps_1.wav</ShortName>
-					<CachePath>SFX/Grass_Footsteps_1_10C4C929.wem</CachePath>
 				</File>
 				<File Id="803106823" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Heavy_Ice_Impact_2.wav</ShortName>
@@ -209,13 +234,17 @@
 					<ShortName>Light_Impact_1.wav</ShortName>
 					<CachePath>SFX/Light_Impact_1_10C4C929.wem</CachePath>
 				</File>
-				<File Id="833563640" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass_Footsteps_4.wav</ShortName>
-					<CachePath>SFX/Grass_Footsteps_4_10C4C929.wem</CachePath>
+				<File Id="821296415" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Void_Footstep_3.wav</ShortName>
+					<CachePath>SFX/Void_Footstep_3_10C4C929.wem</CachePath>
 				</File>
 				<File Id="840412545" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Sniff_3.wav</ShortName>
 					<CachePath>SFX/Player_Sniff_3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="861304478" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dirt_Footstep_1.wav</ShortName>
+					<CachePath>SFX/Dirt_Footstep_1_10C4C929.wem</CachePath>
 				</File>
 				<File Id="865124749" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Clock_Tick_3.wav</ShortName>
@@ -225,9 +254,17 @@
 					<ShortName>Statue_Drag.wav</ShortName>
 					<CachePath>SFX/Statue_Drag_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="938976132" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Void_Footstep_4.wav</ShortName>
+					<CachePath>SFX/Void_Footstep_4_10C4C929.wem</CachePath>
+				</File>
 				<File Id="947600182" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Stone_Footstep_1.wav</ShortName>
 					<CachePath>SFX/Stone_Footstep_1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="979436076" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ice_Footstep_2.wav</ShortName>
+					<CachePath>SFX/Ice_Footstep_2_10C4C929.wem</CachePath>
 				</File>
 				<File Id="988023209" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Land.wav</ShortName>
@@ -236,10 +273,6 @@
 				<File Id="1030029765" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Clock_Tick_2.wav</ShortName>
 					<CachePath>SFX/Clock_Tick_2_10C4C929.wem</CachePath>
-				</File>
-				<File Id="1048811388" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass_Footsteps_3.wav</ShortName>
-					<CachePath>SFX/Grass_Footsteps_3_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1054721353" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Item_Pickup.wav</ShortName>
@@ -256,7 +289,7 @@
 						<MediaRef Id="429081445"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="694142006" Name="Cave_Music" DurationType="OneShot" DurationMin="192" DurationMax="192">
+				<Event Id="694142006" Name="Cave_Music" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="506904011"/>
 					</MediaRefs>
@@ -289,8 +322,26 @@
 						<MediaRef Id="1073202503"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0" DurationMax="0.29810148">
+				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0.22108833" DurationMax="0.29810148">
 					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1265478494" Id="3370470011"/>
+							<MediaRefs>
+								<MediaRef Id="539440202"/>
+								<MediaRef Id="736419123"/>
+								<MediaRef Id="821296415"/>
+								<MediaRef Id="938976132"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1265478494" Id="344481046"/>
+							<MediaRefs>
+								<MediaRef Id="642308971"/>
+								<MediaRef Id="668849041"/>
+								<MediaRef Id="745359697"/>
+								<MediaRef Id="979436076"/>
+							</MediaRefs>
+						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="1265478494" Id="1216965916" Default="true"/>
 							<MediaRefs>
@@ -310,12 +361,12 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="1265478494" Id="4248645337"/>
+							<SwitchValue GroupType="Switch" GroupId="1265478494" Id="2195636714"/>
 							<MediaRefs>
-								<MediaRef Id="681288750"/>
-								<MediaRef Id="797125566"/>
-								<MediaRef Id="833563640"/>
-								<MediaRef Id="1048811388"/>
+								<MediaRef Id="88630389"/>
+								<MediaRef Id="284730830"/>
+								<MediaRef Id="732323351"/>
+								<MediaRef Id="861304478"/>
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -396,14 +447,15 @@
 			<SwitchGroups>
 				<SwitchGroup Id="1265478494" Name="Footstep_Surfaces">
 					<Switches>
+						<Switch Id="344481046" Name="Ice"/>
 						<Switch Id="787898836" Name="Snow"/>
 						<Switch Id="1216965916" Name="Stone"/>
+						<Switch Id="2195636714" Name="Dirt"/>
 						<Switch Id="3370470011" Name="Void"/>
-						<Switch Id="4248645337" Name="Grass"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{64E48273-10EF-B4B8-E0E3-D750599544F6}</FileHash>
+	<FileHash>{275F7070-2FC6-CBD6-C9EB-2E202BE39E0A}</FileHash>
 </SoundBanksInfo>

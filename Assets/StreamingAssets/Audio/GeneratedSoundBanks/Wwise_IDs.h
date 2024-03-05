@@ -43,7 +43,8 @@ namespace AK
 
             namespace SWITCH
             {
-                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID DIRT = 2195636714U;
+                static const AkUniqueID ICE = 344481046U;
                 static const AkUniqueID SNOW = 787898836U;
                 static const AkUniqueID STONE = 1216965916U;
                 static const AkUniqueID VOID = 3370470011U;
