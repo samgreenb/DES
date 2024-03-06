@@ -196,8 +196,8 @@ MonoBehaviour:
         guid: 97418716e410f841a8cfe171ea07aea2
       Path: Events\Default Work Unit\Cave_Music
       maxAttenuation: 0
-      maxDuration: 192
-      minDuration: 192
+      maxDuration: -1
+      minDuration: -1
     - name: Cave_River
       guid: 18738489ab858f4b9d3edf3a090799f4
       id: 732341345
@@ -544,7 +544,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 549aa12270c0274dbf6cb9ea92e331d6
     GuidInternal: 
-    m_lastTime: -8584920268051646801
+    m_lastTime: -8584918854029481438
     List:
     - name: Footstep_Surfaces
       guid: 9f02accb3afe8b4fb779714f8fd26695
@@ -659,7 +659,7 @@ MonoBehaviour:
     m_lastTime: -8584928099326260833
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 020000000300000004000000050000000600000007000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
