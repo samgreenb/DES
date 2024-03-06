@@ -299,7 +299,7 @@ MonoBehaviour:
       Path: Events\Default Work Unit\Footsteps
       maxAttenuation: 0
       maxDuration: 0.29810148
-      minDuration: 0
+      minDuration: 0.22108833
     - name: Heavy_Ice_Impact
       guid: 7f7f2cb25dfa144ba6aeabcee82a102a
       id: 2004729559
@@ -544,7 +544,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 549aa12270c0274dbf6cb9ea92e331d6
     GuidInternal: 
-    m_lastTime: -8584924756350608051
+    m_lastTime: -8584920268051646801
     List:
     - name: Footstep_Surfaces
       guid: 9f02accb3afe8b4fb779714f8fd26695
@@ -561,9 +561,9 @@ MonoBehaviour:
         guid: 9f02accb3afe8b4fb779714f8fd26695
       Path: Switches\Default Work Unit\Footstep_Surfaces
       values:
-      - name: Grass
+      - name: Dirt
         guid: 9d5dfb7a760260479beea2ab22a8c685
-        id: 4248645337
+        id: 2195636714
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -574,9 +574,25 @@ MonoBehaviour:
         - ElementName: Footstep_Surfaces
           ObjectType: 11
           guid: 9f02accb3afe8b4fb779714f8fd26695
-        - ElementName: Grass
+        - ElementName: Dirt
           ObjectType: 10
           guid: 9d5dfb7a760260479beea2ab22a8c685
+      - name: Ice
+        guid: 1187310e1259274298ffc798fd29a639
+        id: 344481046
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 549aa12270c0274dbf6cb9ea92e331d6
+        - ElementName: Footstep_Surfaces
+          ObjectType: 11
+          guid: 9f02accb3afe8b4fb779714f8fd26695
+        - ElementName: Ice
+          ObjectType: 10
+          guid: 1187310e1259274298ffc798fd29a639
       - name: Snow
         guid: 92cb5933cbec704d986055494eeffbf7
         id: 787898836
