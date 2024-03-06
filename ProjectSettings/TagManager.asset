@@ -6,11 +6,12 @@ TagManager:
   tags:
   - PushPull
   - Hold
+  - Sniff
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - 
