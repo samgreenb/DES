@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Security;
 using UnityEngine;
 
 public class s_ShowText : MonoBehaviour
@@ -13,19 +14,21 @@ public class s_ShowText : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (DoOnce == false);
+        if (DoOnce != true)
         {
             if (!other.CompareTag("Player")) return;
             Text.SetActive(true);
-            Invoke("Delay", 3);
+            Invoke("Delay", 2);
+            DoOnce = true;
         }
+
 
     }
 
 
-    void Delay()
+    private void Delay()
     {
         Text.SetActive(false);
-        DoOnce = true;
+
     }
 }
