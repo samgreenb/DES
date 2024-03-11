@@ -18,10 +18,12 @@ Event	ID	Name			Wwise Object Path	Notes
 	3170274879	Falling_Into_Lake			\Default Work Unit\Falling_Into_Lake	
 	3833651337	Jump			\Default Work Unit\Jump	
 	3978910662	Player_Barks			\Default Work Unit\Player_Barks	
+	3991942870	Music			\Default Work Unit\Music	
 	4004046394	Statue_Melt			\Default Work Unit\Statue_Melt	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	1265478494	Footstep_Surfaces			\Default Work Unit\Footstep_Surfaces	
+	3991942870	Music			\Default Work Unit\Music	
 
 Switch	ID	Name	Switch Group			Notes
 	344481046	Ice	Footstep_Surfaces			
@@ -29,6 +31,9 @@ Switch	ID	Name	Switch Group			Notes
 	1216965916	Stone	Footstep_Surfaces			
 	2195636714	Dirt	Footstep_Surfaces			
 	3370470011	Void	Footstep_Surfaces			
+	624189772	Lake	Music			
+	997105147	Wonderland	Music			
+	4122393694	Cave	Music			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	14544015	Snow_Footstep_4	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Snow_Footstep_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Snow_Footsteps\Snow_Footstep_4		43872
@@ -54,9 +59,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	408948165	Medium_Ice_Impact_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Medium_Ice_Impact_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Medium_Ice_Impacts\Medium_Ice_Impact_3		172128
 	429081445	Ambience_Wind	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Ambience_Wind_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Wind		13532256
 	445252164	Light_Ice_Impact_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Light_Ice_Impact_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Light_Ice_Impacts\Light_Ice_Impact_1		180320
+	458278501	AJ_Track_02_Remix	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\AJ_Track_02_Remix_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\Wonderland\AJ_Track_02_Remix\AJ_Track_02_Remix		37388384
 	458584362	Collapsing_Cave	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Collapsing_Cave_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Collapsing_Cave		2556000
 	481628282	Pressure_Plate_Click	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Pressure_Plate_Click_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pressure_Plate_Click		68192
-	506904011	Afterlife_Journey_Cave_track	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Afterlife_Journey_Cave_track_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Afterlife_Journey_Cave_track		36864096
+	506904011	Afterlife_Journey_Cave_track	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Afterlife_Journey_Cave_track_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\Cave\Afterlife_Journey_Cave_track\Afterlife_Journey_Cave_track		36864096
 	539440202	Void_Footstep_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Void_Footstep_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Void_Footsteps\Void_Footstep_2		44128
 	549733239	Player_Bark_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Player_Bark_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Barks\Player_Bark_1		52704
 	581431168	Stone_Footstep_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Stone_Footstep_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Stone_Footsteps\Stone_Footstep_3		46432
@@ -83,6 +89,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	979436076	Ice_Footstep_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Ice_Footstep_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Ice_Footsteps\Ice_Footstep_2		44128
 	988023209	Land	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Land_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Land		76840
 	1030029765	Clock_Tick_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Clock_Tick_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clock_Ticks\Clock_Tick_2		36192
+	1036570820	Ambience_Wind	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Ambience_Wind_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\Lake\Ambience_Wind\Ambience_Wind		13532256
 	1054721353	Item_Pickup	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Item_Pickup_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Item_Pickup		86504
 	1073202503	Player_Panting	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Windows\SFX\Player_Panting_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Panting		1120352
 

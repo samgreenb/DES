@@ -9,14 +9,15 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{8C6E7119-32C8-A014-38DE-1E1E62D230A7}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{7A1AE05F-B4E7-E155-6618-ED82AD891A0D}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
 				<ShareSets>
+					<Plugin Id="702543456" Name="Tunnel1" LibName="Wwise Matrix Reverb" LibId="7536643"/>
+					<Plugin Id="1990128658" Name="Room_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="2849147824" Name="Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="2995775460" Name="Room_Small" LibName="Wwise RoomVerb" LibId="7733251"/>
-					<Plugin Id="3407225994" Name="Phone_Booth" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
@@ -28,13 +29,14 @@
 				<Bus Id="4122393694" Name="Cave"/>
 			</Busses>
 			<AuxBusses>
-				<AuxBus Id="854237680" Name="Cave_Statue_Room_Reverb">
+				<AuxBus Id="1042516749" Name="Medium_Room_Reverb">
 					<PluginRefs>
 						<ShareSets>
-							<PluginRef Id="2995775460"/>
+							<PluginRef Id="1990128658"/>
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
+				<AuxBus Id="2730119150" Name="Outdoors"/>
 				<AuxBus Id="3177428469" Name="Cave_Reverb">
 					<PluginRefs>
 						<ShareSets>
@@ -45,7 +47,14 @@
 				<AuxBus Id="3400062578" Name="Tunnel_Reverb">
 					<PluginRefs>
 						<ShareSets>
-							<PluginRef Id="3407225994"/>
+							<PluginRef Id="702543456"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="4024401587" Name="Small_Room_Reverb">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2995775460"/>
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
@@ -60,9 +69,16 @@
 						<Switch Id="3370470011" Name="Void"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="3991942870" Name="Music">
+					<Switches>
+						<Switch Id="624189772" Name="Lake"/>
+						<Switch Id="997105147" Name="Wonderland"/>
+						<Switch Id="4122393694" Name="Cave"/>
+					</Switches>
+				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{82AC5BAC-94AB-726E-5142-FC1D1ABDFF02}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{0C684288-047C-E346-25E9-F527C6F14FFF}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -157,6 +173,10 @@
 				<File Id="445252164" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Light_Ice_Impact_1.wav</ShortName>
 					<CachePath>SFX/Light_Ice_Impact_1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="458278501" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AJ_Track_02_Remix.wav</ShortName>
+					<CachePath>SFX/AJ_Track_02_Remix_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="458584362" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Collapsing_Cave.wav</ShortName>
@@ -274,6 +294,10 @@
 					<ShortName>Clock_Tick_2.wav</ShortName>
 					<CachePath>SFX/Clock_Tick_2_10C4C929.wem</CachePath>
 				</File>
+				<File Id="1036570820" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ambience_Wind.wav</ShortName>
+					<CachePath>SFX/Ambience_Wind_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="1054721353" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Item_Pickup.wav</ShortName>
 					<CachePath>SFX/Item_Pickup_10C4C929.wem</CachePath>
@@ -289,11 +313,7 @@
 						<MediaRef Id="429081445"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="694142006" Name="Cave_Music" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="506904011"/>
-					</MediaRefs>
-				</Event>
+				<Event Id="694142006" Name="Cave_Music" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="732341345" Name="Cave_River" MaxAttenuation="56" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="278901706"/>
@@ -343,7 +363,7 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="1265478494" Id="1216965916" Default="true"/>
+							<SwitchValue GroupType="Switch" GroupId="1265478494" Id="1216965916"/>
 							<MediaRefs>
 								<MediaRef Id="158352135"/>
 								<MediaRef Id="581431168"/>
@@ -361,7 +381,7 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="1265478494" Id="2195636714"/>
+							<SwitchValue GroupType="Switch" GroupId="1265478494" Id="2195636714" Default="true"/>
 							<MediaRefs>
 								<MediaRef Id="88630389"/>
 								<MediaRef Id="284730830"/>
@@ -414,6 +434,28 @@
 						<MediaRef Id="408948165"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3991942870" Name="Music" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3991942870" Id="4122393694"/>
+							<MediaRefs>
+								<MediaRef Id="506904011"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3991942870" Id="624189772"/>
+							<MediaRefs>
+								<MediaRef Id="1036570820"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3991942870" Id="997105147"/>
+							<MediaRefs>
+								<MediaRef Id="458278501"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="3978910662" Name="Player_Barks" DurationType="OneShot" DurationMin="0.26672474" DurationMax="0.32692006">
 					<MediaRefs>
 						<MediaRef Id="264028608"/>
@@ -454,8 +496,15 @@
 						<Switch Id="3370470011" Name="Void"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="3991942870" Name="Music">
+					<Switches>
+						<Switch Id="624189772" Name="Lake"/>
+						<Switch Id="997105147" Name="Wonderland"/>
+						<Switch Id="4122393694" Name="Cave"/>
+					</Switches>
+				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{275F7070-2FC6-CBD6-C9EB-2E202BE39E0A}</FileHash>
+	<FileHash>{2CA870CA-670F-499A-4DFB-E0CE1BC2981F}</FileHash>
 </SoundBanksInfo>
