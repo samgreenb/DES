@@ -28,6 +28,7 @@ namespace AK
         static const AkUniqueID LAND = 674522502U;
         static const AkUniqueID LIGHT_ICE_IMPACT = 680865880U;
         static const AkUniqueID MEDIUM_ICE_IMPACT = 2031244205U;
+        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAYER_BARKS = 3978910662U;
         static const AkUniqueID PLAYER_SNIFFS = 1028362978U;
         static const AkUniqueID PRESSURE_PLATE_CLICK = 1442179120U;
@@ -51,6 +52,18 @@ namespace AK
             } // namespace SWITCH
         } // namespace FOOTSTEP_SURFACES
 
+        namespace MUSIC
+        {
+            static const AkUniqueID GROUP = 3991942870U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CAVE = 4122393694U;
+                static const AkUniqueID LAKE = 624189772U;
+                static const AkUniqueID WONDERLAND = 997105147U;
+            } // namespace SWITCH
+        } // namespace MUSIC
+
     } // namespace SWITCHES
 
     namespace BANKS
@@ -68,7 +81,9 @@ namespace AK
     namespace AUX_BUSSES
     {
         static const AkUniqueID CAVE_REVERB = 3177428469U;
-        static const AkUniqueID CAVE_STATUE_ROOM_REVERB = 854237680U;
+        static const AkUniqueID MEDIUM_ROOM_REVERB = 1042516749U;
+        static const AkUniqueID OUTDOORS = 2730119150U;
+        static const AkUniqueID SMALL_ROOM_REVERB = 4024401587U;
         static const AkUniqueID TUNNEL_REVERB = 3400062578U;
     } // namespace AUX_BUSSES
 

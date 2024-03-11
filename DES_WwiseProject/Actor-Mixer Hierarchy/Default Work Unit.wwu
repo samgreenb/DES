@@ -1088,7 +1088,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
 						</Reference>
 						<Reference Name="DefaultSwitchOrState">
-							<ObjectRef Name="Stone" ID="{B13FDF46-4E45-4A1D-B8A0-0245185E3E0A}" WorkUnitID="{22A19A54-C070-4D27-BF6C-B9EA92E331D6}"/>
+							<ObjectRef Name="Dirt" ID="{7AFB5D9D-0276-4760-9BEE-A2AB22A8C685}" WorkUnitID="{22A19A54-C070-4D27-BF6C-B9EA92E331D6}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06576B07-52AC-4F4A-9936-0F1DD314BC12}"/>
@@ -1651,36 +1651,6 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
-				<Sound Name="Afterlife_Journey_Cave_track" ID="{3A199049-108F-4D3C-B879-A73D4EAF62A8}" ShortID="1027408942">
-					<PropertyList>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-10</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06576B07-52AC-4F4A-9936-0F1DD314BC12}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Afterlife_Journey_Cave_track" ID="{20A7CFDF-8A42-4598-A3E6-84C0F888410B}">
-							<Language>SFX</Language>
-							<AudioFile>Afterlife_Journey_Cave_track.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="506904011"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Afterlife_Journey_Cave_track" ID="{20A7CFDF-8A42-4598-A3E6-84C0F888410B}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="Statue_Melt" ID="{84663AF7-E9AC-4CB1-B3EF-057BB501B051}" ShortID="565888106">
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
