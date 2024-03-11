@@ -208,17 +208,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Cave_Music" ID="{16874197-10E4-41F8-A8CF-E171EA07AEA2}">
-					<ChildrenList>
-						<Action Name="" ID="{39F76A1C-824C-4C8F-9BFA-D0798641E377}" ShortID="885650531">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Afterlife_Journey_Cave_track" ID="{3A199049-108F-4D3C-B879-A73D4EAF62A8}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Statue_Melt" ID="{AE664D79-C87A-4485-96DD-D0DBC42C6D47}">
 					<ChildrenList>
 						<Action Name="" ID="{28BE0044-3257-4802-9EDE-A53300B8EDBA}" ShortID="810553796">
@@ -236,6 +225,31 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="MusicSwitch" ID="{AE49FE2C-C4A3-4A17-BF3A-5EA0E3D48D58}" WorkUnitID="{51A8D6A6-731C-4EAD-88F8-F1442FE962B3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music_States" ID="{6B308F76-AEC4-4B81-8B6A-A0B670020A4B}">
+					<ChildrenList>
+						<Action Name="" ID="{90D324EB-7B6D-444F-A4BA-B8408DDFA2B5}" ShortID="44713138">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Afterlife_Journey_Cave_track" ID="{7FF8AF8E-B7C2-496B-B218-74A66F8CCC33}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4B9C4F12-EDA5-4D8D-92A5-E1CEDEB32A4F}" ShortID="392698150">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AJ_Track_02_Remix" ID="{4D933F7F-42A7-4D61-8C31-BF4674997EBB}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{74579E96-FED7-4DA5-9A77-6C0D536F7544}" ShortID="586889622">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience_Wind" ID="{874B7C01-BB7A-400B-A1AA-59E6925AB427}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

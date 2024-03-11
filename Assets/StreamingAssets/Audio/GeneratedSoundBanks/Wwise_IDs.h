@@ -14,7 +14,6 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMBIENCE_WIND = 156328838U;
-        static const AkUniqueID CAVE_MUSIC = 694142006U;
         static const AkUniqueID CAVE_RIVER = 732341345U;
         static const AkUniqueID CLOCK_TICK = 2719257531U;
         static const AkUniqueID COLLAPSING_CAVE = 2567379095U;
@@ -29,12 +28,30 @@ namespace AK
         static const AkUniqueID LIGHT_ICE_IMPACT = 680865880U;
         static const AkUniqueID MEDIUM_ICE_IMPACT = 2031244205U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID MUSIC_STATES = 1690668539U;
         static const AkUniqueID PLAYER_BARKS = 3978910662U;
         static const AkUniqueID PLAYER_SNIFFS = 1028362978U;
         static const AkUniqueID PRESSURE_PLATE_CLICK = 1442179120U;
         static const AkUniqueID STATUE_DRAG = 543487814U;
         static const AkUniqueID STATUE_MELT = 4004046394U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace MUSIC
+        {
+            static const AkUniqueID GROUP = 3991942870U;
+
+            namespace STATE
+            {
+                static const AkUniqueID CAVE = 4122393694U;
+                static const AkUniqueID LAKE = 624189772U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID WONDERLAND = 997105147U;
+            } // namespace STATE
+        } // namespace MUSIC
+
+    } // namespace STATES
 
     namespace SWITCHES
     {

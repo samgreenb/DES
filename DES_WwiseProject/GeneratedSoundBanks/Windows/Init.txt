@@ -1,3 +1,12 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	3991942870	Music			\Default Work Unit\Music	
+
+State	ID	Name	State Group			Notes
+	624189772	Lake	Music			
+	748895195	None	Music			
+	997105147	Wonderland	Music			
+	4122393694	Cave	Music			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	4122393694	Cave			\Default Work Unit\Master Audio Bus\Cave	
@@ -10,6 +19,7 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	4024401587	Small_Room_Reverb			\Default Work Unit\Master Audio Bus\Small_Room_Reverb	
 
 Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 	702543456	Tunnel1	Wwise Matrix Reverb			
 	1990128658	Room_Medium	Wwise RoomVerb			
 	2849147824	Medium	Wwise RoomVerb			

@@ -24,6 +24,35 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Music" ID="{BBCC1734-E709-4077-89FC-CC9115144D07}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Lake" ID="{07075F9A-814A-488D-A8D3-48B3BBADB523}"/>
+								<CustomState Name="" ID="{68473376-E479-4109-AA0B-D8DDF5FF8AE8}" ShortID="1026539455"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Wonderland" ID="{AB692D81-585D-49AB-92B9-8DE9AFB85A89}"/>
+								<CustomState Name="" ID="{C22D2FC8-076F-4905-B7E1-AE4300B9FDBF}" ShortID="660306451">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Cave" ID="{6C4EB35B-6C44-4AA5-93B2-2DB822782E46}"/>
+								<CustomState Name="" ID="{0D76A1B8-FC6D-457A-9C5E-BA60A90DDAA8}" ShortID="626829390">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="Ambience_Wind" ID="{D302BBE0-C333-4CFE-A71A-4A52CD85161F}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -1678,6 +1707,108 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="Statue_Melt" ID="{8B2CB91D-CC98-48E5-9F72-0BDDE262658F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Afterlife_Journey_Cave_track" ID="{7FF8AF8E-B7C2-496B-B218-74A66F8CCC33}" ShortID="595554198">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06576B07-52AC-4F4A-9936-0F1DD314BC12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Afterlife_Journey_Cave_track" ID="{50120D67-D2A4-4667-9C0E-75E15D8104D6}">
+							<Language>SFX</Language>
+							<AudioFile>Afterlife_Journey_Cave_track.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="600313190"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Music" ID="{BBCC1734-E709-4077-89FC-CC9115144D07}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Lake" ID="{07075F9A-814A-488D-A8D3-48B3BBADB523}"/>
+								<CustomState Name="" ID="{E743C369-A68B-4182-A2BA-B98674D4815A}" ShortID="457439499">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Wonderland" ID="{AB692D81-585D-49AB-92B9-8DE9AFB85A89}"/>
+								<CustomState Name="" ID="{4103A919-4EFD-40F2-A93B-BAD60684EA42}" ShortID="785603347">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Cave" ID="{6C4EB35B-6C44-4AA5-93B2-2DB822782E46}"/>
+								<CustomState Name="" ID="{1E40CC97-728D-454A-AF3C-6E9E977BD3B5}" ShortID="813184067"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<ActiveSourceList>
+						<ActiveSource Name="Afterlife_Journey_Cave_track" ID="{50120D67-D2A4-4667-9C0E-75E15D8104D6}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="AJ_Track_02_Remix" ID="{4D933F7F-42A7-4D61-8C31-BF4674997EBB}" ShortID="269270560">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06576B07-52AC-4F4A-9936-0F1DD314BC12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="AJ_Track_02_Remix" ID="{71827243-4FF0-4351-98CD-520E40D97D07}">
+							<Language>SFX</Language>
+							<AudioFile>AJ_Track_02_Remix.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="668461732"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Music" ID="{BBCC1734-E709-4077-89FC-CC9115144D07}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Lake" ID="{07075F9A-814A-488D-A8D3-48B3BBADB523}"/>
+								<CustomState Name="" ID="{E829187F-3231-4F64-AFF9-8C93169FF4EF}" ShortID="304829262">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Wonderland" ID="{AB692D81-585D-49AB-92B9-8DE9AFB85A89}"/>
+								<CustomState Name="" ID="{5F009978-B096-4A4E-BCF3-B0C4FA5F9BEC}" ShortID="448603848"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Cave" ID="{6C4EB35B-6C44-4AA5-93B2-2DB822782E46}"/>
+								<CustomState Name="" ID="{EC9F82A2-D47F-45F5-991B-838066970199}" ShortID="494572417">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<ActiveSourceList>
+						<ActiveSource Name="AJ_Track_02_Remix" ID="{71827243-4FF0-4351-98CD-520E40D97D07}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec75388b24206ef42a87295084c22b86, type: 3}
+  m_Name: AB692D81-585D-49AB-92B9-8DE9AFB85A89
+  m_EditorClassIdentifier: 
+  objectName: Wonderland
+  id: 997105147
+  guid: AB692D81-585D-49AB-92B9-8DE9AFB85A89
+  WwiseStateGroupReference: {fileID: 11400000, guid: b51446a422258584582146642a6486e3, type: 2}
