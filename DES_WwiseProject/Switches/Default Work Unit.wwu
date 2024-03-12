@@ -12,6 +12,13 @@
 						<Switch Name="Ice" ID="{0E318711-5912-4227-98FF-C798FD29A639}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Music" ID="{6E80107E-7FB3-4FBC-9138-F150E4A98F9D}">
+					<ChildrenList>
+						<Switch Name="Cave" ID="{BC1028BA-0D41-4E02-B026-001F163CC766}"/>
+						<Switch Name="Lake" ID="{E3D27093-B27A-4B98-9B10-583C7B7D52F8}"/>
+						<Switch Name="Wonderland" ID="{7DF79107-EEB1-41F4-BC8D-B670E321FBA1}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>
