@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77d00f812c640444f9ab79779785cf5e, type: 3}
   m_Name: 93B14DF5-1C9C-4B0D-B369-913A4CD58F08
   m_EditorClassIdentifier: 
-  objectName: Cave_Statue_Room_Reverb
-  id: 854237680
+  objectName: Medium_Room_Reverb
+  id: 1042516749
   guid: 93B14DF5-1C9C-4B0D-B369-913A4CD58F08

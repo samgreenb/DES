@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 76ddbdf9e8afa245a9d89e1561a5c4bf
     GuidInternal: 
-    m_lastTime: -8584919688204952031
+    m_lastTime: -8584925515344129283
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 076b5706ac524a4f99360f1dd314bc12
     GuidInternal: 
-    m_lastTime: -8584919688218870366
+    m_lastTime: -8584923737225025632
     List:
     - name: Cave
       guid: 938b6f076735b34a89848a3d738368a7
@@ -134,7 +134,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 3393a2487e8d2f48b8d8d877e6065cbb
     GuidInternal: 
-    m_lastTime: -8584919688205326145
+    m_lastTime: -8584923189399763718
     List:
     - name: Main
       guid: 08d96443a17eb8459509e56c096e9406
@@ -162,7 +162,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6ba2c523a76fd44fb22a32d8f086ec57
     GuidInternal: 
-    m_lastTime: -8584919688230541967
+    m_lastTime: -8584923189411043363
     List:
     - name: Ambience_Wind
       guid: e3deda5b34b03c439624b4ce56891313
@@ -487,23 +487,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Statue_Melt
-      guid: 794d66ae7ac8854496ddd0dbc42c6d47
-      id: 4004046394
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 6ba2c523a76fd44fb22a32d8f086ec57
-      - ElementName: Statue_Melt
-        ObjectType: 3
-        guid: 794d66ae7ac8854496ddd0dbc42c6d47
-      Path: Events\Default Work Unit\Statue_Melt
-      maxAttenuation: 0
-      maxDuration: 4.376961
-      minDuration: 4.376961
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -516,7 +499,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: c70e93abd42a954690f04a3b0f448f71
     GuidInternal: 
-    m_lastTime: -8584919688230531958
+    m_lastTime: -8584925515353614974
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -530,7 +513,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: eab348f159d6af48a09b21eabc8360b5
     GuidInternal: 
-    m_lastTime: -8584919688205306120
+    m_lastTime: -8584925515344139252
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -544,7 +527,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 549aa12270c0274dbf6cb9ea92e331d6
     GuidInternal: 
-    m_lastTime: -8584919687980649880
+    m_lastTime: -8584924530607857291
     List:
     - name: Footstep_Surfaces
       guid: 9f02accb3afe8b4fb779714f8fd26695
@@ -640,7 +623,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 4b3d2308ec45b34cb6d455bd9ebe6fe0
     GuidInternal: 
-    m_lastTime: -8584919688204962040
+    m_lastTime: -8584925515344129283
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 

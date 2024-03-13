@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{EDFAFDD9-069B-4F94-929F-C0F948A36C97}" SchemaVersion="110">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{EDFAFDD9-069B-4F94-929F-C0F948A36C97}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{EDFAFDD9-069B-4F94-929F-C0F948A36C97}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_Matrix_Reverb" ID="{3AB073D9-687F-4372-8E3B-79FC8BBB5517}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3"/>
+				<Effect Name="Tunnel_Reverb" ID="{FD44AC2C-96BB-47C3-8155-540743EC4994}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3"/>
+				<Effect Name="New_Matrix_Reverb_01" ID="{67AB8C57-6CC6-48FD-B219-FA73D1BADAE7}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

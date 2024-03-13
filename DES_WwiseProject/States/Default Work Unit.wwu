@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F148B3EA-D659-48AF-A09B-21EABC8360B5}" SchemaVersion="110">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{F148B3EA-D659-48AF-A09B-21EABC8360B5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F148B3EA-D659-48AF-A09B-21EABC8360B5}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Music" ID="{BBCC1734-E709-4077-89FC-CC9115144D07}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="2"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{53FE0134-C460-4C01-AA66-DF9422AB7122}"/>
+						<State Name="Wonderland" ID="{AB692D81-585D-49AB-92B9-8DE9AFB85A89}"/>
+						<State Name="Cave" ID="{6C4EB35B-6C44-4AA5-93B2-2DB822782E46}"/>
+						<State Name="Lake" ID="{07075F9A-814A-488D-A8D3-48B3BBADB523}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{53FE0134-C460-4C01-AA66-DF9422AB7122}"/>
+							<EndState Name="Wonderland" ID="{AB692D81-585D-49AB-92B9-8DE9AFB85A89}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

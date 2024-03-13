@@ -41,4 +41,14 @@ public class DogAnimation : MonoBehaviour
 
         groundedLastUpdate = characterController.isGrounded;
     }
+
+    private void OnDisable()
+    {
+        animator.speed = 0.0f;
+    }
+
+    private void OnEnable()
+    {
+        animator.speed = 1.0f;
+    }
 }

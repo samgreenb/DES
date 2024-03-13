@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d00f812c640444f9ab79779785cf5e, type: 3}
+  m_Name: 3F896F41-ECB3-49F4-ADD1-B2AFB164EFEC
+  m_EditorClassIdentifier: 
+  objectName: Small_Room_Reverb
+  id: 4024401587
+  guid: 3F896F41-ECB3-49F4-ADD1-B2AFB164EFEC
