@@ -8,5 +8,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CaveVerticleSlice.unity
     guid: ffdbf1640a854da428174e17543af62b
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 6e7cff171eb00f740ac781426733d79b
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 3c9d8bb062444124790f71d1de8da22a
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

@@ -6,9 +6,17 @@
 				<SwitchGroup Name="Footstep_Surfaces" ID="{CBAC029F-FE3A-4F8B-B779-714F8FD26695}">
 					<ChildrenList>
 						<Switch Name="Stone" ID="{B13FDF46-4E45-4A1D-B8A0-0245185E3E0A}"/>
-						<Switch Name="Grass" ID="{7AFB5D9D-0276-4760-9BEE-A2AB22A8C685}"/>
+						<Switch Name="Dirt" ID="{7AFB5D9D-0276-4760-9BEE-A2AB22A8C685}"/>
 						<Switch Name="Snow" ID="{3359CB92-ECCB-4D70-9860-55494EEFFBF7}"/>
 						<Switch Name="Void" ID="{59CE9006-3451-44F8-BA15-48A93EB0FADB}"/>
+						<Switch Name="Ice" ID="{0E318711-5912-4227-98FF-C798FD29A639}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Music" ID="{6E80107E-7FB3-4FBC-9138-F150E4A98F9D}">
+					<ChildrenList>
+						<Switch Name="Cave" ID="{BC1028BA-0D41-4E02-B026-001F163CC766}"/>
+						<Switch Name="Lake" ID="{E3D27093-B27A-4B98-9B10-583C7B7D52F8}"/>
+						<Switch Name="Wonderland" ID="{7DF79107-EEB1-41F4-BC8D-B670E321FBA1}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

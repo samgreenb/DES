@@ -4,11 +4,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	566396871	Item_Pickup			\Default Work Unit\Item_Pickup	
 	674522502	Land			\Default Work Unit\Land	
 	680865880	Light_Ice_Impact			\Default Work Unit\Light_Ice_Impact	
-	694142006	Cave_Music			\Default Work Unit\Cave_Music	
 	732341345	Cave_River			\Default Work Unit\Cave_River	
 	1028362978	Player_Sniffs			\Default Work Unit\Player_Sniffs	
 	1245902094	Earthquake			\Default Work Unit\Earthquake	
 	1442179120	Pressure_Plate_Click			\Default Work Unit\Pressure_Plate_Click	
+	1690668539	Music_States			\Default Work Unit\Music_States	
 	2004729559	Heavy_Ice_Impact			\Default Work Unit\Heavy_Ice_Impact	
 	2031244205	Medium_Ice_Impact			\Default Work Unit\Medium_Ice_Impact	
 	2177967876	Item_Drop			\Default Work Unit\Item_Drop	
@@ -18,19 +18,44 @@ Event	ID	Name			Wwise Object Path	Notes
 	3170274879	Falling_Into_Lake			\Default Work Unit\Falling_Into_Lake	
 	3833651337	Jump			\Default Work Unit\Jump	
 	3978910662	Player_Barks			\Default Work Unit\Player_Barks	
+	3991942870	Music			\Default Work Unit\Music	
+	4004046394	Statue_Melt			\Default Work Unit\Statue_Melt	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	1265478494	Footstep_Surfaces			\Default Work Unit\Footstep_Surfaces	
+	3991942870	Music			\Default Work Unit\Music	
 
 Switch	ID	Name	Switch Group			Notes
+	344481046	Ice	Footstep_Surfaces			
 	787898836	Snow	Footstep_Surfaces			
 	1216965916	Stone	Footstep_Surfaces			
+	2195636714	Dirt	Footstep_Surfaces			
 	3370470011	Void	Footstep_Surfaces			
-	4248645337	Grass	Footstep_Surfaces			
+	624189772	Lake	Music			
+	997105147	Wonderland	Music			
+	4122393694	Cave	Music			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3991942870	Music			\Default Work Unit\Music	
+
+State	ID	Name	State Group			Notes
+	624189772	Lake	Music			
+	748895195	None	Music			
+	997105147	Wonderland	Music			
+	4122393694	Cave	Music			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	304829262	Lake	Music	\Actor-Mixer Hierarchy\Default Work Unit\AJ_Track_02_Remix		
+	457439499	Lake	Music	\Actor-Mixer Hierarchy\Default Work Unit\Afterlife_Journey_Cave_track		
+	494572417	Cave	Music	\Actor-Mixer Hierarchy\Default Work Unit\AJ_Track_02_Remix		
+	626829390	Cave	Music	\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Wind		
+	660306451	Wonderland	Music	\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Wind		
+	785603347	Wonderland	Music	\Actor-Mixer Hierarchy\Default Work Unit\Afterlife_Journey_Cave_track		
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	14544015	Snow_Footstep_4	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Snow_Footstep_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Snow_Footsteps\Snow_Footstep_4		43872
 	86817994	Snow_Footstep_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Snow_Footstep_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Snow_Footsteps\Snow_Footstep_3		46432
+	88630389	Dirt_Footstep_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Dirt_Footstep_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt_Footsteps\Dirt_Footstep_3		46432
 	130225437	Jump	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Jump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump		64256
 	158352135	Stone_Footstep_4	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Stone_Footstep_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Stone_Footsteps\Stone_Footstep_4		43872
 	168102605	Snow_Footstep_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Snow_Footstep_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Snow_Footsteps\Snow_Footstep_1		46944
@@ -39,8 +64,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	212957350	Medium_Ice_Impact_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Medium_Ice_Impact_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Medium_Ice_Impacts\Medium_Ice_Impact_1		208992
 	261001254	Player_Sniff_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Player_Sniff_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Sniffs\Player_Sniff_1		155744
 	264028608	Player_Bark_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Player_Bark_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Barks\Player_Bark_2		49944
+	271229291	Statue_Melt	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Statue_Melt_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Statue_Melt		772192
 	272439696	Light_Impact_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Light_Impact_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Light_Impacts\Light_Impact_2		148576
 	278901706	Cave_River	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Cave_River_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cave_River		15973544
+	284730830	Dirt_Footstep_4	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Dirt_Footstep_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt_Footsteps\Dirt_Footstep_4		43872
 	288214208	Earthquake	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Earthquake_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Earthquake		21158784
 	295553665	Player_Sniff_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Player_Sniff_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Sniffs\Player_Sniff_2		284768
 	318292429	Heavy_Ice_Impact_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Heavy_Ice_Impact_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Heavy_Ice_Impacts\Heavy_Ice_Impact_1		202848
@@ -49,29 +76,39 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	408948165	Medium_Ice_Impact_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Medium_Ice_Impact_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Medium_Ice_Impacts\Medium_Ice_Impact_3		172128
 	429081445	Ambience_Wind	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Ambience_Wind_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Wind		13532256
 	445252164	Light_Ice_Impact_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Light_Ice_Impact_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Light_Ice_Impacts\Light_Ice_Impact_1		180320
+	458278501	AJ_Track_02_Remix	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\AJ_Track_02_Remix_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\Wonderland\AJ_Track_02_Remix\AJ_Track_02_Remix		37388384
 	458584362	Collapsing_Cave	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Collapsing_Cave_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Collapsing_Cave		2556000
 	481628282	Pressure_Plate_Click	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Pressure_Plate_Click_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pressure_Plate_Click		68192
-	506904011	Afterlife_Journey_Cave_track	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Afterlife_Journey_Cave_track_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Afterlife_Journey_Cave_track		36864096
+	506904011	Afterlife_Journey_Cave_track	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Afterlife_Journey_Cave_track_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\Cave\Afterlife_Journey_Cave_track\Afterlife_Journey_Cave_track		36864096
+	539440202	Void_Footstep_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Void_Footstep_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Void_Footsteps\Void_Footstep_2		44128
 	549733239	Player_Bark_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Player_Bark_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Barks\Player_Bark_1		52704
 	581431168	Stone_Footstep_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Stone_Footstep_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Stone_Footsteps\Stone_Footstep_3		46432
+	600313190	Afterlife_Journey_Cave_track	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Afterlife_Journey_Cave_track_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Afterlife_Journey_Cave_track		36864096
+	642308971	Ice_Footstep_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Ice_Footstep_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Ice_Footsteps\Ice_Footstep_1		46944
 	658702813	Player_Bark_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Player_Bark_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Barks\Player_Bark_3		54528
+	668461732	AJ_Track_02_Remix	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\AJ_Track_02_Remix_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\AJ_Track_02_Remix		37388384
+	668849041	Ice_Footstep_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Ice_Footstep_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Ice_Footsteps\Ice_Footstep_3		46432
 	669593204	Light_Impact_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Light_Impact_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Light_Impacts\Light_Impact_3		133216
-	681288750	Grass_Footsteps_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Grass_Footsteps_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Grass_Footsteps\Grass_Footsteps_2		44128
 	729610960	Heavy_Ice_Impact_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Heavy_Ice_Impact_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Heavy_Ice_Impacts\Heavy_Ice_Impact_3		170080
+	732323351	Dirt_Footstep_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Dirt_Footstep_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt_Footsteps\Dirt_Footstep_2		44128
+	736419123	Void_Footstep_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Void_Footstep_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Void_Footsteps\Void_Footstep_1		46944
 	740541392	Clock_Tick_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Clock_Tick_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clock_Ticks\Clock_Tick_1		39520
+	745359697	Ice_Footstep_4	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Ice_Footstep_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Ice_Footsteps\Ice_Footstep_4		43872
 	780233463	Stone_Footstep_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Stone_Footstep_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Stone_Footsteps\Stone_Footstep_2		44128
-	797125566	Grass_Footsteps_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Grass_Footsteps_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Grass_Footsteps\Grass_Footsteps_1		46944
 	803106823	Heavy_Ice_Impact_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Heavy_Ice_Impact_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Heavy_Ice_Impacts\Heavy_Ice_Impact_2		190560
 	805304820	Light_Ice_Impact_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Light_Ice_Impact_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Light_Ice_Impacts\Light_Ice_Impact_2		161888
 	816564180	Light_Impact_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Light_Impact_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Light_Impacts\Light_Impact_1		161888
-	833563640	Grass_Footsteps_4	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Grass_Footsteps_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Grass_Footsteps\Grass_Footsteps_4		43872
+	821296415	Void_Footstep_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Void_Footstep_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Void_Footsteps\Void_Footstep_3		46432
 	840412545	Player_Sniff_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Player_Sniff_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Sniffs\Player_Sniff_3		131168
+	861304478	Dirt_Footstep_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Dirt_Footstep_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt_Footsteps\Dirt_Footstep_1		46944
 	865124749	Clock_Tick_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Clock_Tick_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clock_Ticks\Clock_Tick_3		31840
 	870524985	Statue_Drag	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Statue_Drag_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Statue_Drag		1567840
+	938976132	Void_Footstep_4	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Void_Footstep_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Void_Footsteps\Void_Footstep_4		43872
 	947600182	Stone_Footstep_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Stone_Footstep_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Stone_Footsteps\Stone_Footstep_1		46944
+	979436076	Ice_Footstep_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Ice_Footstep_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Ice_Footsteps\Ice_Footstep_2		44128
 	988023209	Land	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Land_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Land		76840
 	1030029765	Clock_Tick_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Clock_Tick_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clock_Ticks\Clock_Tick_2		36192
-	1048811388	Grass_Footsteps_3	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Grass_Footsteps_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Grass_Footsteps\Grass_Footsteps_3		46432
+	1036570820	Ambience_Wind	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Ambience_Wind_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\Lake\Ambience_Wind\Ambience_Wind		13532256
 	1054721353	Item_Pickup	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Item_Pickup_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Item_Pickup		86504
 	1073202503	Player_Panting	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Player_Panting_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Panting		1120352
 

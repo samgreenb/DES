@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 595b1244e3a658b46ac2107b6ffa1403, type: 3}
+  m_Name: BC1028BA-0D41-4E02-B026-001F163CC766
+  m_EditorClassIdentifier: 
+  objectName: Cave
+  id: 4122393694
+  guid: BC1028BA-0D41-4E02-B026-001F163CC766
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: e2aa5066c991a2441a91ac4ebe662cca, type: 2}

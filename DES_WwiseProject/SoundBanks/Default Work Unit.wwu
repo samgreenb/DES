@@ -6,11 +6,12 @@
 				<SoundBank Name="Main" ID="{4364D908-7EA1-45B8-9509-E56C096E9406}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Pressure_Plate_Click" ID="{FE0A1939-DDBB-4191-A5CD-0062991E45FC}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Cave_Music" ID="{16874197-10E4-41F8-A8CF-E171EA07AEA2}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footsteps" ID="{94DA5BC1-E82F-42D5-8F1C-50E6B4CDB5EF}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Ambience_Wind" ID="{5BDADEE3-B034-433C-9624-B4CE56891313}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Statue_Melt" ID="{AE664D79-C87A-4485-96DD-D0DBC42C6D47}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Collapsing_Cave" ID="{85AE55C0-DAAC-4497-BFF4-82093F10F4ED}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Item_Drop" ID="{4B6C6C85-5CAA-44B7-9309-9271D0D9A187}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music" ID="{7FBCA006-DEAE-47E9-B51C-914FDB521856}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Item_Pickup" ID="{D823C068-F423-48C8-8949-FA7BE900FA4F}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player_Barks" ID="{A4C2B1E2-3D5B-48D7-9906-09463E287FE9}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Clock_Tick" ID="{EE813EE8-2527-48D8-8987-F20D0835C512}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
@@ -19,6 +20,7 @@
 						<ObjectRef Name="Heavy_Ice_Impact" ID="{B22C7F7F-FA5D-4B14-A6AE-ABCEE82A102A}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Light_Ice_Impact" ID="{9BFFBE81-4AE5-4B36-A0C0-590F2E35DFD9}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Land" ID="{FC043FD2-635D-4B5E-B590-DA280CAC9A03}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music_States" ID="{6B308F76-AEC4-4B81-8B6A-A0B670020A4B}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Cave_River" ID="{89847318-85AB-4B8F-9D3E-DF3A090799F4}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player_Sniffs" ID="{F2AF232E-5220-4CD5-A634-DC3A7E2998FF}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Statue_Drag" ID="{3C692771-86CB-4D9B-9B7F-AE83CEA925E5}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
