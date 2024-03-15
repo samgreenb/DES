@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMBIENCE_WIND = 156328838U;
+        static const AkUniqueID AMBIENCE_WIND_CAVE = 3594471942U;
         static const AkUniqueID CAVE_RIVER = 732341345U;
         static const AkUniqueID CLOCK_TICK = 2719257531U;
         static const AkUniqueID COLLAPSING_CAVE = 2567379095U;
@@ -44,6 +45,7 @@ namespace AK
 
             namespace STATE
             {
+                static const AkUniqueID ABYSS = 4215188899U;
                 static const AkUniqueID CAVE = 4122393694U;
                 static const AkUniqueID LAKE = 624189772U;
                 static const AkUniqueID NONE = 748895195U;

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{27A80F88-E2B1-1770-1F5A-CDE66E1132C5}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{79072273-3E66-CD55-470D-4B5E32457C24}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -73,6 +73,7 @@
 						<State Id="748895195" Name="None"/>
 						<State Id="997105147" Name="Wonderland"/>
 						<State Id="4122393694" Name="Cave"/>
+						<State Id="4215188899" Name="Abyss"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
@@ -95,7 +96,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{BC13E75A-417A-B566-B922-15DCA831BEF5}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{EDAE877D-106F-57D3-C1E9-FDDF3257836B}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -183,10 +184,6 @@
 					<ShortName>Medium_Ice_Impact_3.wav</ShortName>
 					<CachePath>SFX/Medium_Ice_Impact_3_10C4C929.wem</CachePath>
 				</File>
-				<File Id="429081445" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Ambience_Wind.wav</ShortName>
-					<CachePath>SFX/Ambience_Wind_10C4C929.wem</CachePath>
-				</File>
 				<File Id="445252164" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Light_Ice_Impact_1.wav</ShortName>
 					<CachePath>SFX/Light_Ice_Impact_1_10C4C929.wem</CachePath>
@@ -219,10 +216,6 @@
 					<ShortName>Stone_Footstep_3.wav</ShortName>
 					<CachePath>SFX/Stone_Footstep_3_10C4C929.wem</CachePath>
 				</File>
-				<File Id="600313190" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Afterlife_Journey_Cave_track.wav</ShortName>
-					<CachePath>SFX/Afterlife_Journey_Cave_track_10C4C929.wem</CachePath>
-				</File>
 				<File Id="642308971" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ice_Footstep_1.wav</ShortName>
 					<CachePath>SFX/Ice_Footstep_1_10C4C929.wem</CachePath>
@@ -230,10 +223,6 @@
 				<File Id="658702813" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Bark_3.wav</ShortName>
 					<CachePath>SFX/Player_Bark_3_10C4C929.wem</CachePath>
-				</File>
-				<File Id="668461732" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AJ_Track_02_Remix.wav</ShortName>
-					<CachePath>SFX/AJ_Track_02_Remix_10C4C929.wem</CachePath>
 				</File>
 				<File Id="668849041" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ice_Footstep_3.wav</ShortName>
@@ -332,10 +321,20 @@
 					<CachePath>SFX/Player_Panting_10C4C929.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="1588715066" Name="Echoes_Linear" LibName="Wwise Delay" LibId="6946819"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
-				<Event Id="156328838" Name="Ambience_Wind" DurationType="OneShot" DurationMin="70.48" DurationMax="70.48">
+				<Event Id="156328838" Name="Ambience_Wind" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="429081445"/>
+						<MediaRef Id="1036570820"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3594471942" Name="Ambience_Wind_Cave" MaxAttenuation="15" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="1036570820"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="732341345" Name="Cave_River" MaxAttenuation="56" DurationType="Infinite">
@@ -350,12 +349,12 @@
 						<MediaRef Id="1030029765"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2567379095" Name="Collapsing_Cave" DurationType="Infinite">
+				<Event Id="2567379095" Name="Collapsing_Cave" MaxAttenuation="75" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="458584362"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1245902094" Name="Earthquake" DurationType="Infinite">
+				<Event Id="1245902094" Name="Earthquake" MaxAttenuation="75" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="288214208"/>
 					</MediaRefs>
@@ -376,6 +375,11 @@
 								<MediaRef Id="821296415"/>
 								<MediaRef Id="938976132"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="1588715066"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="1265478494" Id="344481046"/>
@@ -480,11 +484,11 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="1690668539" Name="Music_States" DurationType="OneShot" DurationMin="194.73067" DurationMax="194.73067">
+				<Event Id="1690668539" Name="Music_States" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="429081445"/>
-						<MediaRef Id="600313190"/>
-						<MediaRef Id="668461732"/>
+						<MediaRef Id="458278501"/>
+						<MediaRef Id="506904011"/>
+						<MediaRef Id="1036570820"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3978910662" Name="Player_Barks" DurationType="OneShot" DurationMin="0.26672474" DurationMax="0.32692006">
@@ -537,5 +541,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{86038FDF-087E-7302-0D75-3EEDEE62D87F}</FileHash>
+	<FileHash>{AB380658-2536-1008-83E2-4F3F06DE27F9}</FileHash>
 </SoundBanksInfo>
