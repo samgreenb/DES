@@ -33,6 +33,7 @@ public class TitleEffect : IceStatueEffect
             yield return null;
             t += Time.deltaTime;
         }
+        a.alpha = 1.0f;
         yield return new WaitForSeconds(displayDuration);
         StartCoroutine(nameof(FadeOut));
     }
@@ -46,5 +47,6 @@ public class TitleEffect : IceStatueEffect
             yield return null;
             t += Time.deltaTime;
         }
+        a.alpha = 0.0f;
     }
 }
