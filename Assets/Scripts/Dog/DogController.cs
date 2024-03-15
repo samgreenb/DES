@@ -1,3 +1,4 @@
+using Cinemachine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -344,7 +345,10 @@ public class DogController : MonoBehaviour
     Vector3 push = Vector3.zero;
     private void Move()
     {
+        //cameraRotater.transform.localRotation = Quaternion.Euler(0, Camera.main. transform.localRotation.eulerAngles.y, 0);
+        cameraRotater.transform.localRotation = Quaternion.Euler(0, CinemachineCore.Instance.GetActiveBrain(0).ActiveVirtualCamera.VirtualCameraGameObject.transform.parent.localRotation.eulerAngles.y, 0);
         
+
         //bool anim = false;
         Vector3 input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         CharacterController controller = GetComponent<CharacterController>();
@@ -397,10 +401,10 @@ public class DogController : MonoBehaviour
         turn.x += Input.GetAxis("Mouse X 3");
         //turn.y += Input.GetAxis("Mouse Y");
         //cameraRotater.transform.localRotation = Quaternion.Euler(-turn.y, turn.x, 0);
-        cameraRotater.transform.localRotation = Quaternion.Euler(0, Camera.main.transform.localRotation.eulerAngles.y, 0);
+        
         if (input.magnitude != 0)
         {
-            Vector3 newdir = model.transform.position + cameraRotater.transform.TransformDirection(input/* + Vector3.up * 1*/).normalized;
+            Vector3 newdir = model.transform.position + input.normalized;
             newdir = Vector3.Lerp(model.transform.position + model.transform.forward, newdir, 10.0f * Time.deltaTime);
             model.transform.LookAt(newdir);
             //

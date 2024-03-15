@@ -5,7 +5,13 @@
 			<ChildrenList>
 				<Sound Name="Ambience_Wind" ID="{874B7C01-BB7A-400B-A1AA-59E6925AB427}" ShortID="52408990">
 					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -20,7 +26,7 @@
 							<Language>SFX</Language>
 							<AudioFile>Ambience_Wind.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="429081445"/>
+								<MediaID ID="1036570820"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
@@ -31,6 +37,14 @@
 							</StateGroupInfo>
 						</StateGroupList>
 						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Abyss" ID="{56734DFD-5AB5-45B5-A6FB-C37596B06E7B}"/>
+								<CustomState Name="" ID="{A2ECF87D-B8E5-41F6-9F8C-BF4CCC8C8F1A}" ShortID="985512447">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
 							<CustomState>
 								<StateRef Name="Lake" ID="{07075F9A-814A-488D-A8D3-48B3BBADB523}"/>
 								<CustomState Name="" ID="{68473376-E479-4109-AA0B-D8DDF5FF8AE8}" ShortID="1026539455"/>
@@ -61,8 +75,16 @@
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Collapsing_Cave" ID="{25ADC7BD-6B28-4F71-AEA6-60C7F3D137F1}" WorkUnitID="{9855DF81-3858-421D-ABB1-6FB25CA5BB9C}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
 						</Reference>
@@ -989,6 +1011,9 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Earthquake" ID="{F81FCC1A-E345-4518-AAD5-C123FB433FA4}" WorkUnitID="{9855DF81-3858-421D-ABB1-6FB25CA5BB9C}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
 						</Reference>
@@ -1428,9 +1453,15 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Void_Footsteps" ID="{930EA853-A087-470A-9613-C25707B62803}" ShortID="577844012">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+									<ObjectRef Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06576B07-52AC-4F4A-9936-0F1DD314BC12}"/>
@@ -1441,6 +1472,9 @@
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+											<ObjectRef Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06576B07-52AC-4F4A-9936-0F1DD314BC12}"/>
@@ -1710,6 +1744,9 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Afterlife_Journey_Cave_track" ID="{7FF8AF8E-B7C2-496B-B218-74A66F8CCC33}" ShortID="595554198">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
@@ -1723,7 +1760,7 @@
 							<Language>SFX</Language>
 							<AudioFile>Afterlife_Journey_Cave_track.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="600313190"/>
+								<MediaID ID="506904011"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
@@ -1734,6 +1771,14 @@
 							</StateGroupInfo>
 						</StateGroupList>
 						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Abyss" ID="{56734DFD-5AB5-45B5-A6FB-C37596B06E7B}"/>
+								<CustomState Name="" ID="{6A51A323-7A79-463E-81D0-74A5170A1C4E}" ShortID="281274588">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
 							<CustomState>
 								<StateRef Name="Lake" ID="{07075F9A-814A-488D-A8D3-48B3BBADB523}"/>
 								<CustomState Name="" ID="{E743C369-A68B-4182-A2BA-B98674D4815A}" ShortID="457439499">
@@ -1761,6 +1806,9 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="AJ_Track_02_Remix" ID="{4D933F7F-42A7-4D61-8C31-BF4674997EBB}" ShortID="269270560">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
@@ -1774,7 +1822,7 @@
 							<Language>SFX</Language>
 							<AudioFile>AJ_Track_02_Remix.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="668461732"/>
+								<MediaID ID="458278501"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
@@ -1785,6 +1833,14 @@
 							</StateGroupInfo>
 						</StateGroupList>
 						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Abyss" ID="{56734DFD-5AB5-45B5-A6FB-C37596B06E7B}"/>
+								<CustomState Name="" ID="{A64707F2-51E1-43A5-B7D5-4759F4EBCC9C}" ShortID="185240217">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
 							<CustomState>
 								<StateRef Name="Lake" ID="{07075F9A-814A-488D-A8D3-48B3BBADB523}"/>
 								<CustomState Name="" ID="{E829187F-3231-4F64-AFF9-8C93169FF4EF}" ShortID="304829262">
@@ -1809,6 +1865,81 @@
 					</StateInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="AJ_Track_02_Remix" ID="{71827243-4FF0-4351-98CD-520E40D97D07}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Ambience_Wind_Cave" ID="{D311686C-9F34-4FE3-A8F1-B8EC5D011A19}" ShortID="298739387">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Ambience_Wind" ID="{60CFAD6D-4651-456F-A2C5-EDB9D5F22E63}" WorkUnitID="{9855DF81-3858-421D-ABB1-6FB25CA5BB9C}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06576B07-52AC-4F4A-9936-0F1DD314BC12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Ambience_Wind" ID="{C9BE745E-8666-473E-8FD6-DD1EB2500CA2}">
+							<Language>SFX</Language>
+							<AudioFile>Ambience_Wind.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1036570820"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Music" ID="{BBCC1734-E709-4077-89FC-CC9115144D07}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Abyss" ID="{56734DFD-5AB5-45B5-A6FB-C37596B06E7B}"/>
+								<CustomState Name="" ID="{5DD28FAD-BA8F-40A4-BF3A-50D19B973AE8}" ShortID="14415661">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Lake" ID="{07075F9A-814A-488D-A8D3-48B3BBADB523}"/>
+								<CustomState Name="" ID="{81A0C9A8-C6A4-4865-8754-F95D77F58325}" ShortID="936777038">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Wonderland" ID="{AB692D81-585D-49AB-92B9-8DE9AFB85A89}"/>
+								<CustomState Name="" ID="{5CABDB32-1D0E-4473-8D93-73E96C81C555}" ShortID="1068272777">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Cave" ID="{6C4EB35B-6C44-4AA5-93B2-2DB822782E46}"/>
+								<CustomState Name="" ID="{00B4C50D-C328-41C5-9D74-3E766E19956A}" ShortID="902351843">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<ActiveSourceList>
+						<ActiveSource Name="Ambience_Wind" ID="{C9BE745E-8666-473E-8FD6-DD1EB2500CA2}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

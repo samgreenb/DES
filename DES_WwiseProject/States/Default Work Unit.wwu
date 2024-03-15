@@ -12,6 +12,7 @@
 						<State Name="Wonderland" ID="{AB692D81-585D-49AB-92B9-8DE9AFB85A89}"/>
 						<State Name="Cave" ID="{6C4EB35B-6C44-4AA5-93B2-2DB822782E46}"/>
 						<State Name="Lake" ID="{07075F9A-814A-488D-A8D3-48B3BBADB523}"/>
+						<State Name="Abyss" ID="{56734DFD-5AB5-45B5-A6FB-C37596B06E7B}"/>
 					</ChildrenList>
 					<TransitionList>
 						<Transition>
