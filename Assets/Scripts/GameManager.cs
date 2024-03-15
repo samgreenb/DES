@@ -106,9 +106,15 @@ public class GameManager : MonoBehaviour
         CinemachineVirtualCamera prevCamera = null; 
         foreach(Shot shot in cinematic.ShotList)
         {
-            if (prevCamera != null) prevCamera.Priority = 0;
-            shot.virtualCamera.Priority = 100;
+            //if (prevCamera != null) prevCamera.Priority = 100;
+            //shot.virtualCamera.Priority = 100;
+            if (prevCamera != null) prevCamera.enabled = false;
+            shot.virtualCamera.enabled = true;
             prevCamera = shot.virtualCamera;
+            foreach(IceStatueEffect effect in shot.effects)
+            {
+                effect.Activate();
+            }
             yield return new WaitForSeconds(shot.time);
         }
         EnterGameplay();

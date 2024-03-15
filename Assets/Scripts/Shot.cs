@@ -9,4 +9,5 @@ public class Shot
 {
     public CinemachineVirtualCamera virtualCamera;
     public float time;
+    public List<IceStatueEffect> effects;
 }
