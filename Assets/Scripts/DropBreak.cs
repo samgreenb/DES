@@ -10,6 +10,8 @@ public class DropBreak : MonoBehaviour
     [SerializeField]
     float breakVelocity;
 
+    float yVelocity;
+
     Rigidbody rb;
 
     private void Start()
@@ -17,10 +19,17 @@ public class DropBreak : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+    private void Update()
+    {
+        
+        yVelocity = rb.velocity.y;
+        //Debug.Log(rb.velocity.y);
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
-
-        if(rb.velocity.magnitude > breakVelocity)
+        Debug.Log(yVelocity);
+        if(yVelocity < breakVelocity)
         {
             Destroy(gameObject);
             hiddenObject.transform.position = transform.position;

@@ -194,7 +194,7 @@ public class DogController : MonoBehaviour
             //Debug.Log("CDM : " + currentDistance.magnitude + "DM : " + distance.magnitude + "");
             //Debug.Log("Lower : " + (distance.magnitude + 0.2f) + " current : " + currentDistance.magnitude + " Higher : " + (distance.magnitude + 0.4f) + "");
 
-            Debug.Log("Current y distance : " + Mathf.Abs(currentYDistance - yDistance));
+            //Debug.Log("Current y distance : " + Mathf.Abs(currentYDistance - yDistance));
             if (Mathf.Abs(currentYDistance - yDistance) >= 0.75)
             {
                 Debug.Log("stop this madness");
