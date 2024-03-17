@@ -99,7 +99,7 @@ public class DogController : MonoBehaviour
             //    Move();
             //    Hold();
             //    Crouch();
-                break;
+            //    break;
             case STATE.Headbutt:
                 break;
             case STATE.Sniff:
@@ -168,6 +168,7 @@ public class DogController : MonoBehaviour
     [SerializeField] GameObject interact;
     [SerializeField] GameObject dragging = null;
     Vector3 distance = Vector3.zero;
+    float yDistance = 0.0f;
     private void PushPull()
     {
         if (!controller.isGrounded) return;
@@ -187,25 +188,40 @@ public class DogController : MonoBehaviour
             //    direction * Time.deltaTime * pushSpeed);
 
             Vector3 currentDistance = dragging.transform.position - transform.position;
+            float currentYDistance = currentDistance.y;
             currentDistance.y = 0;
 
             //Debug.Log("CDM : " + currentDistance.magnitude + "DM : " + distance.magnitude + "");
             //Debug.Log("Lower : " + (distance.magnitude + 0.2f) + " current : " + currentDistance.magnitude + " Higher : " + (distance.magnitude + 0.4f) + "");
 
-            if (currentDistance.magnitude > distance.magnitude + 0.4f)
+            Debug.Log("Current y distance : " + Mathf.Abs(currentYDistance - yDistance));
+            if (Mathf.Abs(currentYDistance - yDistance) >= 0.75)
+            {
+                Debug.Log("stop this madness");
+                //dragging.transform.parent = null;
+                //transform.parent = null;
+                dragging = null;
+                state = STATE.Default;
+                //controller.enabled = true;
+                //transform.rotation = Quaternion.identity;
+                return;
+            }
+
+            if (currentDistance.magnitude > distance.magnitude + 0.4f && currentDistance.magnitude < distance.magnitude + 0.6f)
             {
                 currentDistance.Normalize();
                 currentDistance *= 3.0f;
                 currentDistance.y = -gravity;
                 controller.Move(currentDistance * Time.deltaTime);
 
-            } else if (currentDistance.magnitude < distance.magnitude + 0.2f)
+            }
+             else if (currentDistance.magnitude < distance.magnitude + 0.2f)
             {
                 currentDistance.Normalize();
                 currentDistance *= 3.0f;
                 currentDistance.y = gravity;
                 controller.Move(-currentDistance * Time.deltaTime);
-            } else 
+            } else
             {
                 controller.Move(Vector3.down);
             }
@@ -227,6 +243,7 @@ public class DogController : MonoBehaviour
                     //transform.parent = dragging.transform;
                     state = STATE.PushPull;
                     distance = (dragging.transform.position - transform.position);
+                    yDistance = distance.y;
                     distance.y = 0;
                     return;
                 }
