@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Net.Security;
 using UnityEngine;
 
-public class s_ShowText : MonoBehaviour
+public class s_ShowText1 : MonoBehaviour
 {
 
     public GameObject Text;
     public GameObject Player;
-    public int Timer; //How long text shows
-    public bool DoOnce = false;
+    [SerializeField] List<KeyCode> KeyCodesNeeded = new();
+    private bool DoOnce = false;
 
 
     private void OnTriggerEnter(Collider other)
@@ -19,11 +19,21 @@ public class s_ShowText : MonoBehaviour
         {
             if (!other.CompareTag("Player")) return;
             Text.SetActive(true);
-            Invoke("Delay", Timer);
             DoOnce = true;
         }
 
+    }
 
+
+    private void Update()
+    {
+        for (int i = 0; i < KeyCodesNeeded.Count; i++)
+        {
+            if (Input.GetKeyDown(KeyCodesNeeded[i]))
+            {
+                Text.SetActive(false);
+            }
+        }
     }
 
 
