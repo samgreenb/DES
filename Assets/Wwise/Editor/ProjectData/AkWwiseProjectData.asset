@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 76ddbdf9e8afa245a9d89e1561a5c4bf
     GuidInternal: 
-    m_lastTime: -8584925515344129283
+    m_lastTime: -8584914270672430796
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 076b5706ac524a4f99360f1dd314bc12
     GuidInternal: 
-    m_lastTime: -8584923737225025632
+    m_lastTime: -8584914235775796417
     List:
     - name: Cave
       guid: 938b6f076735b34a89848a3d738368a7
@@ -74,23 +74,6 @@ MonoBehaviour:
         ObjectType: 1
         guid: d14b5696b6c45a4aa3a978ed9c9b5402
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Cave_Reverb
-    - name: Cave_Statue_Room_Reverb
-      guid: f54db1939c1c0d4bb369913a4cd58f08
-      id: 854237680
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 076b5706ac524a4f99360f1dd314bc12
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Cave_Statue_Room_Reverb
-        ObjectType: 1
-        guid: f54db1939c1c0d4bb369913a4cd58f08
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Cave_Statue_Room_Reverb
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -105,6 +88,57 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Medium_Room_Reverb
+      guid: f54db1939c1c0d4bb369913a4cd58f08
+      id: 1042516749
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 076b5706ac524a4f99360f1dd314bc12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Medium_Room_Reverb
+        ObjectType: 1
+        guid: f54db1939c1c0d4bb369913a4cd58f08
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Medium_Room_Reverb
+    - name: Outdoors
+      guid: 22351a72b2d0214386ddd5a811d9f382
+      id: 2730119150
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 076b5706ac524a4f99360f1dd314bc12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Outdoors
+        ObjectType: 1
+        guid: 22351a72b2d0214386ddd5a811d9f382
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Outdoors
+    - name: Small_Room_Reverb
+      guid: 416f893fb3ecf449add1b2afb164efec
+      id: 4024401587
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 076b5706ac524a4f99360f1dd314bc12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Small_Room_Reverb
+        ObjectType: 1
+        guid: 416f893fb3ecf449add1b2afb164efec
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Small_Room_Reverb
     - name: Tunnel_Reverb
       guid: e2f95931a2768549a53b090425786419
       id: 3400062578
@@ -134,7 +168,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 3393a2487e8d2f48b8d8d877e6065cbb
     GuidInternal: 
-    m_lastTime: -8584923189399763718
+    m_lastTime: -8584912645529089892
     List:
     - name: Main
       guid: 08d96443a17eb8459509e56c096e9406
@@ -162,7 +196,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6ba2c523a76fd44fb22a32d8f086ec57
     GuidInternal: 
-    m_lastTime: -8584923189411043363
+    m_lastTime: -8584912662896747539
     List:
     - name: Ambience_Wind
       guid: e3deda5b34b03c439624b4ce56891313
@@ -179,11 +213,11 @@ MonoBehaviour:
         guid: e3deda5b34b03c439624b4ce56891313
       Path: Events\Default Work Unit\Ambience_Wind
       maxAttenuation: 0
-      maxDuration: 70.48
-      minDuration: 70.48
-    - name: Cave_Music
-      guid: 97418716e410f841a8cfe171ea07aea2
-      id: 694142006
+      maxDuration: -1
+      minDuration: -1
+    - name: Ambience_Wind_Cave
+      guid: a4e9deb3c6a7df44922d75c6590f524c
+      id: 3594471942
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -191,13 +225,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 6ba2c523a76fd44fb22a32d8f086ec57
-      - ElementName: Cave_Music
+      - ElementName: Ambience_Wind_Cave
         ObjectType: 3
-        guid: 97418716e410f841a8cfe171ea07aea2
-      Path: Events\Default Work Unit\Cave_Music
-      maxAttenuation: 0
-      maxDuration: 192
-      minDuration: 192
+        guid: a4e9deb3c6a7df44922d75c6590f524c
+      Path: Events\Default Work Unit\Ambience_Wind_Cave
+      maxAttenuation: 15
+      maxDuration: -1
+      minDuration: -1
     - name: Cave_River
       guid: 18738489ab858f4b9d3edf3a090799f4
       id: 732341345
@@ -246,7 +280,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: c055ae85acda9744bff482093f10f4ed
       Path: Events\Default Work Unit\Collapsing_Cave
-      maxAttenuation: 0
+      maxAttenuation: 75
       maxDuration: -1
       minDuration: -1
     - name: Earthquake
@@ -263,7 +297,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 98d052903c942c4ea6f123b4f20a9224
       Path: Events\Default Work Unit\Earthquake
-      maxAttenuation: 0
+      maxAttenuation: 75
       maxDuration: -1
       minDuration: -1
     - name: Falling_Into_Lake
@@ -299,7 +333,7 @@ MonoBehaviour:
       Path: Events\Default Work Unit\Footsteps
       maxAttenuation: 0
       maxDuration: 0.29810148
-      minDuration: 0
+      minDuration: 0.22108833
     - name: Heavy_Ice_Impact
       guid: 7f7f2cb25dfa144ba6aeabcee82a102a
       id: 2004729559
@@ -419,6 +453,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.2212387
       minDuration: 0.79824525
+    - name: Music
+      guid: 06a0bc7faedee947b51c914fdb521856
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6ba2c523a76fd44fb22a32d8f086ec57
+      - ElementName: Music
+        ObjectType: 3
+        guid: 06a0bc7faedee947b51c914fdb521856
+      Path: Events\Default Work Unit\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music_States
+      guid: 768f306bc4ae814b8b6aa0b670020a4b
+      id: 1690668539
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6ba2c523a76fd44fb22a32d8f086ec57
+      - ElementName: Music_States
+        ObjectType: 3
+        guid: 768f306bc4ae814b8b6aa0b670020a4b
+      Path: Events\Default Work Unit\Music_States
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Player_Barks
       guid: e2b1c2a45b3dd748990609463e287fe9
       id: 3978910662
@@ -487,6 +555,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Statue_Melt
+      guid: 794d66ae7ac8854496ddd0dbc42c6d47
+      id: 4004046394
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6ba2c523a76fd44fb22a32d8f086ec57
+      - ElementName: Statue_Melt
+        ObjectType: 3
+        guid: 794d66ae7ac8854496ddd0dbc42c6d47
+      Path: Events\Default Work Unit\Statue_Melt
+      maxAttenuation: 0
+      maxDuration: 4.376961
+      minDuration: 4.376961
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -499,7 +584,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: c70e93abd42a954690f04a3b0f448f71
     GuidInternal: 
-    m_lastTime: -8584925515353614974
+    m_lastTime: -8584914270711922944
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -513,8 +598,106 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: eab348f159d6af48a09b21eabc8360b5
     GuidInternal: 
-    m_lastTime: -8584925515344139252
-    List: []
+    m_lastTime: -8584912666558570180
+    List:
+    - name: Music
+      guid: 3417ccbb09e7774089fccc9115144d07
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: eab348f159d6af48a09b21eabc8360b5
+      - ElementName: Music
+        ObjectType: 9
+        guid: 3417ccbb09e7774089fccc9115144d07
+      Path: States\Default Work Unit\Music
+      values:
+      - name: Abyss
+        guid: fd4d7356b55ab545a6fbc37596b06e7b
+        id: 4215188899
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: eab348f159d6af48a09b21eabc8360b5
+        - ElementName: Music
+          ObjectType: 9
+          guid: 3417ccbb09e7774089fccc9115144d07
+        - ElementName: Abyss
+          ObjectType: 8
+          guid: fd4d7356b55ab545a6fbc37596b06e7b
+      - name: Cave
+        guid: 5bb34e6c446ca54a93b22db822782e46
+        id: 4122393694
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: eab348f159d6af48a09b21eabc8360b5
+        - ElementName: Music
+          ObjectType: 9
+          guid: 3417ccbb09e7774089fccc9115144d07
+        - ElementName: Cave
+          ObjectType: 8
+          guid: 5bb34e6c446ca54a93b22db822782e46
+      - name: Lake
+        guid: 9a5f07074a818d48a8d348b3bbadb523
+        id: 624189772
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: eab348f159d6af48a09b21eabc8360b5
+        - ElementName: Music
+          ObjectType: 9
+          guid: 3417ccbb09e7774089fccc9115144d07
+        - ElementName: Lake
+          ObjectType: 8
+          guid: 9a5f07074a818d48a8d348b3bbadb523
+      - name: None
+        guid: 3401fe5360c4014caa66df9422ab7122
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: eab348f159d6af48a09b21eabc8360b5
+        - ElementName: Music
+          ObjectType: 9
+          guid: 3417ccbb09e7774089fccc9115144d07
+        - ElementName: None
+          ObjectType: 8
+          guid: 3401fe5360c4014caa66df9422ab7122
+      - name: Wonderland
+        guid: 812d69ab5d58ab4992b98de9afb85a89
+        id: 997105147
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: eab348f159d6af48a09b21eabc8360b5
+        - ElementName: Music
+          ObjectType: 9
+          guid: 3417ccbb09e7774089fccc9115144d07
+        - ElementName: Wonderland
+          ObjectType: 8
+          guid: 812d69ab5d58ab4992b98de9afb85a89
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -527,7 +710,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 549aa12270c0274dbf6cb9ea92e331d6
     GuidInternal: 
-    m_lastTime: -8584924530607857291
+    m_lastTime: -8584914255159902571
     List:
     - name: Footstep_Surfaces
       guid: 9f02accb3afe8b4fb779714f8fd26695
@@ -544,9 +727,9 @@ MonoBehaviour:
         guid: 9f02accb3afe8b4fb779714f8fd26695
       Path: Switches\Default Work Unit\Footstep_Surfaces
       values:
-      - name: Grass
+      - name: Dirt
         guid: 9d5dfb7a760260479beea2ab22a8c685
-        id: 4248645337
+        id: 2195636714
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -557,9 +740,25 @@ MonoBehaviour:
         - ElementName: Footstep_Surfaces
           ObjectType: 11
           guid: 9f02accb3afe8b4fb779714f8fd26695
-        - ElementName: Grass
+        - ElementName: Dirt
           ObjectType: 10
           guid: 9d5dfb7a760260479beea2ab22a8c685
+      - name: Ice
+        guid: 1187310e1259274298ffc798fd29a639
+        id: 344481046
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 549aa12270c0274dbf6cb9ea92e331d6
+        - ElementName: Footstep_Surfaces
+          ObjectType: 11
+          guid: 9f02accb3afe8b4fb779714f8fd26695
+        - ElementName: Ice
+          ObjectType: 10
+          guid: 1187310e1259274298ffc798fd29a639
       - name: Snow
         guid: 92cb5933cbec704d986055494eeffbf7
         id: 787898836
@@ -611,6 +810,72 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: Music
+      guid: 7e10806eb37fbc4f9138f150e4a98f9d
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 549aa12270c0274dbf6cb9ea92e331d6
+      - ElementName: Music
+        ObjectType: 11
+        guid: 7e10806eb37fbc4f9138f150e4a98f9d
+      Path: Switches\Default Work Unit\Music
+      values:
+      - name: Cave
+        guid: ba2810bc410d024eb026001f163cc766
+        id: 4122393694
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 549aa12270c0274dbf6cb9ea92e331d6
+        - ElementName: Music
+          ObjectType: 11
+          guid: 7e10806eb37fbc4f9138f150e4a98f9d
+        - ElementName: Cave
+          ObjectType: 10
+          guid: ba2810bc410d024eb026001f163cc766
+      - name: Lake
+        guid: 9370d2e37ab2984b9b10583c7b7d52f8
+        id: 624189772
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 549aa12270c0274dbf6cb9ea92e331d6
+        - ElementName: Music
+          ObjectType: 11
+          guid: 7e10806eb37fbc4f9138f150e4a98f9d
+        - ElementName: Lake
+          ObjectType: 10
+          guid: 9370d2e37ab2984b9b10583c7b7d52f8
+      - name: Wonderland
+        guid: 0791f77db1eef441bc8db670e321fba1
+        id: 997105147
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 549aa12270c0274dbf6cb9ea92e331d6
+        - ElementName: Music
+          ObjectType: 11
+          guid: 7e10806eb37fbc4f9138f150e4a98f9d
+        - ElementName: Wonderland
+          ObjectType: 10
+          guid: 0791f77db1eef441bc8db670e321fba1
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -623,10 +888,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 4b3d2308ec45b34cb6d455bd9ebe6fe0
     GuidInternal: 
-    m_lastTime: -8584925515344129283
+    m_lastTime: -8584914270672480793
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
