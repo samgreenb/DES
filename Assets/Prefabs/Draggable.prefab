@@ -115,6 +115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5953008972023734031}
   - component: {fileID: 4868198594633791549}
+  - component: {fileID: 8307340628544568862}
   m_Layer: 0
   m_Name: Draggable
   m_TagString: Untagged
@@ -165,3 +166,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 32
   m_CollisionDetection: 0
+--- !u!114 &8307340628544568862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8607159098618779390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cf084c12ec959f42bf9a97663fe0604, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collideSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}

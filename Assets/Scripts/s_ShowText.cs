@@ -8,6 +8,7 @@ public class s_ShowText : MonoBehaviour
 
     public GameObject Text;
     public GameObject Player;
+    public int Timer; //How long text shows
     public bool DoOnce = false;
 
 
@@ -18,7 +19,7 @@ public class s_ShowText : MonoBehaviour
         {
             if (!other.CompareTag("Player")) return;
             Text.SetActive(true);
-            Invoke("Delay", 2);
+            Invoke("Delay", Timer);
             DoOnce = true;
         }
 
