@@ -104,6 +104,7 @@ namespace AK
         static const AkUniqueID OUTDOORS = 2730119150U;
         static const AkUniqueID SMALL_ROOM_REVERB = 4024401587U;
         static const AkUniqueID TUNNEL_REVERB = 3400062578U;
+        static const AkUniqueID VOID = 3370470011U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES

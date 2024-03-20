@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 076b5706ac524a4f99360f1dd314bc12
     GuidInternal: 
-    m_lastTime: -8584914235775796417
+    m_lastTime: -8584906559533040355
     List:
     - name: Cave
       guid: 938b6f076735b34a89848a3d738368a7
@@ -156,6 +156,23 @@ MonoBehaviour:
         ObjectType: 1
         guid: e2f95931a2768549a53b090425786419
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Tunnel_Reverb
+    - name: Void
+      guid: 2ba03e6b4df0f3409a47aaa69843d137
+      id: 3370470011
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 076b5706ac524a4f99360f1dd314bc12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Void
+        ObjectType: 1
+        guid: 2ba03e6b4df0f3409a47aaa69843d137
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Void
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -598,7 +615,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: eab348f159d6af48a09b21eabc8360b5
     GuidInternal: 
-    m_lastTime: -8584912666558570180
+    m_lastTime: -8584906553327072585
     List:
     - name: Music
       guid: 3417ccbb09e7774089fccc9115144d07
@@ -891,7 +908,7 @@ MonoBehaviour:
     m_lastTime: -8584914270672480793
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000
+  ExpandedWaapiItemIds: 05000000060000001d0000001e0000001f000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

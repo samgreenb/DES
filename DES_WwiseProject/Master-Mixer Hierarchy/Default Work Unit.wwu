@@ -46,6 +46,13 @@
 								</Reference>
 							</ReferenceList>
 						</AuxBus>
+						<AuxBus Name="Void" ID="{6B3EA02B-F04D-40F3-9A47-AAA69843D137}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+									<ObjectRef Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+						</AuxBus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

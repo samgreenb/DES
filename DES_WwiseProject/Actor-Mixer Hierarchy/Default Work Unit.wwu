@@ -1142,7 +1142,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{625C7C81-33E5-4F03-8D33-5A44785314EA}"/>
 						</Reference>
 						<Reference Name="DefaultSwitchOrState">
-							<ObjectRef Name="Dirt" ID="{7AFB5D9D-0276-4760-9BEE-A2AB22A8C685}" WorkUnitID="{22A19A54-C070-4D27-BF6C-B9EA92E331D6}"/>
+							<ObjectRef Name="Void" ID="{59CE9006-3451-44F8-BA15-48A93EB0FADB}" WorkUnitID="{22A19A54-C070-4D27-BF6C-B9EA92E331D6}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{06576B07-52AC-4F4A-9936-0F1DD314BC12}"/>

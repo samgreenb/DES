@@ -146,3 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec64de195811f684e92ddb96d9fb99bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collideSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 50d0227de1dab9544b76438b86780d66, type: 2}
