@@ -16,12 +16,14 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	1042516749	Medium_Room_Reverb			\Default Work Unit\Master Audio Bus\Medium_Room_Reverb	
 	2730119150	Outdoors			\Default Work Unit\Master Audio Bus\Outdoors	
 	3177428469	Cave_Reverb			\Default Work Unit\Master Audio Bus\Cave_Reverb	
+	3370470011	Void			\Default Work Unit\Master Audio Bus\Void	
 	3400062578	Tunnel_Reverb			\Default Work Unit\Master Audio Bus\Tunnel_Reverb	
 	4024401587	Small_Room_Reverb			\Default Work Unit\Master Audio Bus\Small_Room_Reverb	
 
 Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 	702543456	Tunnel1	Wwise Matrix Reverb			
+	1588715066	Echoes_Linear	Wwise Delay			
 	1990128658	Room_Medium	Wwise RoomVerb			
 	2849147824	Medium	Wwise RoomVerb			
 	2995775460	Room_Small	Wwise RoomVerb			

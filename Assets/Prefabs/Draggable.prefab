@@ -181,4 +181,4 @@ MonoBehaviour:
   collideSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: aa2842c8d7f407c47804f9261a192d1e, type: 2}

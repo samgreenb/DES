@@ -9,13 +9,14 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E51E626E-8990-CEF6-DF40-748AE4FAF90A}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{FDF52CBB-968C-D7E7-7463-ECBCF181A00C}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
 				<ShareSets>
 					<Plugin Id="48620415" Name="Have_U_Ever_Been_Outside" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="702543456" Name="Tunnel1" LibName="Wwise Matrix Reverb" LibId="7536643"/>
+					<Plugin Id="1588715066" Name="Echoes_Linear" LibName="Wwise Delay" LibId="6946819"/>
 					<Plugin Id="1990128658" Name="Room_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="2849147824" Name="Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="2995775460" Name="Room_Small" LibName="Wwise RoomVerb" LibId="7733251"/>
@@ -48,6 +49,13 @@
 					<PluginRefs>
 						<ShareSets>
 							<PluginRef Id="2849147824"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="3370470011" Name="Void">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1588715066"/>
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
@@ -96,7 +104,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{EDAE877D-106F-57D3-C1E9-FDDF3257836B}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{C3424DED-53E2-0776-D6ED-029724F8A6B2}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -368,7 +376,7 @@
 				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0.22108833" DurationMax="0.29810148">
 					<SwitchContainers>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="1265478494" Id="3370470011"/>
+							<SwitchValue GroupType="Switch" GroupId="1265478494" Id="3370470011" Default="true"/>
 							<MediaRefs>
 								<MediaRef Id="539440202"/>
 								<MediaRef Id="736419123"/>
@@ -409,7 +417,7 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="1265478494" Id="2195636714" Default="true"/>
+							<SwitchValue GroupType="Switch" GroupId="1265478494" Id="2195636714"/>
 							<MediaRefs>
 								<MediaRef Id="88630389"/>
 								<MediaRef Id="284730830"/>
@@ -541,5 +549,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{92D6541A-7011-F973-7DD2-836F9DB6413D}</FileHash>
+	<FileHash>{21C7E3E8-7682-3D28-863D-525E5049DFE2}</FileHash>
 </SoundBanksInfo>
