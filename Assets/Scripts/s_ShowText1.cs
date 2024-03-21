@@ -31,7 +31,7 @@ public class s_ShowText1 : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCodesNeeded[i]))
             {
-                Text.SetActive(false);
+                Invoke("Delay", 2);
             }
         }
     }
