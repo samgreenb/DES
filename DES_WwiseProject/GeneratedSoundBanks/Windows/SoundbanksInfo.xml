@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3DD5C1F6-0482-9450-0A2C-9D9EA9585281}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A23B13D6-F219-8EAA-CDFA-42CDE1C1A521}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -104,7 +104,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{D00B318F-003F-29F0-2C9E-520D38640DFC}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{2F12B179-8894-D463-CE41-BB05518079D3}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -207,6 +207,10 @@
 				<File Id="481628282" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Pressure_Plate_Click.wav</ShortName>
 					<CachePath>SFX/Pressure_Plate_Click_10C4C929.wem</CachePath>
+				</File>
+				<File Id="505547607" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Phone_Noti_3.wav</ShortName>
+					<CachePath>SFX/Phone_Noti_3_10C4C929.wem</CachePath>
 				</File>
 				<File Id="506904011" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Afterlife_Journey_Cave_track.wav</ShortName>
@@ -332,6 +336,8 @@
 			<Plugins>
 				<ShareSets>
 					<Plugin Id="1588715066" Name="Echoes_Linear" LibName="Wwise Delay" LibId="6946819"/>
+					<Plugin Id="1674078407" Name="Chorus_Like" LibName="Wwise Flanger" LibId="8192003"/>
+					<Plugin Id="2171939413" Name="Dialog_Leveler_Hard" LibName="Wwise Compressor" LibId="7077891"/>
 				</ShareSets>
 			</Plugins>
 			<Events>
@@ -499,6 +505,17 @@
 						<MediaRef Id="1036570820"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3836751784" Name="Object_Appearing" DurationType="OneShot" DurationMin="1.2709906" DurationMax="1.2783533">
+					<MediaRefs>
+						<MediaRef Id="505547607"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1674078407"/>
+							<PluginRef Id="2171939413"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
 				<Event Id="3978910662" Name="Player_Barks" DurationType="OneShot" DurationMin="0.26672474" DurationMax="0.32692006">
 					<MediaRefs>
 						<MediaRef Id="264028608"/>
@@ -549,5 +566,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E873DCB3-6421-608B-01D9-BAD731239A0E}</FileHash>
+	<FileHash>{EE512ED4-4413-F97F-FBED-2E4DA0DF7431}</FileHash>
 </SoundBanksInfo>

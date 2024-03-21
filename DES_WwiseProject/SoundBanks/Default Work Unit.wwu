@@ -19,6 +19,7 @@
 						<ObjectRef Name="Falling_Into_Lake" ID="{D358E1C5-B864-4966-BE69-EC0622646208}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Jump" ID="{072F287B-408B-4AED-A39C-04C3B79C9008}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Heavy_Ice_Impact" ID="{B22C7F7F-FA5D-4B14-A6AE-ABCEE82A102A}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Object_Appearing" ID="{C5B5BFAC-8A5F-4B2A-A5A0-E8CCF291C87E}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Light_Ice_Impact" ID="{9BFFBE81-4AE5-4B36-A0C0-590F2E35DFD9}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Land" ID="{FC043FD2-635D-4B5E-B590-DA280CAC9A03}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music_States" ID="{6B308F76-AEC4-4B81-8B6A-A0B670020A4B}" WorkUnitID="{23C5A26B-6FA7-4FD4-B22A-32D8F086EC57}" Origin="Manual" Filter="7"/>

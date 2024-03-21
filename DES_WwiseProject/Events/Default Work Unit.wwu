@@ -266,6 +266,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Object_Appearing" ID="{C5B5BFAC-8A5F-4B2A-A5A0-E8CCF291C87E}">
+					<ChildrenList>
+						<Action Name="" ID="{0BDA6220-6706-41BE-A3F1-A467C2CF4888}" ShortID="618590953">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Object_Appearing" ID="{FC7F8DA6-28E2-4127-9CA7-57886AF1BAE5}" WorkUnitID="{0F998219-96FC-4A6F-A037-202C90C13818}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

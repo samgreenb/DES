@@ -2,10 +2,12 @@
 <PluginInfo Platform="Windows" BasePlatform="Windows">
 	<PluginLibs>
 		<PluginLib LibName="Wwise Delay" LibId="6946819" Type="Effect" DLL="AkDelay" StaticLib="AkDelayFX"/>
+		<PluginLib LibName="Wwise Compressor" LibId="7077891" Type="Effect" DLL="AkCompressor" StaticLib="AkCompressorFX"/>
 		<PluginLib LibName="Wwise Matrix Reverb" LibId="7536643" Type="Effect" DLL="AkMatrixReverb" StaticLib="AkMatrixReverbFX"/>
 		<PluginLib LibName="Wwise RoomVerb" LibId="7733251" Type="Effect" DLL="AkRoomVerb" StaticLib="AkRoomVerbFX"/>
+		<PluginLib LibName="Wwise Flanger" LibId="8192003" Type="Effect" DLL="AkFlanger" StaticLib="AkFlangerFX"/>
 		<PluginLib LibName="System" LibId="11403271" Type="AudioDevice"/>
 		<PluginLib LibName="No Output" LibId="11862023" Type="AudioDevice"/>
 	</PluginLibs>
-	<FileHash>{059E7DDF-EB57-32EF-7D29-119C6355A223}</FileHash>
+	<FileHash>{B5CCAD5B-B192-9831-F349-905FDC891064}</FileHash>
 </PluginInfo>
