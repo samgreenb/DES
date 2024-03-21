@@ -6,7 +6,8 @@ public class s_ChangeLightColour : MonoBehaviour
 {
 
     public Light SelectedLight;
-    public Color NewColor; 
+    public Color NewColor;
+    public Quaternion NewRotation;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,8 +16,8 @@ public class s_ChangeLightColour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!other.CompareTag("Player")) return;
         SelectedLight.color = NewColor;
+        SelectedLight.transform.rotation = NewRotation;
     }
 
 }
