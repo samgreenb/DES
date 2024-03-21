@@ -456,14 +456,28 @@ public class DogController : MonoBehaviour
             // But instead we want to collide against everything except layer 8. The ~ operator does this, it inverts a bitmask.
             layerMask = ~layerMask;
 
-            RaycastHit hit;
             // Does the ray intersect any objects excluding the player layer
-            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.up), out hit, 2.0f, layerMask) && !hit.collider.gameObject.CompareTag("Player"))
+            RaycastHit[] hits = Physics.RaycastAll(transform.position, transform.TransformDirection(Vector3.up), 2.0f, layerMask);
+
+            foreach(var hitt in hits)
             {
-                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-                Debug.Log("Did Hit : " + hit.collider.gameObject.name);
-                return;
+                if (!hitt.collider.gameObject.CompareTag("Player")
+                && !hitt.collider.isTrigger)
+                {
+                    Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.up) * hitt.distance, Color.yellow);
+                    Debug.Log("Did Hit : " + hitt.collider.gameObject.name);
+                    return;
+                }
             }
+
+            //if (Physics.RaycastAll(transform.position, transform.TransformDirection(Vector3.up), out hit, 2.0f, layerMask) 
+            //    && !hit.collider.gameObject.CompareTag("Player")
+            //    && !hit.collider.isTrigger)
+            //{
+            //    Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+            //    Debug.Log("Did Hit : " + hit.collider.gameObject.name);
+            //    return;
+            //}
             standingModel.SetActive(true);
             crouchingModel.SetActive(false);
             controller.height = 2;
