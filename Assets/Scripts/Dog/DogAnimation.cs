@@ -39,6 +39,15 @@ public class DogAnimation : MonoBehaviour
             animator.SetBool("walk", false);
         }
 
+        if (characterController.isGrounded && characterController.velocity.magnitude > 5.5f)
+        {
+            animator.SetBool("run", true);
+        }
+        else
+        {
+            animator.SetBool("run", false);
+        }
+
         groundedLastUpdate = characterController.isGrounded;
     }
 

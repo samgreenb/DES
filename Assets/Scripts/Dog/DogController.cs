@@ -362,6 +362,7 @@ public class DogController : MonoBehaviour
     Vector3 push = Vector3.zero;
     private void Move()
     {
+        
         //cameraRotater.transform.localRotation = Quaternion.Euler(0, Camera.main. transform.localRotation.eulerAngles.y, 0);
         cameraRotater.transform.localRotation = Quaternion.Euler(0, CinemachineCore.Instance.GetActiveBrain(0).ActiveVirtualCamera.VirtualCameraGameObject.transform.parent.localRotation.eulerAngles.y, 0);
         
@@ -369,6 +370,8 @@ public class DogController : MonoBehaviour
         //bool anim = false;
         Vector3 input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         CharacterController controller = GetComponent<CharacterController>();
+
+        Debug.Log(controller.velocity);
 
             //moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         //if (moveDirection.magnitude > 0) { anim = true; }
