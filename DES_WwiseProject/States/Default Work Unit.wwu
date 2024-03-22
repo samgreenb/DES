@@ -17,7 +17,7 @@
 					<TransitionList>
 						<Transition>
 							<StartState Name="None" ID="{53FE0134-C460-4C01-AA66-DF9422AB7122}"/>
-							<EndState Name="Wonderland" ID="{AB692D81-585D-49AB-92B9-8DE9AFB85A89}"/>
+							<EndState Name="Lake" ID="{07075F9A-814A-488D-A8D3-48B3BBADB523}"/>
 							<Time>0</Time>
 							<IsShared>false</IsShared>
 						</Transition>

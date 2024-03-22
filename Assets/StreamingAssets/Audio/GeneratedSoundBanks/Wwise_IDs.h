@@ -30,6 +30,7 @@ namespace AK
         static const AkUniqueID MEDIUM_ICE_IMPACT = 2031244205U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID MUSIC_STATES = 1690668539U;
+        static const AkUniqueID OBJECT_APPEARING = 3836751784U;
         static const AkUniqueID PLAYER_BARKS = 3978910662U;
         static const AkUniqueID PLAYER_SNIFFS = 1028362978U;
         static const AkUniqueID PRESSURE_PLATE_CLICK = 1442179120U;

@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 076b5706ac524a4f99360f1dd314bc12
     GuidInternal: 
-    m_lastTime: -8584905699931222192
+    m_lastTime: -8584905696859608292
     List:
     - name: Cave
       guid: 938b6f076735b34a89848a3d738368a7
@@ -185,7 +185,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 3393a2487e8d2f48b8d8d877e6065cbb
     GuidInternal: 
-    m_lastTime: -8584912645529089892
+    m_lastTime: -8584905632824883786
     List:
     - name: Main
       guid: 08d96443a17eb8459509e56c096e9406
@@ -213,7 +213,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6ba2c523a76fd44fb22a32d8f086ec57
     GuidInternal: 
-    m_lastTime: -8584912662896747539
+    m_lastTime: -8584905632824773631
     List:
     - name: Ambience_Wind
       guid: e3deda5b34b03c439624b4ce56891313
@@ -504,6 +504,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Object_Appearing
+      guid: acbfb5c55f8a2a4ba5a0e8ccf291c87e
+      id: 3836751784
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6ba2c523a76fd44fb22a32d8f086ec57
+      - ElementName: Object_Appearing
+        ObjectType: 3
+        guid: acbfb5c55f8a2a4ba5a0e8ccf291c87e
+      Path: Events\Default Work Unit\Object_Appearing
+      maxAttenuation: 0
+      maxDuration: 1.2783533
+      minDuration: 1.2709906
     - name: Player_Barks
       guid: e2b1c2a45b3dd748990609463e287fe9
       id: 3978910662
@@ -615,7 +632,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: eab348f159d6af48a09b21eabc8360b5
     GuidInternal: 
-    m_lastTime: -8584906553327072585
+    m_lastTime: -8584905664909690743
     List:
     - name: Music
       guid: 3417ccbb09e7774089fccc9115144d07
@@ -908,7 +925,7 @@ MonoBehaviour:
     m_lastTime: -8584914270672480793
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000070000001d0000001e0000001f000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

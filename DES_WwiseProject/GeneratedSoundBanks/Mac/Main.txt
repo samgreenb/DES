@@ -18,6 +18,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3170274879	Falling_Into_Lake			\Default Work Unit\Falling_Into_Lake	
 	3594471942	Ambience_Wind_Cave			\Default Work Unit\Ambience_Wind_Cave	
 	3833651337	Jump			\Default Work Unit\Jump	
+	3836751784	Object_Appearing			\Default Work Unit\Object_Appearing	
 	3978910662	Player_Barks			\Default Work Unit\Player_Barks	
 	3991942870	Music			\Default Work Unit\Music	
 	4004046394	Statue_Melt			\Default Work Unit\Statue_Melt	
@@ -63,6 +64,8 @@ Custom State	ID	Name	State Group	Owner		Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	1588715066	Echoes_Linear	Wwise Delay			
+	1674078407	Chorus_Like	Wwise Flanger			
+	2171939413	Dialog_Leveler_Hard	Wwise Compressor			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	14544015	Snow_Footstep_4	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Snow_Footstep_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Snow_Footsteps\Snow_Footstep_4		43872
@@ -90,6 +93,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	458278501	AJ_Track_02_Remix	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\AJ_Track_02_Remix_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\Wonderland\AJ_Track_02_Remix\AJ_Track_02_Remix		37388384
 	458584362	Collapsing_Cave	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Collapsing_Cave_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Collapsing_Cave		2556000
 	481628282	Pressure_Plate_Click	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Pressure_Plate_Click_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pressure_Plate_Click		68192
+	505547607	Object_Appearing	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Phone_Noti_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object_Appearing		244832
 	506904011	Afterlife_Journey_Cave_track	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Afterlife_Journey_Cave_track_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\Cave\Afterlife_Journey_Cave_track\Afterlife_Journey_Cave_track		36864096
 	539440202	Void_Footstep_2	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Void_Footstep_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Void_Footsteps\Void_Footstep_2		44128
 	549733239	Player_Bark_1	C:\Users\flynn\GitHub\DES\DES_WwiseProject\.cache\Mac\SFX\Player_Bark_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Barks\Player_Bark_1		52704
